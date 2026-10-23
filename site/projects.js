@@ -74,4 +74,33 @@ window.PORTFOLIO = [
     ],
     added: "2026-10",
   },
+  {
+    id: "jonah-voice",
+    type: "skill",
+    name: "Jonah's voice",
+    tagline:
+      "A Claude Skill for drafting and editing anything I send, post or publish as myself, so it sounds like me: plainspoken, direct and short.",
+    problem:
+      "Claude's default drafts don't sound like any particular person. Anything going out under my name has to sound like me, without a rewrite every time.",
+    highlights: [
+      "Five hard rules on every draft: no em dashes, no stock \"not X, but Y\" reversals, invent nothing, no inflation, keep my words when editing",
+      "Separate guidance for emails and texts, articles and posts, reports, scripts, and personal notes",
+      "Before-and-after examples that show the edit to make, like \"leverage\" becoming \"use\"",
+      "A checklist Claude runs before handing over any draft, including a search for em dashes",
+    ],
+    stack: ["Claude Skill", "SKILL.md"],
+    stats: [
+      { value: "5", label: "Hard rules" },
+      { value: "5", label: "Formats covered" },
+      { value: "7", label: "Pre-handoff checks" },
+    ],
+    links: [
+      {
+        label: "Read the SKILL.md",
+        url: "https://github.com/jonahselner/jonah-selner-claude-portfolio/blob/main/skills/jonah-voice/SKILL.md",
+        primary: true,
+      },
+    ],
+    added: "2026-10",
+  },
 ];

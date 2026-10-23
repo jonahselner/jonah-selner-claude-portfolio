@@ -181,7 +181,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 (function(){
   var TYPES = [
     {key:"app", label:"Apps", one:"App", blurb:"Small web apps built with Claude Code, each replacing a manual workflow.", empty:"More apps on the way."},
-    {key:"skill", label:"Skills", one:"Skill", blurb:"Claude Skills (SKILL.md plus supporting files) recreated from real Boost workflows.", empty:"Skills are being added. Check back soon."},
+    {key:"skill", label:"Skills", one:"Skill", blurb:"Claude Skills (SKILL.md plus supporting files) that teach Claude how I work.", empty:"Skills are being added. Check back soon."},
     {key:"dashboard", label:"Dashboards", one:"Dashboard", blurb:"Dashboards wired to sample data, the way a practice or ops lead would see it.", empty:"Dashboards are being added. Check back soon."}
   ];
   var items = (window.PORTFOLIO || []).slice();
@@ -205,7 +205,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         ((p.stack||[]).length?'<div class="tech">'+p.stack.map(function(s){return '<span>'+esc(s)+'</span>';}).join("")+'</div>':'')+
         (links?'<div class="links">'+links+'</div>':'')+
       '</div>'+
-      '<aside class="side">'+(stats||'<div class="stat"><b>'+esc(t.one)+'</b><span>Working prototype</span></div>')+'<div class="note">Demo data is labeled inside each demo.</div></aside>'+
+      '<aside class="side">'+(stats||'<div class="stat"><b>'+esc(t.one)+'</b><span>Working prototype</span></div>')+(p.type!=='skill'?'<div class="note">Demo data is labeled inside each demo.</div>':'')+'</aside>'+
     '</article>';
   }
 
