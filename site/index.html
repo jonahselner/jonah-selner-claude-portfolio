@@ -43,8 +43,8 @@ h1,h2,h3{color:var(--ink);font-weight:700;margin:0}
 .hero{position:relative;overflow:hidden;background:var(--surface-alt);border-bottom:1px solid var(--border)}
 .hero::before{content:"";position:absolute;right:-180px;top:-220px;width:620px;height:620px;border-radius:50%;background:radial-gradient(closest-side,rgba(61,115,196,.14),transparent);pointer-events:none}
 .hero .wrap{position:relative;display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center;padding-top:72px;padding-bottom:64px}
-.hero h1{font-size:44px;line-height:1.04;letter-spacing:-1.54px;margin:12px 0 18px;max-width:17ch}
-.hero h1 em{font-style:normal;color:var(--brand-blue)}
+.hero h1{font-size:44px;line-height:1.04;letter-spacing:-1.54px;margin:12px 0 18px;max-width:20ch}
+.hero h1 em{font-style:normal;color:var(--brand-blue);white-space:nowrap}
 .lead{font-size:18px;line-height:28px;max-width:60ch;margin:0}
 .me{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center}
 .me img{width:132px;height:132px;border-radius:50%;box-shadow:var(--shadow-card);border:4px solid #fff}
@@ -145,7 +145,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   <div class="wrap">
     <div>
       <div class="eyebrow">Jonah's AI portfolio</div>
-      <h1>Real operating problems, solved with <em>Claude</em>.</h1>
+      <h1>Real operating problems, solved with <em>Claude and ChatGPT</em>.</h1>
       <p class="lead">Apps, skills and dashboards I built with Claude and ChatGPT while running Boost Patients, a patient engagement company for elective and specialty practices. Each one started as a workflow my team ran by hand.</p>
       <div class="tally" id="tally"></div>
     </div>
