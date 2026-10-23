@@ -78,6 +78,40 @@ window.PORTFOLIO = [
     added: "2026-10",
   },
   {
+    id: "aesthetics-consult-router",
+    type: "skill",
+    name: "Aesthetic consult booking",
+    tagline:
+      "A call-center agent types a few words about what a med spa lead wants. Claude returns one booking instruction: which consult, the fee, and a line the agent can say.",
+    problem:
+      "Agents on a live call aren't clinicians, and the lead is waiting. They need to know whether \"Morpheus8\" or \"my neck looks tired\" is a Visia consult or a filler consult without putting anyone on hold.",
+    highlights: [
+      "Maps brands, treatments, body areas and plain-language worries to one of seven consults, with the fee",
+      "Always one answer. When it's a true toss-up, it gives the agent one question to ask and what to book for each answer",
+      "Safety comes first: a possible complication after filler goes straight to clinical staff, and stroke or vision symptoms get a 911 instruction",
+      "Handles the edge cases agents get wrong, like a lip flip (neurotoxin, not filler) and PicoSure for a tattoo vs. dark spots",
+      "Waxing, facials and massage skip the consult and transfer straight to scheduling. Medical concerns outside aesthetics get pointed to the right doctor",
+    ],
+    stack: ["Claude Skill", "SKILL.md", "Reference catalog"],
+    stats: [
+      { value: "7", label: "Consult types" },
+      { value: "250+", label: "Example lead phrasings" },
+      { value: "4", label: "Safety escalations" },
+    ],
+    links: [
+      {
+        label: "Read the SKILL.md",
+        url: "https://github.com/jonahselner/jonah-selner-claude-portfolio/blob/main/skills/aesthetics-consult-router/SKILL.md",
+        primary: true,
+      },
+      {
+        label: "Service catalog",
+        url: "https://github.com/jonahselner/jonah-selner-claude-portfolio/blob/main/skills/aesthetics-consult-router/references/catalog.md",
+      },
+    ],
+    added: "2026-10",
+  },
+  {
     id: "jonah-voice",
     type: "skill",
     name: "Jonah's voice",
