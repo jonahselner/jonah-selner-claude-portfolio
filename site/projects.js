@@ -27,8 +27,9 @@ window.PORTFOLIO = [
       "Deterministic 100-point rubric: 70 points for speed to first response, 30 for texting back",
       "One-page web and PDF report for slow responders, generated from the same data model so they never disagree",
       "Signed call, SMS and voicemail webhooks with retry de-duplication and a full audit log",
+      "Two AI tools: built the production app with ChatGPT Codex (28 feature branches, merged by pull request), then used Claude Code to turn it into this read-only public demo",
     ],
-    stack: ["Claude Code", "TypeScript", "Express", "Twilio", "Postgres", "PDFKit"],
+    stack: ["ChatGPT Codex", "Claude Code", "TypeScript", "Express", "Twilio", "Postgres", "PDFKit"],
     stats: [
       { value: "13", label: "Practices shopped (demo)" },
       { value: "70 / 30", label: "Speed / text rubric" },
