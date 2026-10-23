@@ -11,6 +11,7 @@
   stack       tools/tech (short labels)
   stats       optional, up to 3 { value, label } proof points
   links       [{ label, url, primary? }]; first primary link is the main button
+  note        optional small line under the stats (e.g. "The demo uses sample data.")
   added       "YYYY-MM" the entry was added
 */
 window.PORTFOLIO = [
@@ -19,15 +20,15 @@ window.PORTFOLIO = [
     type: "app",
     name: "Secret Shop",
     tagline:
-      "Mystery-shops how fast an elective or specialty practice responds to a new patient inquiry, then scores it and writes the report.",
+      "Mystery-shops a practice's website form, then times how long it takes them to call or text back. It scores the response and writes the report.",
     problem:
-      "Practices believed they followed up fast. Secret Shop measures it: a real-looking web inquiry, a dedicated tracking number, and five days of every call and text logged.",
+      "A slow call back can lose the patient. Secret Shop shows a practice exactly how long theirs took, with a timestamp on every call and text.",
     highlights: [
-      "Seven-step shop workflow: enter a practice, spin up a local tracking number, submit the inquiry, track for five days",
-      "Deterministic 100-point rubric: 70 points for speed to first response, 30 for texting back",
-      "One-page web and PDF report for slow responders, generated from the same data model so they never disagree",
-      "Signed call, SMS and voicemail webhooks with retry de-duplication and a full audit log",
-      "Two AI tools: built the production app with ChatGPT Codex (28 feature branches, merged by pull request), then used Claude Code to turn it into this read-only public demo",
+      "Enter a practice, get a local tracking number, submit the inquiry, then log every response for five days",
+      "Scored out of 100: 70 points for how fast they respond, 30 for whether they text back",
+      "Slow responders get a one-page report and PDF, built from the same data so the two always match",
+      "Signed call, SMS and voicemail webhooks, with duplicate retries ignored and every event in an audit log",
+      "I built the production app with ChatGPT Codex (28 feature branches, merged by pull request), then used Claude Code to turn it into this read-only demo",
     ],
     stack: ["ChatGPT Codex", "Claude Code", "TypeScript", "Express", "Twilio", "Postgres", "PDFKit"],
     stats: [
@@ -35,6 +36,7 @@ window.PORTFOLIO = [
       { value: "70 / 30", label: "Speed / text rubric" },
       { value: "5 days", label: "Tracking window" },
     ],
+    note: "The demo uses sample data.",
     links: [
       { label: "Open the demo", url: "https://boost-secret-shop.vercel.app/", primary: true },
       { label: "Sample report", url: "https://boost-secret-shop.vercel.app/bramblewood-dental-r1002" },
@@ -47,14 +49,14 @@ window.PORTFOLIO = [
     type: "app",
     name: "BoostFlow",
     tagline:
-      "A live call guide for patient concierges: each practice's call policy, turned into a step-by-step flow they follow while on the phone.",
+      "A call guide for patient concierges. It turns each practice's call policy into steps they follow while they're on the phone.",
     problem:
-      "Every practice had its own policies buried in long documents. Concierges needed the right script, rule and link in the moment, not after the call.",
+      "Each practice has its own call rules. Concierges need the right script and link while the patient is still on the line.",
     highlights: [
-      "Six-stage call flow: greet, triage, qualify, educate, schedule, close",
-      "Emergency protocol that surfaces on its own, with an ordered escalation list and urgent transfer form",
-      "Appointment-type reference (costs, validations, treatments) plus scheduler, callback and transfer shortcuts",
-      "One app, many practices: each clinic's policy loads from its own config, with a dated change log",
+      "Six call stages: greet, triage, qualify, educate, schedule and close",
+      "An emergency protocol with who to call, in order, and an urgent transfer form",
+      "Reference tabs for costs, validations and treatments, plus shortcuts to schedule, call back or transfer",
+      "One app for every practice. Each clinic's policy loads from its own config and keeps a dated change log",
     ],
     stack: ["Vibe coded with Claude", "HTML / JS", "Netlify"],
     stats: [
@@ -80,14 +82,14 @@ window.PORTFOLIO = [
     type: "skill",
     name: "Jonah's voice",
     tagline:
-      "A Claude Skill for drafting and editing anything I send, post or publish as myself, so it sounds like me: plainspoken, direct and short.",
+      "Teaches Claude to write like me when it drafts or edits anything I send, post or publish: plainspoken, direct and short.",
     problem:
-      "Claude's default drafts don't sound like any particular person. Anything going out under my name has to sound like me, without a rewrite every time.",
+      "Claude's default drafts don't sound like anyone in particular. Anything going out under my name should sound like me without a rewrite.",
     highlights: [
       "Five hard rules on every draft: no em dashes, no stock \"not X, but Y\" reversals, invent nothing, no inflation, keep my words when editing",
       "Separate guidance for emails and texts, articles and posts, reports, scripts, and personal notes",
       "Before-and-after examples that show the edit to make, like \"leverage\" becoming \"use\"",
-      "A checklist Claude runs before handing over any draft, including a search for em dashes",
+      "A checklist Claude runs before it hands over any draft, including a search for em dashes",
     ],
     stack: ["Claude Skill", "SKILL.md"],
     stats: [

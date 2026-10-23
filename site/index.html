@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jonah's AI Portfolio</title>
-<meta name="description" content="Apps, Claude skills and dashboards Jonah Selner built while running Boost Patients, a patient engagement company for elective and specialty practices.">
+<meta name="description" content="Apps, skills and dashboards Jonah Selner built with Claude and ChatGPT while running Boost Patients, a patient engagement company for elective and specialty practices.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -97,7 +97,7 @@ section.group:last-of-type{padding-bottom:80px}
 /* Close */
 .close{background:var(--navy-950);color:var(--on-dark-muted);position:relative;overflow:hidden}
 .close::before{content:"";position:absolute;right:-120px;top:-160px;width:520px;height:520px;border-radius:50%;background:radial-gradient(closest-side,rgba(61,115,196,.35),transparent)}
-.close .wrap{position:relative;padding-top:72px;padding-bottom:72px;display:grid;grid-template-columns:1.1fr 1fr;gap:48px}
+.close .wrap{position:relative;padding-top:72px;padding-bottom:72px}.close .wrap>div{max-width:68ch}
 .close h2{color:var(--on-dark);font-size:30px;line-height:36px;letter-spacing:-.75px;margin:10px 0 14px}
 .close .eyebrow{color:var(--brand-blue-300)}
 .close p{margin:0 0 12px;font-size:16px;line-height:25px}
@@ -146,7 +146,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <div>
       <div class="eyebrow">Jonah's AI portfolio</div>
       <h1>Real operating problems, solved with <em>Claude and ChatGPT</em>.</h1>
-      <p class="lead">Apps, skills and dashboards I built with Claude and ChatGPT while running Boost Patients, a patient engagement company for elective and specialty practices. Each one started as a workflow my team ran by hand.</p>
+      <p class="lead">Apps, skills and dashboards I built with Claude and ChatGPT while running Boost Patients, a patient engagement company for elective and specialty practices. Most have a demo you can open.</p>
       <div class="tally" id="tally"></div>
     </div>
     <div class="me">
@@ -161,15 +161,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 <section class="close">
   <div class="wrap">
     <div>
-      <div class="eyebrow">How I build</div>
-      <h2>Start from the workflow, not the tool.</h2>
-      <p>At Boost I ran operations as the EOS Integrator: calls, texts, CRM, scheduling and phone system migrations for dozens of practices. The best automations came from watching where a real person lost time or made the same judgment call fifty times a day.</p>
-      <p>Everything here is a working prototype. Where a demo shows practices, patients or results, it uses sample data.</p>
-    </div>
-    <div class="how">
-      <div><b>Find the repeated decision</b>Where does a person apply the same rule over and over?</div>
-      <div><b>Write the rule down</b>Turn the policy or rubric into something Claude can follow exactly.</div>
-      <div><b>Ship the smallest useful tool</b>An app, a skill or a dashboard the team uses the next day.</div>
+      <div class="eyebrow">About me</div>
+      <h2>I ran operations at Boost Patients.</h2>
+      <p>I co-founded Boost Patients and was its EOS Integrator. We handled calls, texts, CRM, scheduling and phone system migrations for elective and specialty medical practices. Most of what's on this page comes out of that work.</p>
+      <p>Everything here is a working prototype.</p>
     </div>
   </div>
 </section>
@@ -180,9 +175,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 <script>
 (function(){
   var TYPES = [
-    {key:"app", label:"Apps", one:"App", blurb:"Small web apps built with Claude Code and ChatGPT Codex, each replacing a manual workflow.", empty:"More apps on the way."},
-    {key:"skill", label:"Skills", one:"Skill", blurb:"Claude Skills (SKILL.md plus supporting files) that teach Claude how I work.", empty:"Skills are being added. Check back soon."},
-    {key:"dashboard", label:"Dashboards", one:"Dashboard", blurb:"Dashboards wired to sample data, the way a practice or ops lead would see it.", empty:"Dashboards are being added. Check back soon."}
+    {key:"app", label:"Apps", one:"App", blurb:"Web apps I built with Claude Code and ChatGPT Codex.", empty:"More apps coming soon."},
+    {key:"skill", label:"Skills", one:"Skill", blurb:"Claude Skills that teach Claude how I work.", empty:"More skills coming soon."},
+    {key:"dashboard", label:"Dashboards", one:"Dashboard", blurb:"Dashboards built on sample data.", empty:"Dashboards coming soon."}
   ];
   var items = (window.PORTFOLIO || []).slice();
   var arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>';
@@ -200,12 +195,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         '<div class="top"><span class="badge type">'+esc(t.one)+'</span>'+(p.added?'<span class="badge">Added '+esc(month(p.added))+'</span>':'')+'</div>'+
         '<h3>'+esc(p.name)+'</h3>'+
         '<p class="tagline">'+esc(p.tagline)+'</p>'+
-        (p.problem?'<p class="problem"><b>Why it exists.</b> '+esc(p.problem)+'</p>':'')+
+        (p.problem?'<p class="problem"><b>Why I built it.</b> '+esc(p.problem)+'</p>':'')+
         ((p.highlights||[]).length?'<ul>'+p.highlights.map(function(h){return '<li>'+esc(h)+'</li>';}).join("")+'</ul>':'')+
         ((p.stack||[]).length?'<div class="tech">'+p.stack.map(function(s){return '<span>'+esc(s)+'</span>';}).join("")+'</div>':'')+
         (links?'<div class="links">'+links+'</div>':'')+
       '</div>'+
-      '<aside class="side">'+(stats||'<div class="stat"><b>'+esc(t.one)+'</b><span>Working prototype</span></div>')+(p.type!=='skill'?'<div class="note">Demo data is labeled inside each demo.</div>':'')+'</aside>'+
+      '<aside class="side">'+(stats||'<div class="stat"><b>'+esc(t.one)+'</b><span>Working prototype</span></div>')+(p.note?'<div class="note">'+esc(p.note)+'</div>':'')+'</aside>'+
     '</article>';
   }
 
