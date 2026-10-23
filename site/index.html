@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jonah's AI Portfolio</title>
+<meta name="description" content="Apps, Claude skills and dashboards Jonah Selner built while running Boost Patients, a patient engagement company for elective and specialty practices.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232a5caa'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='white' text-anchor='middle'%3EJS%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --brand-blue:#2a5caa;--brand-blue-deep:#1d4686;--brand-blue-light:#3d73c4;--brand-blue-300:#7aa6ea;--brand-orange:#fbaa13;
+  --navy-950:#0b1633;--ink:#17223b;--ink-muted:#55607a;--on-dark:#f4f7fd;--on-dark-muted:#c2c9d8;
+  --surface:#ffffff;--surface-alt:#f7f9fc;--surface-muted:#f1f5fb;--surface-accent:#e7effa;
+  --border:#dbe1ea;--border-strong:#c3cbd8;--success:oklch(0.52 0.1 165);
+  --radius-md:12px;--radius-lg:16px;--radius-xl:20px;
+  --shadow-card:0 1px 2px 0 rgba(16,24,40,.04),0 16px 40px -18px rgba(16,24,40,.16);
+  --shadow-on-dark:0 10px 30px -12px rgba(10,25,60,.55);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--surface);color:var(--ink-muted);font:400 .95rem/1.5 Barlow,ui-sans-serif,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--brand-blue)}
+.wrap{max-width:1280px;margin:0 auto;padding:0 24px}
+h1,h2,h3{color:var(--ink);font-weight:700;margin:0}
+.eyebrow{font-size:11px;line-height:16.5px;font-weight:600;letter-spacing:.88px;text-transform:uppercase;color:var(--brand-blue)}
+
+/* Nav */
+.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--border)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.mark{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:700;font-size:17px;letter-spacing:-.2px;white-space:nowrap}
+.mark span{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:9px;background:var(--brand-blue);color:#fff;font-size:13px}
+.filters{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.filters::-webkit-scrollbar{display:none}
+.filters button{font:600 14px/1 Barlow,sans-serif;color:var(--ink-muted);background:none;border:0;padding:10px 12px;border-radius:var(--radius-md);cursor:pointer;white-space:nowrap}
+.filters button:hover{background:var(--surface-muted);color:var(--ink)}
+.filters button[aria-pressed=true]{background:var(--surface-accent);color:var(--brand-blue-deep)}
+.filters .n{font-weight:500;opacity:.7;margin-left:4px}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;background:var(--surface-alt);border-bottom:1px solid var(--border)}
+.hero::before{content:"";position:absolute;right:-180px;top:-220px;width:620px;height:620px;border-radius:50%;background:radial-gradient(closest-side,rgba(61,115,196,.14),transparent);pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center;padding-top:72px;padding-bottom:64px}
+.hero h1{font-size:44px;line-height:1.04;letter-spacing:-1.54px;margin:12px 0 18px;max-width:17ch}
+.hero h1 em{font-style:normal;color:var(--brand-blue)}
+.lead{font-size:18px;line-height:28px;max-width:60ch;margin:0}
+.me{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center}
+.me img{width:132px;height:132px;border-radius:50%;box-shadow:var(--shadow-card);border:4px solid #fff}
+.me b{display:block;color:var(--ink);font-size:16px}
+.me small{font-size:12px;line-height:16px}
+.tally{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.tally div{background:#fff;border:1px solid var(--border);border-radius:var(--radius-md);padding:10px 16px;min-width:112px}
+.tally b{display:block;font-size:28px;line-height:1.1;color:var(--ink);letter-spacing:-.4px}
+
+/* Sections */
+section.group{padding:64px 0 16px}
+section.group:last-of-type{padding-bottom:80px}
+.group-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:24px;flex-wrap:wrap}
+.group-head h2{font-size:30px;line-height:36px;letter-spacing:-.75px}
+.group-head p{margin:4px 0 0;max-width:62ch}
+.stack{display:grid;gap:24px}
+
+/* Card */
+.card{display:grid;grid-template-columns:minmax(0,1fr) 300px;background:#fff;border:1px solid var(--border);border-radius:var(--radius-lg);box-shadow:var(--shadow-card);overflow:hidden;scroll-margin-top:88px}
+.card .body{padding:28px 28px 26px}
+.card .top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;line-height:16px;font-weight:600;padding:4px 10px;border-radius:999px;background:var(--surface-muted);color:var(--ink-muted)}
+.badge.type{background:var(--surface-accent);color:var(--brand-blue-deep)}
+.card h3{font-size:24px;line-height:32px;letter-spacing:-.72px}
+.tagline{font-size:17px;line-height:26px;color:var(--ink);margin:6px 0 14px}
+.problem{margin:0 0 16px;padding-left:12px;border-left:3px solid var(--brand-orange)}
+.problem b{color:var(--ink);font-weight:600}
+.card ul{margin:0 0 20px;padding:0;list-style:none;display:grid;gap:8px}
+.card li{position:relative;padding-left:24px;font-size:14px;line-height:20px}
+.card li::before{content:"";position:absolute;left:2px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--surface-accent);box-shadow:inset 0 0 0 3.5px var(--brand-blue)}
+.tech{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:22px}
+.tech span{font-size:12px;font-weight:500;padding:3px 9px;border:1px solid var(--border);border-radius:999px;color:var(--ink-muted)}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;font:600 15px/22px Barlow,sans-serif;text-decoration:none;padding:9px 16px;border-radius:var(--radius-md);border:1px solid var(--border);color:var(--brand-blue-deep);background:#fff;transition:background .15s,border-color .15s}
+.btn:hover{background:var(--surface-muted);border-color:var(--border-strong)}
+.btn.primary{background:var(--brand-blue);border-color:var(--brand-blue);color:#fff}
+.btn.primary:hover{background:var(--brand-blue-deep);border-color:var(--brand-blue-deep)}
+.btn svg{width:16px;height:16px;flex:none}
+.side{background:var(--navy-950);color:var(--on-dark-muted);padding:28px 24px;display:flex;flex-direction:column;justify-content:center;gap:20px;position:relative;overflow:hidden}
+.side::before{content:"";position:absolute;left:-80px;bottom:-120px;width:320px;height:320px;border-radius:50%;background:radial-gradient(closest-side,rgba(61,115,196,.45),transparent)}
+.side>*{position:relative}
+.stat b{display:block;font-size:40px;line-height:1;font-weight:700;letter-spacing:-.48px;color:var(--on-dark)}
+.stat span{display:block;margin-top:6px;font-size:11px;line-height:16.5px;font-weight:600;letter-spacing:.88px;text-transform:uppercase}
+.side .note{font-size:12px;line-height:16px;color:var(--brand-blue-300);border-top:1px solid rgba(255,255,255,.12);padding-top:14px}
+
+.empty{border:1.5px dashed var(--border-strong);border-radius:var(--radius-lg);padding:28px;background:var(--surface-alt);display:flex;gap:16px;align-items:center}
+.empty svg{width:22px;height:22px;flex:none;color:var(--brand-blue)}
+.empty b{color:var(--ink);display:block}
+
+/* Close */
+.close{background:var(--navy-950);color:var(--on-dark-muted);position:relative;overflow:hidden}
+.close::before{content:"";position:absolute;right:-120px;top:-160px;width:520px;height:520px;border-radius:50%;background:radial-gradient(closest-side,rgba(61,115,196,.35),transparent)}
+.close .wrap{position:relative;padding-top:72px;padding-bottom:72px;display:grid;grid-template-columns:1.1fr 1fr;gap:48px}
+.close h2{color:var(--on-dark);font-size:30px;line-height:36px;letter-spacing:-.75px;margin:10px 0 14px}
+.close .eyebrow{color:var(--brand-blue-300)}
+.close p{margin:0 0 12px;font-size:16px;line-height:25px}
+.how{display:grid;gap:12px;align-content:start}
+.how div{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius-md);padding:14px 16px}
+.how b{color:var(--on-dark);display:block;font-weight:600}
+footer{padding:24px 0;font-size:12px;line-height:16px;border-top:1px solid var(--border)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+.hidden{display:none!important}
+
+@media (max-width:900px){
+  .card{grid-template-columns:1fr}
+  .side{flex-direction:row;flex-wrap:wrap;justify-content:flex-start;gap:24px 32px}
+  .side .note{flex-basis:100%}
+  .close .wrap{grid-template-columns:1fr}
+}
+@media (max-width:720px){
+  .wrap{padding:0 16px}
+  .hero .wrap{grid-template-columns:1fr;padding-top:40px;padding-bottom:40px;gap:24px}
+  .me{flex-direction:row;text-align:left;order:-1}
+  .me img{width:72px;height:72px;border-width:3px}
+  .hero h1{font-size:34px;letter-spacing:-1px}
+  .lead{font-size:16px;line-height:25px}
+  .nav .mark .full{display:none}
+  .card .body{padding:22px 18px}
+  .side{padding:22px 18px}
+  .stat b{font-size:30px}
+  section.group{padding-top:44px}
+  .group-head h2{font-size:26px;line-height:32px}
+  .btn{flex:1 1 auto;justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Portfolio">
+  <div class="wrap">
+    <a class="mark" href="#top"><span>JS</span><b class="full">Jonah Selner</b></a>
+    <div class="filters" id="filters" role="group" aria-label="Filter by type"></div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Jonah's AI portfolio</div>
+      <h1>Real operating problems, solved with <em>Claude</em>.</h1>
+      <p class="lead">Apps, Claude skills and dashboards I built while running Boost Patients, a patient engagement company for elective and specialty practices. Each one started as a workflow my team ran by hand.</p>
+      <div class="tally" id="tally"></div>
+    </div>
+    <div class="me">
+      <img src="jonah.jpg" alt="Jonah Selner" width="132" height="132">
+      <div><b>Jonah Selner</b><small>Co-founder, Boost Patients<br>Former EOS Integrator</small></div>
+    </div>
+  </div>
+</header>
+
+<main id="groups"></main>
+
+<section class="close">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">How I build</div>
+      <h2>Start from the workflow, not the tool.</h2>
+      <p>At Boost I ran operations as the EOS Integrator: calls, texts, CRM, scheduling and phone system migrations for dozens of practices. The best automations came from watching where a real person lost time or made the same judgment call fifty times a day.</p>
+      <p>Everything here is a working prototype. Where a demo shows practices, patients or results, it uses sample data.</p>
+    </div>
+    <div class="how">
+      <div><b>Find the repeated decision</b>Where does a person apply the same rule over and over?</div>
+      <div><b>Write the rule down</b>Turn the policy or rubric into something Claude can follow exactly.</div>
+      <div><b>Ship the smallest useful tool</b>An app, a skill or a dashboard the team uses the next day.</div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap"><span>© Jonah Selner</span><span id="updated"></span></div></footer>
+
+<script src="projects.js"></script>
+<script>
+(function(){
+  var TYPES = [
+    {key:"app", label:"Apps", one:"App", blurb:"Small web apps built with Claude Code, each replacing a manual workflow.", empty:"More apps on the way."},
+    {key:"skill", label:"Skills", one:"Skill", blurb:"Claude Skills (SKILL.md plus supporting files) recreated from real Boost workflows.", empty:"Skills are being added. Check back soon."},
+    {key:"dashboard", label:"Dashboards", one:"Dashboard", blurb:"Dashboards wired to sample data, the way a practice or ops lead would see it.", empty:"Dashboards are being added. Check back soon."}
+  ];
+  var items = (window.PORTFOLIO || []).slice();
+  var arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>';
+  var clock = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>';
+
+  function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
+  function count(k){return items.filter(function(i){return i.type===k;}).length;}
+  function month(s){if(!s)return"";var p=s.split("-");var d=new Date(+p[0],(+p[1]||1)-1,1);return d.toLocaleDateString("en-US",{month:"short",year:"numeric"});}
+
+  function card(p, t){
+    var stats = (p.stats||[]).slice(0,3).map(function(s){return '<div class="stat"><b>'+esc(s.value)+'</b><span>'+esc(s.label)+'</span></div>';}).join("");
+    var links = (p.links||[]).map(function(l){return '<a class="btn'+(l.primary?' primary':'')+'" href="'+esc(l.url)+'" target="_blank" rel="noopener">'+esc(l.label)+arrow+'</a>';}).join("");
+    return '<article class="card" id="'+esc(p.id)+'">'+
+      '<div class="body">'+
+        '<div class="top"><span class="badge type">'+esc(t.one)+'</span>'+(p.added?'<span class="badge">Added '+esc(month(p.added))+'</span>':'')+'</div>'+
+        '<h3>'+esc(p.name)+'</h3>'+
+        '<p class="tagline">'+esc(p.tagline)+'</p>'+
+        (p.problem?'<p class="problem"><b>Why it exists.</b> '+esc(p.problem)+'</p>':'')+
+        ((p.highlights||[]).length?'<ul>'+p.highlights.map(function(h){return '<li>'+esc(h)+'</li>';}).join("")+'</ul>':'')+
+        ((p.stack||[]).length?'<div class="tech">'+p.stack.map(function(s){return '<span>'+esc(s)+'</span>';}).join("")+'</div>':'')+
+        (links?'<div class="links">'+links+'</div>':'')+
+      '</div>'+
+      '<aside class="side">'+(stats||'<div class="stat"><b>'+esc(t.one)+'</b><span>Working prototype</span></div>')+'<div class="note">Demo data is labeled inside each demo.</div></aside>'+
+    '</article>';
+  }
+
+  // Tally
+  document.getElementById("tally").innerHTML = TYPES.map(function(t){return '<div><b>'+count(t.key)+'</b><span class="eyebrow" style="color:var(--ink-muted)">'+t.label+'</span></div>';}).join("");
+
+  // Groups
+  document.getElementById("groups").innerHTML = TYPES.map(function(t){
+    var list = items.filter(function(i){return i.type===t.key;}).sort(function(a,b){return (b.added||"").localeCompare(a.added||"");});
+    var inner = list.length ? list.map(function(p){return card(p,t);}).join("") :
+      '<div class="empty">'+clock+'<div><b>'+esc(t.empty)+'</b></div></div>';
+    return '<section class="group" data-type="'+t.key+'" id="'+t.key+'s"><div class="wrap">'+
+      '<div class="group-head"><div><h2>'+t.label+'</h2><p>'+esc(t.blurb)+'</p></div><span class="eyebrow" style="color:var(--ink-muted)">'+list.length+' '+(list.length===1?t.one:t.label).toLowerCase()+'</span></div>'+
+      '<div class="stack">'+inner+'</div></div></section>';
+  }).join("");
+
+  // Filters
+  var filters = document.getElementById("filters");
+  var opts = [{key:"all",label:"All",n:items.length}].concat(TYPES.map(function(t){return {key:t.key,label:t.label,n:count(t.key)};}));
+  filters.innerHTML = opts.map(function(o,i){return '<button type="button" data-k="'+o.key+'" aria-pressed="'+(i===0)+'">'+o.label+'<span class="n">'+o.n+'</span></button>';}).join("");
+  filters.addEventListener("click", function(e){
+    var b = e.target.closest("button"); if(!b) return;
+    var k = b.getAttribute("data-k");
+    [].forEach.call(filters.children,function(x){x.setAttribute("aria-pressed", x===b);});
+    [].forEach.call(document.querySelectorAll("section.group"),function(s){s.classList.toggle("hidden", k!=="all" && s.getAttribute("data-type")!==k);});
+    var target = k==="all" ? document.getElementById("groups") : document.getElementById(k+"s");
+    var y = target.getBoundingClientRect().top + window.scrollY - 64;
+    if (window.scrollY > y) window.scrollTo({top:y,behavior:"smooth"});
+  });
+
+  var latest = items.map(function(i){return i.added||"";}).sort().pop();
+  if (latest) document.getElementById("updated").textContent = "Last updated " + month(latest);
+})();
+</script>
+</body>
+</html>
