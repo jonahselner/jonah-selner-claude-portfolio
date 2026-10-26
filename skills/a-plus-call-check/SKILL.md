@@ -1,9 +1,9 @@
 ---
-name: client-highlight-check
+name: a-plus-call-check
 description: Confirms whether a call someone flagged as great is truly an A+ call worth forwarding to the client, and drafts the short note to send with it. Use whenever someone shares a call and says it was great, or asks if it's worth sending to a client.
 ---
 
-# Client Highlight Check
+# A+ Call Check
 
 Someone on the team heard a call and said "that was a great one." The client success team likes to forward calls like that to the client (the practice the agent answers calls for) with a short note: *thought you'd appreciate this call, here's what our agent did well.* It shows the client that the team is paying attention, builds confidence, and makes them feel good about the partnership.
 

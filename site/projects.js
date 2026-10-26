@@ -78,9 +78,9 @@ window.PORTFOLIO = [
     added: "2026-10",
   },
   {
-    id: "client-highlight-check",
+    id: "a-plus-call-check",
     type: "skill",
-    name: "Client highlight check",
+    name: "A+ call check",
     tagline:
       "Someone flags a great call. Claude confirms it's a true A+ before it goes to the client, then drafts the \"thought you'd appreciate this call\" note.",
     problem:
@@ -102,16 +102,16 @@ window.PORTFOLIO = [
     links: [
       {
         label: "Read the SKILL.md",
-        url: "https://github.com/jonahselner/jonah-selner-claude-portfolio/blob/main/skills/client-highlight-check/SKILL.md",
+        url: "https://github.com/jonahselner/jonah-selner-claude-portfolio/blob/main/skills/a-plus-call-check/SKILL.md",
         primary: true,
       },
       {
         label: "Sample verdict",
-        url: "https://github.com/jonahselner/jonah-selner-claude-portfolio/blob/main/skills/client-highlight-check/samples/Sample_Verdict.md",
+        url: "https://github.com/jonahselner/jonah-selner-claude-portfolio/blob/main/skills/a-plus-call-check/samples/Sample_Verdict.md",
       },
       {
         label: "Test case",
-        url: "https://github.com/jonahselner/jonah-selner-claude-portfolio/tree/main/skills/client-highlight-check/evals",
+        url: "https://github.com/jonahselner/jonah-selner-claude-portfolio/tree/main/skills/a-plus-call-check/evals",
       },
     ],
     added: "2026-10",
