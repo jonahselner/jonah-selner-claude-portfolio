@@ -7,8 +7,9 @@
   name       display name
   icon       "timer" | "phone" | "pen" | "split" | "star" | "users" | "chart" | "mail" | "spark"
   tone       icon tile color: "blue" | "navy" | "deep" | "orange"
-  tagline    one sentence, about 15 words: what it does
-  builtWith  short chips, e.g. ["Claude Code"], ["ChatGPT Codex", "Claude Code"], ["Claude Skill", "Evals"]
+  subtitle   4 to 8 plain words under the name: what it is, for someone who has never seen it
+  tagline    one sentence, about 15 to 20 words: what it does
+  builtWith  AI tools, shown under "How it works", e.g. ["Claude Code"], ["ChatGPT Codex", "Claude Code"], ["Claude Skill", "Evals"]
   stats      up to 2 { value, label } proof points
   why        one or two sentences, shown under "How it works"
   points     up to 3 short bullets, shown under "How it works"
@@ -21,16 +22,17 @@ window.PORTFOLIO = [
   {
     id: "secret-shop",
     type: "app",
-    name: "Secret Shop",
+    name: "Speed-to-lead secret shopper",
     icon: "timer",
     tone: "blue",
-    tagline: "Mystery-shops a practice's web form, then times how long it takes them to call or text back.",
+    tagline: "Fills out a practice's web form as a new patient, then logs every call and text for five days and scores the response.",
+    subtitle: "Times how fast practices call leads back",
     builtWith: ["ChatGPT Codex", "Claude Code"],
     stats: [
       { value: "13", label: "practices shopped" },
       { value: "5 days", label: "of call tracking" },
     ],
-    why: "A slow call back can lose the patient. Secret Shop shows a practice exactly how long theirs took.",
+    why: "A slow call back can lose the patient. This shows a practice exactly how long theirs took.",
     points: [
       "Spins up a local tracking number and logs every call and text for five days",
       "Scores out of 100 (70 for speed, 30 for texting back), then writes a one-page report and PDF",
@@ -47,10 +49,11 @@ window.PORTFOLIO = [
   {
     id: "boost-flow",
     type: "app",
-    name: "BoostFlow",
+    name: "Live call guide",
     icon: "phone",
     tone: "navy",
-    tagline: "Turns each practice's call policy into steps a concierge follows while on the phone.",
+    tagline: "Walks a concierge through every call, from greeting to booking, using that practice's own rules.",
+    subtitle: "Each practice's call rules, step by step",
     builtWith: ["Vibe coded with Claude"],
     stats: [
       { value: "6", label: "call stages" },
@@ -72,10 +75,11 @@ window.PORTFOLIO = [
   {
     id: "concierge-candidate-screening",
     type: "skill",
-    name: "Concierge candidate screening",
+    name: "Candidate screener",
     icon: "users",
     tone: "deep",
-    tagline: "Reads resumes, recruiter transcripts and interview videos, then rates each candidate GREEN, YELLOW or RED.",
+    tagline: "Reads resumes, recruiter transcripts and interview videos, then writes a one-page review of each candidate.",
+    subtitle: "Rates job applicants green, yellow or red",
     builtWith: ["Claude Skill", "Tested with evals"],
     stats: [
       { value: "18 / 18", label: "test checks passed" },
@@ -98,10 +102,11 @@ window.PORTFOLIO = [
   {
     id: "a-plus-call-check",
     type: "skill",
-    name: "A+ call check",
+    name: "Client-ready call check",
     icon: "star",
     tone: "orange",
-    tagline: "Confirms a flagged call is truly A+ before it goes to the client, then drafts the note to send.",
+    tagline: "Scores a call someone flagged as great. If it's truly A+, Claude drafts the note to send the practice.",
+    subtitle: "Checks a great call before the client hears it",
     builtWith: ["Claude Skill", "Tested with evals"],
     stats: [
       { value: "6", label: "scored sections" },
@@ -124,10 +129,11 @@ window.PORTFOLIO = [
   {
     id: "aesthetics-consult-router",
     type: "skill",
-    name: "Aesthetic consult booking",
+    name: "Med spa consult router",
     icon: "split",
     tone: "blue",
-    tagline: "An agent types a few words about what a caller wants. Claude returns the one consult to book and the fee.",
+    tagline: "An agent types what the caller wants, like \"Botox\" or \"my neck looks tired.\" Claude returns the consult and the fee.",
+    subtitle: "Tells call agents which consult to book",
     builtWith: ["Claude Skill"],
     stats: [
       { value: "7", label: "consult types" },
@@ -149,10 +155,11 @@ window.PORTFOLIO = [
   {
     id: "jonah-voice",
     type: "skill",
-    name: "Jonah's voice",
+    name: "My writing voice",
     icon: "pen",
     tone: "navy",
-    tagline: "Teaches Claude to draft and edit anything I send or publish so it sounds like me.",
+    tagline: "Rules and examples Claude follows when it drafts or edits anything I send or publish.",
+    subtitle: "Makes Claude's drafts sound like me",
     builtWith: ["Claude Skill"],
     stats: [
       { value: "5", label: "hard rules" },

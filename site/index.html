@@ -70,7 +70,7 @@ section.group{padding:40px 0 8px}
 .tone-deep{background:linear-gradient(140deg,#2a5caa,#0b1633)}
 .tone-orange{background:linear-gradient(140deg,#fdc451,#f59e0b);color:var(--ink)}
 .meta h3{font-size:19px;line-height:24px;letter-spacing:-.3px}
-.meta .by{font-size:13px;line-height:18px;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.meta .by{font-size:13px;line-height:18px;margin-top:2px}
 .get{display:inline-flex;align-items:center;gap:6px;font:600 14px/20px Barlow,sans-serif;text-decoration:none;padding:8px 14px;border-radius:999px;background:var(--brand-blue);color:#fff;white-space:nowrap;transition:background .15s}
 .get:hover{background:var(--brand-blue-deep)}
 .get svg,.more a svg{width:14px;height:14px}
@@ -85,7 +85,7 @@ summary::-webkit-details-marker{display:none}
 summary svg{width:16px;height:16px;transition:transform .2s}
 details[open] summary svg{transform:rotate(180deg)}
 .more{padding-top:10px;font-size:14px;line-height:21px}
-.more p{margin:0 0 10px}
+.more p{margin:0 0 10px}.more .built b{color:var(--ink);font-weight:600}
 .more ul{margin:0 0 12px;padding-left:18px}
 .more li{margin-bottom:4px}
 .tech{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
@@ -136,7 +136,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   <div class="wrap">
     <div class="who">
       <img src="jonah.jpg" alt="Jonah Selner" width="76" height="76">
-      <div><b>Jonah Selner</b><span>Co-founder and EOS Integrator, Boost</span></div>
+      <div><b>Jonah Selner</b><span>Co-founder, Boost</span></div>
     </div>
     <h1>Real operating problems, solved with <em>Claude and ChatGPT</em>.</h1>
     <p class="lead">Apps and Claude skills I built while running Boost, a patient engagement company for elective and specialty medical practices.</p>
@@ -149,8 +149,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 <section class="about">
   <div class="wrap">
     <div class="eyebrow">About me</div>
-    <h2>I ran operations at Boost.</h2>
-    <p>I co-founded Boost and was its EOS Integrator. We handled calls, texts, CRM, scheduling and phone system migrations for elective and specialty medical practices. Most of what's on this page comes out of that work.</p>
+    <h2>I co-founded and ran Boost.</h2>
+    <p>Boost handled calls, texts, CRM, scheduling and phone system migrations for elective and specialty medical practices. Most of what's on this page comes out of that work.</p>
   </div>
 </section>
 
@@ -190,6 +190,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     var others = links.filter(function(l){return l!==primary;});
     var stats = (p.stats||[]).slice(0,2).map(function(s){return '<div class="stat"><b>'+esc(s.value)+'</b><span>'+esc(s.label)+'</span></div>';}).join("");
     var more =
+      ((p.builtWith||[]).length?'<p class="built"><b>Built with</b> '+esc(p.builtWith.join(", "))+'</p>':'')+
       (p.why?'<p>'+esc(p.why)+'</p>':'')+
       ((p.points||[]).length?'<ul>'+p.points.slice(0,3).map(function(x){return '<li>'+esc(x)+'</li>';}).join("")+'</ul>':'')+
       ((p.tech||[]).length?'<div class="tech">'+p.tech.map(function(x){return '<span>'+esc(x)+'</span>';}).join("")+'</div>':'')+
@@ -198,7 +199,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     return '<article class="tile" id="'+esc(p.id)+'">'+
       '<div class="head">'+
         '<div class="icon tone-'+esc(p.tone||"blue")+'">'+svg(ICONS[p.icon]||ICONS.spark)+'</div>'+
-        '<div class="meta"><h3>'+esc(p.name)+'</h3><div class="by">'+esc((p.builtWith&&p.builtWith.length)?p.builtWith.join(" · "):t.one)+'</div></div>'+
+        '<div class="meta"><h3>'+esc(p.name)+'</h3><div class="by">'+esc(p.subtitle||t.one)+'</div></div>'+
         (primary?'<a class="get" href="'+esc(primary.url)+'" target="_blank" rel="noopener">'+esc(primary.label)+ARROW+'</a>':'')+
       '</div>'+
       '<p class="tagline">'+esc(p.tagline)+'</p>'+
