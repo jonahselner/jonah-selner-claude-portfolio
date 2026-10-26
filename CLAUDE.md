@@ -13,9 +13,9 @@ One static page listing the apps, Claude skills and dashboards Jonah built. Host
    - Pick an `icon` and `tone` that differ from the neighboring tiles.
    - Exactly one link is `primary: true` (the tile's button). Other links show under "How it works". For a skill, copy its files to `skills/<name>/` and link the SKILL.md on GitHub.
 2. Get the facts from the thing itself (its repo, README, live URL), not from guesses. Ask Jonah for anything missing (links, numbers).
-3. Voice follows the Boost Patients design system: concrete, plain verbs, short sentences, sentence case, numbers with their source.
+3. Voice follows the Boost design system: concrete, plain verbs, short sentences, sentence case, numbers with their source.
 4. Check it renders (desktop + 390px mobile), then redeploy the `site/` files to the Vercel project with `target: "production"`, and commit to this repo.
 
 ## Design
 
-Boost Patients design system (Barlow; brand blue `#2a5caa`; ink `#17223b`; navy `#0b1633` for the stats panel and closing band). Tokens live as CSS variables at the top of `index.html`.
+Boost design system (Barlow; brand blue `#2a5caa`; ink `#17223b`; navy `#0b1633` for the stats panel and closing band). Tokens live as CSS variables at the top of `index.html`.

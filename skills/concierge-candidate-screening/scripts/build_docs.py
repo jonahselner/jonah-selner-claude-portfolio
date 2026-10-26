@@ -74,7 +74,7 @@ DEFAULT_INTRO = (
     "for this role. YELLOW candidates are close, and each has one specific check listed that will "
     "decide the call."
 )
-SIGNER = "Call Center Hiring Manager, Boost Patients"
+SIGNER = "Call Center Hiring Manager, Boost"
 
 
 def shade(cell, hex_fill):
@@ -196,7 +196,7 @@ def build_summary(batch, outdir, scale=1.0):
     body = 8.5 * scale
     doc = base_doc(9.5 * scale)
     para(doc, "Candidate Screening — Executive Summary", bold=True, size=15 * scale, color="1F3A5F", after=1)
-    para(doc, f"{batch['batch_date']} · {n} candidate{'s' if n != 1 else ''} reviewed · Boost Patients",
+    para(doc, f"{batch['batch_date']} · {n} candidate{'s' if n != 1 else ''} reviewed · Boost",
          size=9.5 * scale, color="555555", after=4)
     para(doc, batch.get("intro") or DEFAULT_INTRO, size=9 * scale, after=5)
 
