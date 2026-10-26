@@ -117,7 +117,6 @@ window.PORTFOLIO = [
     points: [
       "Scores 10 criteria. Every YELLOW comes with one specific question and what each answer means",
       "Checks the interview videos so nobody has to watch them: setup from frames, energy from pitch and volume",
-      "Ignores age, sex, family status and appearance, even when a resume lists them",
     ],
     tech: ["Python", "ffmpeg", "python-docx", "skill-creator evals"],
     note: "Tested on 3 synthetic batches.",
