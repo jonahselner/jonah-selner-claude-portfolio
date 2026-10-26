@@ -78,6 +78,45 @@ window.PORTFOLIO = [
     added: "2026-10",
   },
   {
+    id: "client-highlight-check",
+    type: "skill",
+    name: "Client highlight check",
+    tagline:
+      "Someone flags a great call. Claude confirms it's a true A+ before it goes to the client, then drafts the \"thought you'd appreciate this call\" note.",
+    problem:
+      "Our client success team forwarded standout calls to practices to build confidence. That only works if every call sent is excellent, and nobody has time to listen to the whole thing first.",
+    highlights: [
+      "Three verdicts: send it, close but don't send, or don't send. Each one quotes the moment in the call that earned or blocked it",
+      "Holds every call to a 6-section, 100-point standard: 90+ total, no section under 80%, and none of 7 critical flags, like \"Would you like me to book that?\"",
+      "Rereads the call as the client would and blocks anything awkward, like a promise of results, a dig at a competitor, or a caller complaining about the practice",
+      "Quotes the opening line and the best moment so the team can spot-check the audio in seconds, and lists any fees the agent stated so they can confirm them before sending",
+      "Writes a 3 to 5 sentence client note with no scores or QA language, using the caller's first name only",
+    ],
+    stack: ["Claude Skill", "SKILL.md", "skill-creator evals"],
+    stats: [
+      { value: "6", label: "Scored sections" },
+      { value: "7", label: "Critical flags" },
+      { value: "2 / 2", label: "Test verdicts correct" },
+    ],
+    note: "Tested on 2 synthetic calls: one passed with a client note, one was blocked for permission-based booking and a missing recap.",
+    links: [
+      {
+        label: "Read the SKILL.md",
+        url: "https://github.com/jonahselner/jonah-selner-claude-portfolio/blob/main/skills/client-highlight-check/SKILL.md",
+        primary: true,
+      },
+      {
+        label: "Sample verdict",
+        url: "https://github.com/jonahselner/jonah-selner-claude-portfolio/blob/main/skills/client-highlight-check/samples/Sample_Verdict.md",
+      },
+      {
+        label: "Test case",
+        url: "https://github.com/jonahselner/jonah-selner-claude-portfolio/tree/main/skills/client-highlight-check/evals",
+      },
+    ],
+    added: "2026-10",
+  },
+  {
     id: "concierge-candidate-screening",
     type: "skill",
     name: "Concierge candidate screening",

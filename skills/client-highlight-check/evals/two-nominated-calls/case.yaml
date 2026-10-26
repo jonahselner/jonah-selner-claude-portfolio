@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: two-nominated-calls
+context:
+  scaffold_script: place-files.sh
+expected_outcome: |
+  Evaluates only the two named calls. Dana's LASIK call gets Send it with a short client note; Priya's call is blocked for permission-based booking language and a missing recap.

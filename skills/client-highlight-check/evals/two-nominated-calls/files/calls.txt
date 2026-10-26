@@ -1,0 +1,151 @@
+========================================
+AGENT: Dana Ruiz
+DATE: 2026-03-04
+DISPOSITION: Consult Scheduled
+TRANSCRIPT: https://calls.example.com/transcripts/1001
+RECORDING: https://calls.example.com/recordings/1001
+========================================
+[P-48213] New lead from web form. Press 1 to connect.
+[P-77120] Thank you for calling Lakeside Eye Center, this is Dana. How can I help you today?
+[P-48213] Hi, yeah, I filled out a form online about LASIK.
+[P-77120] Wonderful, thanks for reaching out. Can I get your first name?
+[P-48213] It's Maria.
+[P-77120] Hi Maria. Before I tell you anything about the procedure, what's got you looking into LASIK right now?
+[P-48213] Honestly I've worn glasses since I was twelve and contacts give me dry eyes. I'm a nurse and the glasses fog up under my mask all day.
+[P-77120] Oh, that sounds exhausting. So between the fogging at work and contacts drying you out, you don't really have a comfortable option right now.
+[P-48213] Exactly. I've been putting this off for like three years because I'm nervous about someone touching my eyes.
+[P-77120] Three years is a long time to put up with that, Maria. And being nervous is completely normal, almost everyone who calls us says the same thing. What's made now feel like the right time?
+[P-48213] My sister had it done last year and she loves it. I'm kind of jealous.
+[P-77120] That makes total sense. Seeing someone you trust go through it changes everything. Can I ask a couple of quick questions so I book you the right kind of visit?
+[P-48213] Sure.
+[P-77120] Do you know roughly what your prescription is, and have you had any eye surgery before?
+[P-48213] Around minus four I think. No surgery.
+[P-77120] Perfect. And are you wearing contacts right now?
+[P-48213] Yes, today.
+[P-77120] Good to know. For the consult we'll need you out of soft contacts for about a week beforehand, because they change the shape of the cornea slightly and we want accurate measurements. Is that doable?
+[P-48213] Yeah I can wear my foggy glasses for a week.
+[P-77120] Ha, one last week of fog. The consultation is free, takes about ninety minutes, and the doctor will tell you whether you're a candidate and which procedure fits. They will dilate your eyes, so plan on a driver.
+[P-48213] Okay. How much is the actual surgery though? That's my big worry.
+[P-77120] That's a fair question and I'm glad you asked it up front. It depends on what the doctor recommends, and they'll give you an exact number at the consult. We do have monthly financing, and a lot of our patients who work long shifts like you tell us it ends up costing less than years of contacts and solution.
+[P-48213] Okay that helps.
+[P-77120] Let me pull up the schedule. I have Tuesday the 17th at 10am or Thursday the 19th at 2pm.
+[P-48213] Thursday at 2 works, I'm off that day.
+[P-77120] Great. Can I get your last name, date of birth and best phone number?
+[P-48213] Maria Okafor, June 3rd 1990, and it's 555-201-7788.
+[P-77120] Thank you. So, Maria, you're all set for Thursday the 19th at 2pm at our Lakeside office on Harbor Road. Plan on about ninety minutes. Stop wearing contacts on the 12th, bring your glasses and a list of any medications, and bring a driver because of the dilation. The doctor will measure your eyes, talk through options, and give you exact pricing.
+[P-48213] Perfect.
+[P-77120] And Maria, honestly, after three years of fog under that mask, I'm really glad you called. You're going to leave that visit with real answers.
+[P-48213] Thank you, Dana!
+[P-77120] You're welcome. Have a great rest of your day.
+
+========================================
+AGENT: Dana Ruiz
+DATE: 2026-03-04
+DISPOSITION: Appointment Booked
+TRANSCRIPT: https://calls.example.com/transcripts/1002
+RECORDING: https://calls.example.com/recordings/1002
+========================================
+[P-77120] Lakeside Eye, this is Dana.
+[P-90011] Hi, I'm calling about cataract surgery for my dad, well for me actually, my eye doctor said I have cataracts.
+[P-77120] Okay. Do you have a referral?
+[P-90011] I think they sent one over. My name's Robert.
+[P-77120] Okay Robert, let me look. Yep, I see it. So do you want to schedule an evaluation?
+[P-90011] I guess so, yeah.
+[P-77120] Okay. What insurance do you have?
+[P-90011] Medicare and a supplement.
+[P-77120] Okay that's fine. I have next Monday at 9.
+[P-90011] Hmm, is there anything later? I don't drive in the mornings, glare is bad.
+[P-77120] Sorry, sorry, let me look. Um. Sorry. Wednesday at 1?
+[P-90011] That's better.
+[P-77120] Okay. Date of birth?
+[P-90011] April 11, 1951.
+[P-77120] Okay. And phone?
+[P-90011] 555-330-1290.
+[P-77120] Okay, you're booked Wednesday at 1.
+[P-90011] Is there a cost for the evaluation?
+[P-77120] No, Medicare covers it.
+[P-90011] Okay. Do I need to bring anything?
+[P-77120] Just your cards.
+[P-90011] How long will it take?
+[P-77120] Um, an hour maybe.
+[P-90011] Okay. Will they do the surgery that day?
+[P-77120] No.
+[P-90011] Alright.
+[P-77120] Okay, anything else?
+[P-90011] No, I think that's it.
+[P-77120] Okay bye.
+
+========================================
+AGENT: Marcus Bell
+DATE: 2026-03-05
+DISPOSITION: Not booked - lead will call back
+TRANSCRIPT: https://calls.example.com/transcripts/1003
+RECORDING: https://calls.example.com/recordings/1003
+========================================
+[P-12001] New lead, press 1 to connect.
+[P-55502] Hi, thanks for calling Northgate Aesthetics, this is Marcus. How can I help?
+[P-12001] Hi, I was looking at your Botox page, I wanted to ask about pricing.
+[P-55502] Absolutely. Who am I speaking with?
+[P-12001] This is Jen.
+[P-55502] Hi Jen. Happy to help with pricing. Can I ask what made you start looking into Botox?
+[P-12001] Just the lines on my forehead. I see them in every photo now. I'm turning forty in the spring and I want to feel good about pictures at my party.
+[P-55502] Ah, so it's the forehead lines in photos, and you've got a big birthday coming. That's a great reason. Is this your first time considering it?
+[P-12001] Yeah. I'm a little scared it'll look frozen.
+[P-55502] That's the number one thing people worry about, and it's a fair worry. Our injectors focus on a natural look, so you still move your face, just softer. They'll talk with you about how much movement you want to keep.
+[P-12001] Okay. So how much is it?
+[P-55502] We price per unit, it's $14 a unit, and most people's forehead is somewhere around 20 units, but the injector decides at your visit.
+[P-12001] So like $280?
+[P-55502] Roughly, yes, depending on what you need. The first consult is free and you can get treated the same day if you want.
+[P-12001] Hm. That's more than I was hoping. The place near my work is $10 a unit.
+[P-55502] I understand, price matters. What I'd say is the difference is usually in who's injecting and how much they use, so it's worth comparing the total, not just the unit price.
+[P-12001] Yeah. I need to think about it.
+[P-55502] Of course. Do you want to book a consult just to get a quote?
+[P-12001] Maybe. Let me check my schedule and call back.
+[P-55502] Sure, no problem. You can call this number anytime.
+[P-12001] Okay thanks.
+[P-55502] Thanks Jen, take care.
+[P-12001] Bye.
+[P-55502] Bye now.
+
+========================================
+AGENT: Marcus Bell
+DATE: 2026-03-05
+DISPOSITION: Hung up
+TRANSCRIPT: https://calls.example.com/transcripts/1004
+RECORDING: https://calls.example.com/recordings/1004
+========================================
+[P-55502] Northgate Aesthetics, this is Marcus.
+[P-33010] Wrong number, sorry.
+[P-55502] No problem, have a good day.
+
+========================================
+AGENT: Priya Shah
+DATE: 2026-03-05
+DISPOSITION: Booked consult
+TRANSCRIPT: https://calls.example.com/transcripts/1005
+RECORDING: https://calls.example.com/recordings/1005
+========================================
+[P-60001] Press 1 to connect to the caller.
+[P-70707] Good afternoon, Northgate Aesthetics, this is Priya. What can I do for you today?
+[P-60001] Hi, I'm interested in a consult for a tummy tuck.
+[P-70707] Great, I'd love to help. Who do I have the pleasure of speaking with?
+[P-60001] Alicia.
+[P-70707] Hi Alicia. Tell me a little about what's going on and what you're hoping for.
+[P-60001] I had two kids and my stomach just never went back. I work out and eat well but there's loose skin no matter what. I don't even wear a swimsuit anymore.
+[P-70707] So you've put in the work at the gym and it's still not changing, and it's to the point where you're skipping the pool. That's frustrating.
+[P-60001] Yeah. My kids want me to swim with them.
+[P-70707] That's such a real reason. And just so you know, what you're describing is really common after pregnancy, and it's not something exercise can fix. It's not you.
+[P-60001] That actually makes me feel better.
+[P-70707] Good. Have you had any surgeries before, and how old is your youngest?
+[P-60001] C-section with my second, and she's three.
+[P-70707] Thank you, that helps the surgeon prepare. The consultation is $150, which goes toward your procedure if you move forward. It's about an hour with the surgeon, they'll examine you, talk through options, and you'll get a full quote.
+[P-60001] Is the surgery really expensive?
+[P-70707] It's a real investment, so it's a smart question. It typically ranges based on what the surgeon recommends, and you'll get an exact quote at the consult. We also offer financing plans that a lot of moms use. Would you like me to go ahead and get you on the books?
+[P-60001] Yes please.
+[P-70707] Let me see. I have Monday the 23rd at 11 or Friday the 27th at 3.
+[P-60001] The 27th.
+[P-70707] Perfect. I'll text you a link to pay the consult fee to hold the spot.
+[P-60001] Great.
+[P-70707] Alicia, I'm really glad you called. Swimming with your kids this summer is a great goal and the surgeon will help you figure out the best way to get there.
+[P-60001] Thank you so much.
+[P-70707] You're welcome, have a wonderful day.
