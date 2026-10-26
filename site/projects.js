@@ -178,4 +178,30 @@ window.PORTFOLIO = [
     ],
     added: "2026-10",
   },
+  {
+    id: "boost-compliance-advisor",
+    type: "skill",
+    name: "Compliance advisor",
+    icon: "spark",
+    tone: "orange",
+    tagline: "Answers \"can we do this?\" questions about calls, texts, AI and patient data with a clear recommendation and a risk rating.",
+    subtitle: "Answers the team's compliance questions",
+    builtWith: ["Claude Skill"],
+    stats: [
+      { value: "9", label: "compliance areas covered" },
+      { value: "6", label: "steps in every answer" },
+    ],
+    why: "We called and texted patients for practices nationwide. The team needed straight answers on TCPA, HIPAA and AI disclosure before acting, not a legal memo.",
+    points: [
+      "Shows the legal minimum and Boost's stricter standard side by side, and says when no standard is set yet",
+      "Tags each rule stable or verify, and searches FCC, FTC and HHS sources before trusting anything that changes",
+      "Asks which state the patient is in, rates the risk red, yellow or green, and only suggests a lawyer when the risk is high",
+    ],
+    tech: ["SKILL.md", "Primary-source search"],
+    note: "Not legal advice. Built for internal use.",
+    links: [
+      { label: "View skill", url: "https://github.com/jonahselner/jonah-selner-claude-portfolio/blob/main/skills/boost-compliance-advisor/SKILL.md", primary: true },
+    ],
+    added: "2026-10",
+  },
 ];
