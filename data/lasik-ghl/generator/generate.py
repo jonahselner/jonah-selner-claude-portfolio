@@ -18,7 +18,7 @@ ap.add_argument("--start", default="2025-11-01")
 ap.add_argument("--end", default="2026-10-25")
 ap.add_argument("--out", default="../data")
 ap.add_argument("--seed", type=int, default=42)
-ap.add_argument("--ep-rate", type=float, default=0.85, help="existing-patient calls per open hour at full volume (scaled to lead volume)")
+ap.add_argument("--ep-rate", type=float, default=0.95, help="existing-patient calls per open hour at full volume (scaled to lead volume)")
 args = ap.parse_args()
 
 R = random.Random(args.seed)
@@ -28,7 +28,7 @@ EXPORT_AT = DT(2026, 10, 26, 9, 0)
 
 AI_TEXT_LAUNCH = DT(2026, 1, 12)        # Conversation AI answers texts 24/7
 VOICE_AI_LAUNCH = DT(2026, 5, 11)       # Voice AI screens the new-patient line
-CARRIER_ISSUE = (DT(2026, 8, 4), DT(2026, 8, 29))   # Polaris number filtered (30007)
+CARRIER_ISSUE = (DT(2026, 8, 4), DT(2026, 8, 29))   # Woodbury number filtered (30007)
 SAT_STAFF_FIX = DT(2026, 9, 12)         # Saturday coverage added after missed-call review
 
 def gid(n=20):
@@ -45,7 +45,7 @@ def is_dst(t):
     return DT(2026, 3, 8, 2) <= t < DT(2026, 11, 1, 2) or t < DT(2025, 11, 2, 2)
 
 def to_utc(t):
-    return t + TD(hours=4 if is_dst(t) else 5)
+    return t + TD(hours=5 if is_dst(t) else 6)  # US Central
 
 def fz(t):  # GHL API style
     return to_utc(t).strftime("%Y-%m-%dT%H:%M:%S.") + f"{R.randint(0,999):03d}Z"
@@ -96,11 +96,11 @@ def mins(t, a, b):
     return t + TD(seconds=R.randint(int(a * 60), int(b * 60)))
 
 # ---------------------------------------------------------------- reference data
-LOCS = {"Dublin": "+16145550111", "Easton": "+16145550112", "Polaris": "+16145550113"}
+LOCS = {"Edina": "+19525550111", "Maple Grove": "+17635550112", "Woodbury": "+16515550113"}
 LOC_W = [0.38, 0.34, 0.28]
-MAIN_LINE = "+16145550100"
-TRACKING = {"Google Ads": "+16145550121", "Google Business Profile": "+16145550122",
-            "Facebook": "+16145550123", "Website": MAIN_LINE}
+MAIN_LINE = "+16125550100"
+TRACKING = {"Google Ads": "+16125550121", "Google Business Profile": "+16125550122",
+            "Facebook": "+16125550123", "Website": MAIN_LINE}
 
 AGENTS = [
     dict(name="Maya Torres", start=DT(2025, 1, 1), end=DT(2030, 1, 1), mult=1.05, speed=1.0),
@@ -154,15 +154,16 @@ Lopez Martin Martinez Mendoza Miller Mitchell Moore Morales Morgan Murphy Myers 
 Perez Perry Peterson Phillips Powell Price Ramirez Reed Reyes Richardson Rivera Roberts Robinson Rodriguez Rogers Ross
 Russell Sanchez Sanders Scott Shah Simmons Smith Stewart Sullivan Taylor Thomas Thompson Torres Turner Walker Ward
 Washington Watson White Williams Wilson Wood Wright Young Zimmerman Okoye Haddad Kowalski Novak Bauer""".split()
-AREA = ["614", "614", "614", "380", "740", "937", "419"]
-CITIES = [("Columbus", "43215"), ("Dublin", "43017"), ("Westerville", "43081"), ("Hilliard", "43026"), ("Gahanna", "43230"),
-          ("Grove City", "43123"), ("Delaware", "43015"), ("Worthington", "43085"), ("Reynoldsburg", "43068"), ("Lewis Center", "43035")]
+AREA = ["612", "612", "651", "651", "952", "952", "763", "763", "320", "507"]
+CITIES = [("Minneapolis", "55408"), ("St. Paul", "55105"), ("Edina", "55435"), ("Bloomington", "55420"), ("Maple Grove", "55369"),
+          ("Plymouth", "55447"), ("Woodbury", "55125"), ("Eagan", "55123"), ("Eden Prairie", "55344"), ("Roseville", "55113"),
+          ("Minnetonka", "55305"), ("Burnsville", "55337"), ("Blaine", "55434"), ("Lakeville", "55044"), ("Stillwater", "55082")]
 
 used_phones = set()
 def phone():
     while True:
         p = f"+1{R.choice(AREA)}555{R.randint(0, 9999):04d}"
-        if p[-4:] != "1212" and p not in used_phones and p not in LOCS.values():
+        if p[-4:] != "1212" and p not in used_phones and p not in LOCS.values() and p not in TRACKING.values():
             used_phones.add(p)
             return p
 
@@ -238,7 +239,7 @@ def sms_out(c, t, body, kind="workflow", user=None):
     status, err = "delivered", ""
     if c["invalid"]:
         status, err = "failed", pick(["30003 - Unreachable destination handset", "30005 - Unknown destination handset", "30006 - Landline or unreachable carrier"])
-    elif c["loc"] == "Polaris" and CARRIER_ISSUE[0] <= t <= CARRIER_ISSUE[1] and R.random() < .38:
+    elif c["loc"] == "Woodbury" and CARRIER_ISSUE[0] <= t <= CARRIER_ISSUE[1] and R.random() < .38:
         status, err = "failed", "30007 - Message filtered by carrier"
     elif R.random() < .012:
         status, err = "undelivered", "30008 - Unknown error"
@@ -277,7 +278,7 @@ def rvm(c, t):
     if t > END or c["dnd_calls"]:
         return None
     return msg(c, t, "TYPE_CAMPAIGN_VOICEMAIL", "outbound", "failed" if c["invalid"] else "delivered", "", None, "workflow",
-               "+16145550100", c["phone"], "Voicemail drop failed" if c["invalid"] else "")
+               MAIN_LINE, c["phone"], "Voicemail drop failed" if c["invalid"] else "")
 
 def call(c, t, direction, status, dur, user=None, number=None, src_name="", voice_ai=False):
     """status uses GHL callStatus values: completed, no-answer, busy, failed, canceled, voicemail."""
@@ -963,7 +964,7 @@ for c in contacts:
                  "Email": c["email"], "Created": fl(c["created"]), "Last Activity": fl(c["last_activity"]),
                  "Tags": ",".join(sorted(c["tags"] | ({"new lead"} if not c["existing"] else set()))),
                  "Source": c["src_label"], "Assigned To": c["agent"]["name"] if c["agent"] else "",
-                 "City": c["city"], "State": "OH", "Postal Code": c["zip"],
+                 "City": c["city"], "State": "MN", "Postal Code": c["zip"],
                  "DND": "true" if dnd_any else "false",
                  "DND SMS": "true" if c["dnd_sms_at"] and c["dnd_sms_at"] <= END else "false",
                  "DND Calls": "true" if c["dnd_calls"] else "false",

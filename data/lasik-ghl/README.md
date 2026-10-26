@@ -1,6 +1,6 @@
 # Lakemont LASIK & Vision: sample GoHighLevel data
 
-A year of fictional lead follow-up data for a made-up 3-location LASIK practice ("Lakemont LASIK & Vision", Columbus OH area: Dublin, Easton, Polaris). Boost runs the practice's lead engagement inside GoHighLevel (GHL). The data looks like what you'd get by exporting that GHL sub-account. It's the raw material for the dashboards in this portfolio.
+A year of fictional lead follow-up data for a made-up 3-location LASIK practice ("Lakemont LASIK & Vision", Twin Cities, MN: Edina, Maple Grove, Woodbury). Boost runs the practice's lead engagement inside GoHighLevel (GHL). The data looks like what you'd get by exporting that GHL sub-account. It's the raw material for the dashboards in this portfolio.
 
 **Everything is invented.** No real patients, practice or messages. Phone numbers use the 555 exchange, emails use `example.com/.net/.org`, and IDs are random.
 
@@ -35,7 +35,7 @@ Join key: `contactId` / `Contact ID` / `Contact Id`. The inconsistent naming is 
 - `status`: SMS `delivered/sent/failed/undelivered`; email `delivered/opened/clicked/failed`; calls use GHL call statuses `completed/no-answer/voicemail/busy/failed`
 - `source`: `workflow` (automation), `app` (a concierge in the UI, `userId` filled), `api` (Conversation AI texting bot), `bulk_actions` (promo blasts)
 - `error`: real Twilio-style codes, e.g. `30007 - Message filtered by carrier`, `30006 - Landline or unreachable carrier`
-- Timestamps are UTC (`...Z`). Other files use local Eastern time, in different formats.
+- Timestamps are UTC (`...Z`). Other files use local Central time, in different formats.
 
 ## Who's doing the work
 
@@ -48,13 +48,13 @@ Join key: `contactId` / `Contact ID` / `Contact Id`. The inconsistent naming is 
 
 | Question | What the data shows |
 |---|---|
-| Does speed to lead matter? | For leads that arrive during business hours, the booking rate falls from ~46% (called within 5 min) to ~11% (called after a day) |
-| Which sources actually convert? | Facebook brings ~1/3 of leads but books worst (~21%). Google Business Profile calls and referrals book best. The CRM `Source` field is messy (`fb_leadgen`, `FB`, `Facebook Lead Ads`, blank…), so this takes real cleanup to see |
+| Does speed to lead matter? | For leads that arrive during business hours, the booking rate falls from ~45% (called within 5 min) to ~32% (5–15 min) and ~25% (over an hour) |
+| Which sources actually convert? | Facebook brings ~1/3 of leads but books worst (~20%). Google Business Profile calls and referrals book best. The CRM `Source` field is messy (`fb_leadgen`, `FB`, `Facebook Lead Ads`, blank…), so this takes real cleanup to see |
 | ROI by channel | Opportunity values ($4,000–$9,000) on won deals, tied back to source and UTM campaign |
 | How much follow-up does a lead get? | ~13 texts, ~6 calls, ~5 emails and 1–2 voicemail drops per lead, on average, mostly unseen by the practice |
 | Voice AI time savings | Concierge talk time per lead drops ~32% after launch, because existing patients no longer reach the team |
 | After-hours leads | Before Conversation AI, after-hours leads book at ~19%. After it starts replying within minutes, they book at ~32% |
-| Deliverability | Polaris's texting number gets carrier-filtered (30007) in August 2026: ~35% failure vs ~5% normal |
+| Deliverability | Woodbury's texting number gets carrier-filtered (30007) in August 2026: ~35% failure vs ~5% normal |
 | Missed calls | Saturday inbound calls go unanswered ~38% of the time, dropping to ~14% after Saturday coverage is added Sept 12 |
 | Compliance | Some opt-outs are non-standard ("please stop texting me") and keep getting texts for hours or days until someone flags them |
 | Lost reasons | "Price" leads keep receiving promo blasts, and some come back |

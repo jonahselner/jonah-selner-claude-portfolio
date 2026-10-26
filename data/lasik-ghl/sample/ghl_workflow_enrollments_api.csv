@@ -1,204 +1,190 @@
 contactId,workflowId,workflowName,enrolledAt,status,exitedAt,exitReason
-sCGRlrwZbqcabUGJmGEp,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2025-11-11T01:46:41.014Z,finished,2025-11-11T01:51:41.025Z,completed
-sCGRlrwZbqcabUGJmGEp,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2025-11-11T18:59:10.706Z,finished,2025-11-11T15:56:58.967Z,contact replied
-pSscDlkrCaqx9vJupc94,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2025-11-13T16:32:15.583Z,finished,2025-11-13T16:37:15.809Z,completed
-pSscDlkrCaqx9vJupc94,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2025-11-13T16:32:15.138Z,finished,2025-11-20T16:32:15.516Z,completed
-pSscDlkrCaqx9vJupc94,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2025-11-14T22:59:16.710Z,finished,2025-11-15T16:28:25.226Z,contact replied
-sUNPjc01T5GOBUSZGi6H,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2025-11-20T00:07:10.679Z,finished,2025-11-20T00:12:10.879Z,completed
-sUNPjc01T5GOBUSZGi6H,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2025-11-20T00:07:10.224Z,finished,2025-11-27T00:07:10.815Z,completed
-sUNPjc01T5GOBUSZGi6H,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2025-11-20T17:25:02.335Z,finished,2025-12-20T18:08:13.346Z,completed
-sUNPjc01T5GOBUSZGi6H,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2025-12-20T18:08:13.244Z,active,,
-qZe2qpUWnoVPDF2yeE6R,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2025-11-29T23:24:04.716Z,finished,2025-12-29T22:54:47.503Z,completed
-qZe2qpUWnoVPDF2yeE6R,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2025-12-29T22:54:47.217Z,active,,
-0G9Cryn687neLfjVHq8x,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2025-12-05T17:57:49.254Z,finished,2025-12-05T18:02:49.721Z,completed
-0G9Cryn687neLfjVHq8x,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2025-12-06T18:13:40.735Z,finished,2025-12-06T18:17:55.328Z,contact replied
-zy3Lex7BWr2drgd1QsO7,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2025-12-06T02:04:16.040Z,finished,2025-12-06T02:09:16.920Z,completed
-zy3Lex7BWr2drgd1QsO7,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2025-12-06T23:27:01.734Z,finished,2026-01-05T22:16:21.168Z,completed
-zy3Lex7BWr2drgd1QsO7,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-01-05T22:16:21.485Z,active,,
-qVVPqzPptEJQzhkPkenG,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2025-12-12T01:08:27.580Z,finished,2025-12-12T01:13:27.588Z,completed
-qVVPqzPptEJQzhkPkenG,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2025-12-12T17:16:58.643Z,finished,2026-01-11T15:16:17.356Z,completed
-qVVPqzPptEJQzhkPkenG,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-01-11T15:16:17.493Z,active,,
-qVVPqzPptEJQzhkPkenG,pphrac5m-99zz-rbmx-qsjvpszqkzgz,03 | Consult Booked - Reminders,2026-06-16T20:06:24.192Z,finished,2026-06-18T20:53:46.399Z,appointment cancelled
-qVVPqzPptEJQzhkPkenG,pphrac5m-99zz-rbmx-qsjvpszqkzgz,03 | Consult Booked - Reminders,2026-06-18T22:05:17.555Z,finished,2026-06-26T14:30:00.539Z,appointment time reached
-qVVPqzPptEJQzhkPkenG,mbhume3x-2wtc-m4aq-mrq6a0e55pwk,09 | Post-Consult Follow Up,2026-06-28T14:30:00.479Z,finished,2026-07-12T14:30:00.387Z,completed
-HOY32nfr5pyzPCB9t203,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2025-12-20T14:32:01.159Z,finished,2025-12-20T14:37:01.388Z,completed
-HOY32nfr5pyzPCB9t203,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2025-12-21T21:19:24.637Z,finished,2026-01-20T18:37:00.505Z,completed
-HOY32nfr5pyzPCB9t203,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-01-20T18:37:00.431Z,active,,
-6cPTt9iOqHOBSWhgetH8,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2025-12-27T03:36:31.131Z,finished,2025-12-27T03:41:31.906Z,completed
-6cPTt9iOqHOBSWhgetH8,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2025-12-27T03:36:31.023Z,finished,2026-01-03T03:36:31.168Z,completed
-6cPTt9iOqHOBSWhgetH8,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2025-12-27T14:41:20.856Z,finished,2026-01-26T19:57:22.018Z,completed
-6cPTt9iOqHOBSWhgetH8,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-01-26T19:57:22.924Z,active,,
-6cPTt9iOqHOBSWhgetH8,pphrac5m-99zz-rbmx-qsjvpszqkzgz,03 | Consult Booked - Reminders,2026-06-27T07:10:05.578Z,finished,2026-07-04T14:00:00.068Z,appointment time reached
-6cPTt9iOqHOBSWhgetH8,xapfsy6g-xmrh-5oof-rlfvjh8ney3e,04 | No-Show Recovery,2026-07-04T15:09:00.424Z,finished,2026-07-08T15:09:00.517Z,completed
-xRzmaZsV2GenFmtX0moD,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2025-12-30T19:32:25.088Z,finished,2025-12-30T19:37:25.668Z,completed
-xRzmaZsV2GenFmtX0moD,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2025-12-31T15:18:07.262Z,active,,
-xRzmaZsV2GenFmtX0moD,pphrac5m-99zz-rbmx-qsjvpszqkzgz,03 | Consult Booked - Reminders,2026-01-01T23:34:03.325Z,finished,2026-01-06T21:30:00.549Z,appointment time reached
-VDctQUy1xvCkgafrfwA9,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2025-12-31T04:01:09.929Z,finished,2025-12-31T04:06:09.861Z,completed
-VDctQUy1xvCkgafrfwA9,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2025-12-31T04:01:09.967Z,finished,2026-01-07T04:01:09.170Z,completed
-VDctQUy1xvCkgafrfwA9,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2025-12-31T23:56:22.045Z,finished,2026-01-30T21:36:43.780Z,completed
-VDctQUy1xvCkgafrfwA9,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-01-30T21:36:43.520Z,active,,
-vxrv99NcqVTSu7rtaUWM,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-01-06T01:52:27.765Z,finished,2026-01-06T01:57:27.805Z,completed
-vxrv99NcqVTSu7rtaUWM,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-01-06T18:42:09.773Z,finished,2026-01-10T15:40:58.197Z,contact replied
-vxrv99NcqVTSu7rtaUWM,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-01-10T15:59:30.394Z,active,,
-vxrv99NcqVTSu7rtaUWM,pphrac5m-99zz-rbmx-qsjvpszqkzgz,03 | Consult Booked - Reminders,2026-06-09T02:16:15.100Z,finished,2026-06-13T15:00:00.164Z,appointment time reached
-vxrv99NcqVTSu7rtaUWM,mbhume3x-2wtc-m4aq-mrq6a0e55pwk,09 | Post-Consult Follow Up,2026-06-15T15:00:00.771Z,finished,2026-06-29T15:00:00.994Z,completed
-pAePcEJIukB4geqNfngA,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-01-07T11:06:32.421Z,finished,2026-01-07T11:11:32.104Z,completed
-pAePcEJIukB4geqNfngA,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-01-08T18:23:53.788Z,finished,2026-02-07T18:58:49.375Z,completed
-pAePcEJIukB4geqNfngA,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-02-07T18:58:49.168Z,active,,
-pAePcEJIukB4geqNfngA,pphrac5m-99zz-rbmx-qsjvpszqkzgz,03 | Consult Booked - Reminders,2026-05-13T21:07:45.234Z,finished,2026-05-16T15:30:00.158Z,appointment time reached
-pAePcEJIukB4geqNfngA,xapfsy6g-xmrh-5oof-rlfvjh8ney3e,04 | No-Show Recovery,2026-05-16T16:43:00.529Z,finished,2026-05-20T16:43:00.454Z,completed
-HoPZgPDcgaE40o1C6xc4,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-01-11T23:57:39.988Z,finished,2026-01-12T00:02:39.807Z,completed
-HoPZgPDcgaE40o1C6xc4,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-01-11T23:57:39.837Z,finished,2026-01-18T23:57:39.426Z,completed
-HoPZgPDcgaE40o1C6xc4,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-01-12T16:55:27.183Z,finished,2026-02-11T19:59:44.168Z,completed
-HoPZgPDcgaE40o1C6xc4,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-02-11T19:59:44.198Z,active,,
-NtencYFJEeAgYzQJjOIf,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-01-13T17:07:57.781Z,finished,2026-01-13T17:12:57.821Z,completed
-NtencYFJEeAgYzQJjOIf,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-01-14T18:03:32.089Z,active,,
-NtencYFJEeAgYzQJjOIf,pphrac5m-99zz-rbmx-qsjvpszqkzgz,03 | Consult Booked - Reminders,2026-01-15T16:40:26.988Z,finished,2026-01-17T16:30:00.011Z,appointment time reached
-fKN7xVGkjwskHk7egyFW,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-01-15T16:12:21.015Z,finished,2026-01-15T16:17:21.064Z,completed
-fKN7xVGkjwskHk7egyFW,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-01-16T21:32:17.779Z,finished,2026-01-16T16:42:42.902Z,contact replied
-c4J1WRcQ1uhyMDJ2OXtP,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-01-16T03:25:56.071Z,finished,2026-01-16T03:30:56.132Z,completed
-c4J1WRcQ1uhyMDJ2OXtP,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-01-16T16:51:08.560Z,finished,2026-02-15T20:36:43.553Z,completed
-c4J1WRcQ1uhyMDJ2OXtP,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-02-15T20:36:43.703Z,active,,
-fdWG5yP8Yib2eNUS0hmi,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-01-30T16:44:38.451Z,finished,2026-01-30T16:49:38.001Z,completed
-fdWG5yP8Yib2eNUS0hmi,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-01-30T16:44:38.544Z,finished,2026-02-06T16:44:38.279Z,completed
-fdWG5yP8Yib2eNUS0hmi,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-01-31T21:10:50.653Z,finished,2026-03-02T16:55:47.459Z,completed
-fdWG5yP8Yib2eNUS0hmi,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-03-02T16:55:47.408Z,active,,
-5ykYYqhXHdO2x93CJHLS,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-02-11T00:27:04.203Z,finished,2026-02-11T00:32:04.125Z,completed
-5ykYYqhXHdO2x93CJHLS,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-02-11T19:30:09.308Z,finished,2026-03-13T22:48:39.772Z,completed
-5ykYYqhXHdO2x93CJHLS,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-03-13T22:48:39.660Z,active,,
-AGx5diFoNPcbdaKwtgHw,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-02-16T01:46:25.972Z,finished,2026-02-16T01:51:25.440Z,completed
-AGx5diFoNPcbdaKwtgHw,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-02-16T21:20:13.367Z,finished,2026-03-18T13:36:04.863Z,completed
-AGx5diFoNPcbdaKwtgHw,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-03-18T13:36:04.719Z,active,,
-dIbzlpkd6XgaNJQ8mjAm,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-02-17T15:20:05.563Z,finished,2026-02-17T15:25:05.386Z,completed
-dIbzlpkd6XgaNJQ8mjAm,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-02-17T15:20:05.256Z,finished,2026-02-24T15:20:05.293Z,completed
-dIbzlpkd6XgaNJQ8mjAm,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-02-18T22:48:02.712Z,finished,2026-03-20T18:24:13.698Z,completed
-dIbzlpkd6XgaNJQ8mjAm,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-03-20T18:24:13.413Z,active,,
-RBRY6HqsP795nf4Gakq5,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-02-25T16:08:29.164Z,finished,2026-02-25T16:13:29.329Z,completed
-RBRY6HqsP795nf4Gakq5,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-02-26T16:30:37.529Z,finished,2026-02-28T17:38:47.855Z,contact replied
-hgN7kwjSbbciSPOcSeVc,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-03-13T02:39:08.948Z,finished,2026-03-13T02:44:08.661Z,completed
-hgN7kwjSbbciSPOcSeVc,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-03-13T14:57:16.367Z,finished,2026-03-14T17:05:19.531Z,contact replied
-bwq7sdTWx6uX9MGE2sNV,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-03-19T06:21:33.264Z,finished,2026-03-19T06:26:33.047Z,completed
-bwq7sdTWx6uX9MGE2sNV,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-03-20T14:59:58.096Z,active,,
-bwq7sdTWx6uX9MGE2sNV,pphrac5m-99zz-rbmx-qsjvpszqkzgz,03 | Consult Booked - Reminders,2026-03-20T21:16:20.362Z,finished,2026-03-30T15:00:00.284Z,appointment time reached
-bwq7sdTWx6uX9MGE2sNV,xapfsy6g-xmrh-5oof-rlfvjh8ney3e,04 | No-Show Recovery,2026-03-30T16:13:00.471Z,finished,2026-04-03T16:13:00.528Z,completed
-s0n8SoFkh8OXfFYSJYgO,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-03-21T18:25:28.223Z,finished,2026-03-21T18:30:28.758Z,completed
-s0n8SoFkh8OXfFYSJYgO,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-03-22T15:52:10.496Z,finished,2026-04-21T21:52:52.200Z,completed
-s0n8SoFkh8OXfFYSJYgO,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-04-21T21:52:52.776Z,active,,
-DCSXqLoivDP4SpGmrtWT,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-03-23T09:57:58.607Z,finished,2026-03-23T10:02:58.981Z,completed
-DCSXqLoivDP4SpGmrtWT,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-03-23T09:57:58.802Z,finished,2026-03-30T09:57:58.805Z,completed
-DCSXqLoivDP4SpGmrtWT,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-03-24T14:56:56.672Z,active,,
-DCSXqLoivDP4SpGmrtWT,pphrac5m-99zz-rbmx-qsjvpszqkzgz,03 | Consult Booked - Reminders,2026-03-24T21:46:31.631Z,finished,2026-03-30T15:30:00.288Z,appointment time reached
-DCSXqLoivDP4SpGmrtWT,mbhume3x-2wtc-m4aq-mrq6a0e55pwk,09 | Post-Consult Follow Up,2026-04-01T15:30:00.829Z,finished,2026-04-15T15:30:00.906Z,completed
-DCSXqLoivDP4SpGmrtWT,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-04-01T19:42:24.385Z,finished,2026-04-08T17:00:04.372Z,completed
-2YBSoGOsDbjqMVzaVp62,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-03-25T23:05:46.248Z,finished,2026-03-25T23:10:46.943Z,completed
-2YBSoGOsDbjqMVzaVp62,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-03-26T22:20:46.242Z,active,,
-2YBSoGOsDbjqMVzaVp62,pphrac5m-99zz-rbmx-qsjvpszqkzgz,03 | Consult Booked - Reminders,2026-03-26T12:14:12.415Z,finished,2026-04-01T14:30:00.556Z,appointment time reached
-HRQ73l5PuXay1F6gcqIn,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-03-30T14:50:40.504Z,finished,2026-03-30T14:55:40.661Z,completed
-HRQ73l5PuXay1F6gcqIn,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-03-31T20:35:21.354Z,finished,2026-03-31T14:58:05.730Z,contact replied
-HRQ73l5PuXay1F6gcqIn,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-03-31T15:22:13.414Z,active,,
-HRQ73l5PuXay1F6gcqIn,pphrac5m-99zz-rbmx-qsjvpszqkzgz,03 | Consult Booked - Reminders,2026-09-28T19:42:30.202Z,finished,2026-10-01T17:00:00.657Z,appointment time reached
-OSRwLqgotVz89HoZ9zDn,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-04-02T03:53:14.185Z,finished,2026-04-02T03:58:14.441Z,completed
-OSRwLqgotVz89HoZ9zDn,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-04-02T03:53:14.171Z,finished,2026-04-09T03:53:14.811Z,completed
-OSRwLqgotVz89HoZ9zDn,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-04-02T20:56:49.974Z,finished,2026-04-02T20:02:56.918Z,contact DND
-wpPtuEFBNOfQ5xj7t2yd,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-04-10T23:28:32.590Z,finished,2026-04-10T23:33:32.412Z,completed
-wpPtuEFBNOfQ5xj7t2yd,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-04-11T14:59:29.798Z,finished,2026-05-11T19:42:52.181Z,completed
-wpPtuEFBNOfQ5xj7t2yd,qq3zopfb-iwyi-sj1q-v9ulfiysh5un,07 | Missed Call Text Back,2026-04-11T17:58:26.041Z,finished,2026-04-11T17:58:26.296Z,completed
-wpPtuEFBNOfQ5xj7t2yd,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-05-11T19:42:52.034Z,active,,
-wpPtuEFBNOfQ5xj7t2yd,pphrac5m-99zz-rbmx-qsjvpszqkzgz,03 | Consult Booked - Reminders,2026-06-10T08:08:55.159Z,finished,2026-06-17T19:30:00.113Z,appointment time reached
-mFSnHfV1CQ4hJhqAo0iE,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-04-13T00:56:32.470Z,finished,2026-04-13T01:01:32.215Z,completed
-mFSnHfV1CQ4hJhqAo0iE,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-04-13T22:48:16.302Z,finished,2026-05-03T19:15:06.926Z,contact DND
-cnTAOivg3QxvEXHJX6ns,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-04-15T01:59:16.024Z,finished,2026-04-15T02:04:16.488Z,completed
-cnTAOivg3QxvEXHJX6ns,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-04-15T16:50:12.071Z,finished,2026-05-15T15:27:06.099Z,completed
-cnTAOivg3QxvEXHJX6ns,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-05-15T15:27:06.740Z,active,,
-cnTAOivg3QxvEXHJX6ns,pphrac5m-99zz-rbmx-qsjvpszqkzgz,03 | Consult Booked - Reminders,2026-09-10T00:50:22.878Z,finished,2026-09-16T18:00:00.830Z,appointment time reached
-m06EMXQdYG6INyNjORSS,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-04-17T19:15:44.847Z,finished,2026-04-17T19:20:44.942Z,completed
-m06EMXQdYG6INyNjORSS,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-04-18T16:17:13.395Z,active,,
-m06EMXQdYG6INyNjORSS,pphrac5m-99zz-rbmx-qsjvpszqkzgz,03 | Consult Booked - Reminders,2026-04-17T20:13:48.410Z,finished,2026-04-21T14:30:00.123Z,appointment time reached
-XZAKS6zCeaRyML8QjEXA,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-05-08T19:41:09.579Z,finished,2026-05-08T19:46:09.629Z,completed
-XZAKS6zCeaRyML8QjEXA,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-05-09T14:01:38.444Z,active,,
-XZAKS6zCeaRyML8QjEXA,pphrac5m-99zz-rbmx-qsjvpszqkzgz,03 | Consult Booked - Reminders,2026-05-08T19:56:16.894Z,finished,2026-05-09T14:00:00.683Z,appointment time reached
-DQ74q69dTcada4PR0Nfy,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-05-17T21:30:42.709Z,finished,2026-05-17T21:35:42.228Z,completed
-DQ74q69dTcada4PR0Nfy,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-05-18T20:03:10.098Z,finished,2026-06-17T17:57:26.568Z,completed
-DQ74q69dTcada4PR0Nfy,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-06-17T17:57:26.684Z,active,,
-M1tLB4pyyRyMX5oZCsSa,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-05-20T13:03:20.718Z,finished,2026-05-20T13:08:20.363Z,completed
-M1tLB4pyyRyMX5oZCsSa,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-05-21T20:27:53.014Z,finished,2026-06-20T16:52:55.905Z,completed
-M1tLB4pyyRyMX5oZCsSa,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-06-20T16:52:55.593Z,active,,
-Tn7qLWaYyDIfIZwXeozL,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-05-22T20:02:16.379Z,finished,2026-05-22T20:51:41.953Z,contact replied
-Tn7qLWaYyDIfIZwXeozL,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-05-22T20:56:44.906Z,active,,
-gcn33KFLKnq7XrBg8CXL,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-06-15T20:30:50.027Z,finished,2026-06-15T20:35:50.708Z,completed
-gcn33KFLKnq7XrBg8CXL,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-06-16T13:51:32.464Z,finished,2026-07-16T16:56:51.684Z,completed
-gcn33KFLKnq7XrBg8CXL,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-07-16T16:56:51.247Z,active,,
-9pUolc8q8wd5J5b16dqY,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-06-17T18:04:17.871Z,finished,2026-06-17T18:09:17.317Z,completed
-9pUolc8q8wd5J5b16dqY,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-06-18T22:10:14.802Z,finished,2026-06-18T18:51:41.107Z,contact replied
-e7N3x4ViXC9g77y1bOeC,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-06-23T12:03:51.713Z,finished,2026-06-23T12:08:51.070Z,completed
-e7N3x4ViXC9g77y1bOeC,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-06-23T12:03:51.291Z,finished,2026-06-30T12:03:51.966Z,completed
-e7N3x4ViXC9g77y1bOeC,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-06-24T16:28:51.830Z,finished,2026-07-24T14:44:50.707Z,completed
-e7N3x4ViXC9g77y1bOeC,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-07-24T14:44:50.451Z,active,,
-JE1shqWmxBqp7pgysA5k,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-07-02T06:35:29.654Z,finished,2026-07-02T06:40:29.589Z,completed
-JE1shqWmxBqp7pgysA5k,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-07-02T06:35:29.409Z,finished,2026-07-09T06:35:29.964Z,completed
-JE1shqWmxBqp7pgysA5k,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-07-03T22:47:50.652Z,finished,2026-07-05T15:57:39.316Z,contact DND
-QTOZmLtmaeSUHA1U6dHZ,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-07-21T16:34:26.704Z,finished,2026-07-21T16:39:26.954Z,completed
-QTOZmLtmaeSUHA1U6dHZ,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-07-22T16:38:59.652Z,finished,2026-07-22T17:12:05.092Z,contact replied
-QTOZmLtmaeSUHA1U6dHZ,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-07-22T17:19:30.267Z,active,,
-s3g9UFCGbHZIibp9foNl,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-07-27T13:09:30.145Z,finished,2026-07-27T13:14:30.299Z,completed
-s3g9UFCGbHZIibp9foNl,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-07-28T13:13:04.854Z,finished,2026-08-27T15:10:37.504Z,completed
-s3g9UFCGbHZIibp9foNl,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-08-27T15:10:37.307Z,active,,
-jQKDVzk80b8OySAM1MHc,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-07-28T01:03:15.837Z,finished,2026-07-28T01:08:15.707Z,completed
-jQKDVzk80b8OySAM1MHc,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-07-28T18:20:49.660Z,finished,2026-08-27T17:34:18.566Z,completed
-jQKDVzk80b8OySAM1MHc,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-08-27T17:34:18.733Z,active,,
-OcZ44cc3PNr6RNrOIZ7c,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-07-28T02:41:42.790Z,finished,2026-07-28T02:46:42.706Z,completed
-OcZ44cc3PNr6RNrOIZ7c,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-07-28T14:04:57.401Z,finished,2026-08-27T17:35:03.524Z,completed
-OcZ44cc3PNr6RNrOIZ7c,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-08-27T17:35:03.081Z,active,,
-NSKoPymJTxD5JtNEE0tb,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-08-05T12:42:07.711Z,finished,2026-08-05T12:47:07.770Z,completed
-NSKoPymJTxD5JtNEE0tb,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-08-05T12:42:07.996Z,finished,2026-08-12T12:42:07.170Z,completed
-NSKoPymJTxD5JtNEE0tb,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-08-06T18:17:42.785Z,active,,
-NSKoPymJTxD5JtNEE0tb,pphrac5m-99zz-rbmx-qsjvpszqkzgz,03 | Consult Booked - Reminders,2026-08-12T18:31:29.900Z,finished,2026-08-13T12:00:00.342Z,appointment time reached
-AvQwiRmNN2r01HgV2V7W,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-08-20T11:47:22.051Z,finished,2026-08-20T11:52:22.374Z,completed
-AvQwiRmNN2r01HgV2V7W,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-08-21T21:56:03.663Z,active,,
-AvQwiRmNN2r01HgV2V7W,pphrac5m-99zz-rbmx-qsjvpszqkzgz,03 | Consult Booked - Reminders,2026-08-23T17:35:20.062Z,finished,2026-08-28T13:00:00.834Z,appointment time reached
-yCtlItZjBKyLof06vu1M,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-08-23T19:41:22.104Z,finished,2026-08-23T19:46:22.823Z,completed
-yCtlItZjBKyLof06vu1M,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-08-24T20:22:39.303Z,active,,
-yCtlItZjBKyLof06vu1M,pphrac5m-99zz-rbmx-qsjvpszqkzgz,03 | Consult Booked - Reminders,2026-08-29T02:51:43.397Z,finished,2026-09-11T18:30:00.940Z,appointment time reached
-yCtlItZjBKyLof06vu1M,xapfsy6g-xmrh-5oof-rlfvjh8ney3e,04 | No-Show Recovery,2026-09-11T19:39:00.643Z,finished,2026-09-15T19:39:00.508Z,completed
-yCtlItZjBKyLof06vu1M,pphrac5m-99zz-rbmx-qsjvpszqkzgz,03 | Consult Booked - Reminders,2026-09-12T20:08:54.956Z,finished,2026-09-18T12:00:00.499Z,appointment time reached
-PJ7Kj4m9AFzCXN5LvSHV,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-08-27T23:16:25.418Z,finished,2026-08-27T23:21:25.180Z,completed
-PJ7Kj4m9AFzCXN5LvSHV,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-08-28T21:45:21.703Z,finished,2026-09-27T18:45:56.300Z,completed
-PJ7Kj4m9AFzCXN5LvSHV,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-09-27T18:45:56.930Z,active,,
-a6tz1gLaQbmlFXJKr3P5,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-09-01T19:21:35.418Z,finished,2026-09-01T19:26:35.143Z,completed
-a6tz1gLaQbmlFXJKr3P5,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-09-01T19:21:35.798Z,finished,2026-09-08T19:21:35.125Z,completed
-a6tz1gLaQbmlFXJKr3P5,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-09-02T14:44:15.042Z,finished,2026-09-22T20:07:11.154Z,contact replied
-bdo4zLW9cCdNppock7L2,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-09-06T00:38:00.079Z,finished,2026-09-06T00:43:00.429Z,completed
-bdo4zLW9cCdNppock7L2,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-09-06T00:38:00.312Z,finished,2026-09-13T00:38:00.411Z,completed
-bdo4zLW9cCdNppock7L2,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-09-06T19:53:46.127Z,finished,2026-10-05T16:22:43.321Z,contact DND
-zPe9hB06wJpymDswpBcr,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-09-15T18:03:57.200Z,finished,2026-09-15T18:08:57.688Z,completed
-zPe9hB06wJpymDswpBcr,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-09-15T18:03:57.870Z,finished,2026-09-22T18:03:57.857Z,completed
-zPe9hB06wJpymDswpBcr,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-09-16T18:46:40.643Z,finished,2026-10-16T13:21:11.084Z,completed
-zPe9hB06wJpymDswpBcr,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-10-16T13:21:11.196Z,active,,
-IpzMGni3WhRGfI2rVXWy,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-09-22T00:48:12.824Z,finished,2026-09-22T00:53:12.290Z,completed
-IpzMGni3WhRGfI2rVXWy,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-09-22T20:13:30.316Z,finished,2026-10-22T22:57:50.736Z,completed
-IpzMGni3WhRGfI2rVXWy,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-10-22T22:57:50.169Z,active,,
-5AbQTSDp2zw5Oglshr6M,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-09-26T01:12:53.129Z,finished,2026-09-26T01:17:53.821Z,completed
-5AbQTSDp2zw5Oglshr6M,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-09-26T19:51:40.175Z,finished,2026-09-26T15:34:00.719Z,contact replied
-5AbQTSDp2zw5Oglshr6M,7aega2kq-pkbz-nkur-y2ry21ijoq2w,05 | Long-Term Nurture - Monthly,2026-09-26T15:40:27.498Z,active,,
-pRhcYunX6wV6fASVzVN1,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-10-01T13:35:08.611Z,finished,2026-10-01T13:40:08.852Z,completed
-pRhcYunX6wV6fASVzVN1,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-10-02T22:28:16.226Z,finished,2026-10-15T14:15:18.495Z,contact replied
-9dkwwAfmOtiiRTFQEpTp,pphrac5m-99zz-rbmx-qsjvpszqkzgz,03 | Consult Booked - Reminders,2026-10-02T22:59:30.660Z,finished,2026-10-05T13:30:00.211Z,appointment time reached
-9dkwwAfmOtiiRTFQEpTp,mbhume3x-2wtc-m4aq-mrq6a0e55pwk,09 | Post-Consult Follow Up,2026-10-07T13:30:00.475Z,finished,2026-10-21T13:30:00.013Z,completed
-9dkwwAfmOtiiRTFQEpTp,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-10-07T20:32:30.131Z,finished,2026-10-14T18:19:05.614Z,completed
-KEXfixXNdzpdxcaSM9nD,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-10-04T09:59:53.569Z,finished,2026-10-04T10:04:53.507Z,completed
-KEXfixXNdzpdxcaSM9nD,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-10-04T09:59:53.748Z,finished,2026-10-11T09:59:53.404Z,completed
-KEXfixXNdzpdxcaSM9nD,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-10-05T18:40:14.467Z,active,,
-C9hkuCDKxskJecaDWFfV,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-10-08T19:59:46.227Z,finished,2026-10-08T20:04:46.240Z,completed
-C9hkuCDKxskJecaDWFfV,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-10-09T13:06:50.611Z,active,,
-C9hkuCDKxskJecaDWFfV,pphrac5m-99zz-rbmx-qsjvpszqkzgz,03 | Consult Booked - Reminders,2026-10-14T02:04:36.863Z,finished,2026-10-19T20:30:00.520Z,appointment time reached
-uylP0wuoxiJ6x11qpdcg,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-10-20T14:55:13.579Z,finished,2026-10-20T15:00:13.695Z,completed
-uylP0wuoxiJ6x11qpdcg,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-10-20T14:55:13.253Z,finished,2026-10-27T14:55:13.200Z,completed
-uylP0wuoxiJ6x11qpdcg,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-10-21T13:32:43.858Z,finished,2026-10-21T14:41:52.866Z,contact replied
-GTA4veCaQ90l5UkysaCZ,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-10-21T00:56:06.309Z,finished,2026-10-21T01:01:06.696Z,completed
-GTA4veCaQ90l5UkysaCZ,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-10-21T00:56:06.575Z,finished,2026-10-28T00:56:06.429Z,completed
-GTA4veCaQ90l5UkysaCZ,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-10-21T19:51:54.626Z,active,,
-SfjQLxJL8AxHpKCzqhol,ybfhezql-jj7s-3rqy-1jl4qiswzr8c,01 | New Lead - Speed to Lead,2026-10-22T02:23:05.639Z,finished,2026-10-22T02:28:05.465Z,completed
-SfjQLxJL8AxHpKCzqhol,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-10-22T21:25:43.607Z,active,,
-SfjQLxJL8AxHpKCzqhol,qq3zopfb-iwyi-sj1q-v9ulfiysh5un,07 | Missed Call Text Back,2026-10-23T07:12:05.612Z,finished,2026-10-23T07:12:05.339Z,completed
-pAePcEJIukB4geqNfngA,pphrac5m-99zz-rbmx-qsjvpszqkzgz,03 | Consult Booked - Reminders,2026-07-13T20:59:38.680Z,finished,2026-07-18T15:30:00.875Z,appointment time reached
-pAePcEJIukB4geqNfngA,xapfsy6g-xmrh-5oof-rlfvjh8ney3e,04 | No-Show Recovery,2026-07-18T16:48:00.161Z,finished,2026-07-22T16:48:00.654Z,completed
+sCGRlrwZbqcabUGJmGEp,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2025-11-11T02:46:41.154Z,finished,2025-11-11T02:51:41.498Z,completed
+sCGRlrwZbqcabUGJmGEp,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2025-11-11T19:59:10.706Z,finished,2025-11-11T16:56:58.967Z,contact replied
+pSscDlkrCaqx9vJupc94,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2025-11-13T17:32:15.583Z,finished,2025-11-13T17:37:15.809Z,completed
+pSscDlkrCaqx9vJupc94,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2025-11-13T17:32:15.138Z,finished,2025-11-20T17:32:15.516Z,completed
+pSscDlkrCaqx9vJupc94,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2025-11-14T23:59:16.710Z,finished,2025-12-14T18:09:46.523Z,completed
+pSscDlkrCaqx9vJupc94,jzwxinm7-orvt-eay4-ecfhxv6ewmoe,05 | Long-Term Nurture - Monthly,2025-12-14T18:09:46.203Z,active,,
+sUNPjc01T5GOBUSZGi6H,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2025-11-20T01:07:10.386Z,finished,2025-11-20T01:12:10.458Z,completed
+sUNPjc01T5GOBUSZGi6H,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2025-11-20T01:07:10.845Z,finished,2025-11-27T01:07:10.049Z,completed
+sUNPjc01T5GOBUSZGi6H,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2025-11-21T00:19:22.616Z,finished,2025-12-20T15:45:16.441Z,completed
+sUNPjc01T5GOBUSZGi6H,jzwxinm7-orvt-eay4-ecfhxv6ewmoe,05 | Long-Term Nurture - Monthly,2025-12-20T15:45:16.970Z,active,,
+EqZe2qpUWnoVPDF2yeE6,9l3iaehy-2tzq-ptgl-hcpfqhlrzx5h,03 | Consult Booked - Reminders,2025-11-28T18:39:45.985Z,finished,2025-12-05T14:30:00.571Z,appointment time reached
+EqZe2qpUWnoVPDF2yeE6,9qppax9h-qr0e-svdn-renruz6acevr,09 | Post-Consult Follow Up,2025-12-07T14:30:00.779Z,finished,2025-12-21T14:30:00.726Z,completed
+EqZe2qpUWnoVPDF2yeE6,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2025-12-07T16:38:29.918Z,finished,2025-12-15T00:02:12.015Z,completed
+0G9Cryn687neLfjVHq8x,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2025-12-05T18:57:49.483Z,finished,2025-12-05T19:02:49.096Z,completed
+0G9Cryn687neLfjVHq8x,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2025-12-06T16:54:48.676Z,finished,2026-01-05T15:28:33.637Z,completed
+0G9Cryn687neLfjVHq8x,jzwxinm7-orvt-eay4-ecfhxv6ewmoe,05 | Long-Term Nurture - Monthly,2026-01-05T15:28:33.034Z,active,,
+zy3Lex7BWr2drgd1QsO7,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2025-12-06T03:04:16.979Z,finished,2025-12-06T03:09:16.139Z,completed
+zy3Lex7BWr2drgd1QsO7,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2025-12-06T19:59:06.197Z,finished,2026-01-05T22:10:53.938Z,completed
+zy3Lex7BWr2drgd1QsO7,jzwxinm7-orvt-eay4-ecfhxv6ewmoe,05 | Long-Term Nurture - Monthly,2026-01-05T22:10:53.059Z,active,,
+VPqzPptEJQzhkPkenG5Z,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2025-12-12T02:08:27.537Z,finished,2025-12-12T02:13:27.782Z,completed
+VPqzPptEJQzhkPkenG5Z,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2025-12-12T19:58:29.228Z,finished,2026-01-11T21:42:06.509Z,completed
+VPqzPptEJQzhkPkenG5Z,jzwxinm7-orvt-eay4-ecfhxv6ewmoe,05 | Long-Term Nurture - Monthly,2026-01-11T21:42:06.819Z,active,,
+32nfr5pyzPCB9t2039bi,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2025-12-20T15:32:01.713Z,finished,2025-12-20T15:37:01.020Z,completed
+32nfr5pyzPCB9t2039bi,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2025-12-21T21:45:51.025Z,finished,2025-12-23T21:54:01.934Z,contact replied
+cPTt9iOqHOBSWhgetH8L,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2025-12-27T04:36:31.525Z,finished,2025-12-27T04:41:31.540Z,completed
+cPTt9iOqHOBSWhgetH8L,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2025-12-27T23:25:51.897Z,finished,2025-12-27T19:07:18.950Z,contact replied
+RzmaZsV2GenFmtX0moDo,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2025-12-30T20:32:25.633Z,finished,2025-12-30T20:37:25.152Z,completed
+RzmaZsV2GenFmtX0moDo,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2025-12-31T18:49:02.086Z,active,,
+RzmaZsV2GenFmtX0moDo,9l3iaehy-2tzq-ptgl-hcpfqhlrzx5h,03 | Consult Booked - Reminders,2026-01-10T18:21:56.093Z,finished,2026-01-12T14:00:00.810Z,appointment time reached
+RzmaZsV2GenFmtX0moDo,ayf41i1o-h9pz-2ohr-umashasx9zkl,04 | No-Show Recovery,2026-01-12T15:08:00.169Z,finished,2026-01-16T15:08:00.542Z,completed
+RzmaZsV2GenFmtX0moDo,9l3iaehy-2tzq-ptgl-hcpfqhlrzx5h,03 | Consult Booked - Reminders,2026-01-12T20:48:09.209Z,finished,2026-01-16T20:30:00.221Z,appointment time reached
+VDctQUy1xvCkgafrfwA9,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2025-12-31T05:01:09.512Z,finished,2025-12-31T05:06:09.026Z,completed
+VDctQUy1xvCkgafrfwA9,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2025-12-31T05:01:09.394Z,finished,2026-01-07T05:01:09.133Z,completed
+VDctQUy1xvCkgafrfwA9,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2025-12-31T19:38:54.051Z,finished,2026-01-30T20:57:34.334Z,completed
+VDctQUy1xvCkgafrfwA9,jzwxinm7-orvt-eay4-ecfhxv6ewmoe,05 | Long-Term Nurture - Monthly,2026-01-30T20:57:34.797Z,active,,
+Mvxrv99NcqVTSu7rtaUW,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-01-06T02:52:27.474Z,finished,2026-01-06T02:57:27.147Z,completed
+Mvxrv99NcqVTSu7rtaUW,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-01-06T02:52:27.025Z,finished,2026-01-13T02:52:27.876Z,completed
+Mvxrv99NcqVTSu7rtaUW,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-01-06T21:59:38.055Z,finished,2026-01-26T17:26:37.864Z,contact DND
+pAePcEJIukB4geqNfngA,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-01-07T12:06:32.434Z,finished,2026-01-07T12:11:32.661Z,completed
+pAePcEJIukB4geqNfngA,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-01-08T18:48:45.899Z,finished,2026-02-07T23:27:16.462Z,completed
+pAePcEJIukB4geqNfngA,jzwxinm7-orvt-eay4-ecfhxv6ewmoe,05 | Long-Term Nurture - Monthly,2026-02-07T23:27:16.235Z,active,,
+HoPZgPDcgaE40o1C6xc4,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-01-12T00:57:39.300Z,finished,2026-01-12T01:02:39.072Z,completed
+HoPZgPDcgaE40o1C6xc4,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-01-12T17:53:36.779Z,finished,2026-02-11T19:26:31.608Z,completed
+HoPZgPDcgaE40o1C6xc4,jzwxinm7-orvt-eay4-ecfhxv6ewmoe,05 | Long-Term Nurture - Monthly,2026-02-11T19:26:31.962Z,active,,
+tencYFJEeAgYzQJjOIfP,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-01-13T18:07:57.329Z,finished,2026-01-13T18:12:57.738Z,completed
+tencYFJEeAgYzQJjOIfP,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-01-13T18:07:57.592Z,finished,2026-01-20T18:07:57.731Z,completed
+tencYFJEeAgYzQJjOIfP,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-01-14T21:43:24.631Z,finished,2026-01-20T19:18:23.152Z,contact replied
+PZ6zfKN7xVGkjwskHk7e,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-01-15T17:12:21.171Z,finished,2026-01-15T17:17:21.716Z,completed
+PZ6zfKN7xVGkjwskHk7e,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-01-15T17:12:21.578Z,finished,2026-01-22T17:12:21.062Z,completed
+PZ6zfKN7xVGkjwskHk7e,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-01-16T16:38:27.272Z,finished,2026-01-20T18:29:41.424Z,contact replied
+U05mc4J1WRcQ1uhyMDJ2,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-01-16T04:25:56.428Z,finished,2026-01-16T04:30:56.152Z,completed
+U05mc4J1WRcQ1uhyMDJ2,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-01-16T23:30:13.503Z,finished,2026-01-17T18:39:10.691Z,contact replied
+uXUGfdWG5yP8Yib2eNUS,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-01-30T17:44:38.538Z,finished,2026-01-30T17:49:38.661Z,completed
+uXUGfdWG5yP8Yib2eNUS,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-01-31T22:54:53.113Z,active,,
+uXUGfdWG5yP8Yib2eNUS,9l3iaehy-2tzq-ptgl-hcpfqhlrzx5h,03 | Consult Booked - Reminders,2026-01-30T20:10:31.739Z,finished,2026-02-04T19:00:00.472Z,appointment time reached
+Ru5ykYYqhXHdO2x93CJH,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-02-11T01:27:04.931Z,finished,2026-02-11T01:32:04.386Z,completed
+Ru5ykYYqhXHdO2x93CJH,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-02-12T00:07:29.843Z,finished,2026-03-13T22:10:12.373Z,completed
+Ru5ykYYqhXHdO2x93CJH,jzwxinm7-orvt-eay4-ecfhxv6ewmoe,05 | Long-Term Nurture - Monthly,2026-03-13T22:10:12.157Z,active,,
+BAGx5diFoNPcbdaKwtgH,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-02-16T02:46:25.975Z,finished,2026-02-16T02:51:25.533Z,completed
+BAGx5diFoNPcbdaKwtgH,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-02-16T17:57:46.651Z,active,,
+BAGx5diFoNPcbdaKwtgH,9l3iaehy-2tzq-ptgl-hcpfqhlrzx5h,03 | Consult Booked - Reminders,2026-02-22T19:25:23.106Z,finished,2026-02-27T21:00:00.131Z,appointment time reached
+BAGx5diFoNPcbdaKwtgH,9qppax9h-qr0e-svdn-renruz6acevr,09 | Post-Consult Follow Up,2026-03-01T21:00:00.377Z,finished,2026-03-15T20:00:00.652Z,completed
+dIbzlpkd6XgaNJQ8mjAm,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-02-17T16:20:05.650Z,finished,2026-02-17T16:25:05.128Z,completed
+dIbzlpkd6XgaNJQ8mjAm,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-02-17T16:20:05.323Z,finished,2026-02-24T16:20:05.912Z,completed
+dIbzlpkd6XgaNJQ8mjAm,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-02-18T23:28:38.337Z,finished,2026-02-20T19:03:30.547Z,contact DND
+RBRY6HqsP795nf4Gakq5,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-02-25T17:08:29.489Z,finished,2026-02-25T17:13:29.760Z,completed
+RBRY6HqsP795nf4Gakq5,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-02-26T21:57:54.551Z,finished,2026-03-28T18:04:23.651Z,completed
+RBRY6HqsP795nf4Gakq5,jzwxinm7-orvt-eay4-ecfhxv6ewmoe,05 | Long-Term Nurture - Monthly,2026-03-28T18:04:23.559Z,active,,
+hgN7kwjSbbciSPOcSeVc,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-03-13T03:39:08.171Z,finished,2026-03-13T03:44:08.863Z,completed
+hgN7kwjSbbciSPOcSeVc,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-03-13T22:04:59.611Z,finished,2026-04-02T15:22:01.935Z,contact DND
+bwq7sdTWx6uX9MGE2sNV,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-03-19T07:21:33.189Z,finished,2026-03-19T07:26:33.858Z,completed
+bwq7sdTWx6uX9MGE2sNV,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-03-20T18:06:02.533Z,finished,2026-04-19T16:24:06.703Z,completed
+bwq7sdTWx6uX9MGE2sNV,jzwxinm7-orvt-eay4-ecfhxv6ewmoe,05 | Long-Term Nurture - Monthly,2026-04-19T16:24:06.557Z,active,,
+s0n8SoFkh8OXfFYSJYgO,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-03-21T19:25:28.375Z,finished,2026-03-21T19:30:28.148Z,completed
+s0n8SoFkh8OXfFYSJYgO,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-03-22T22:56:31.464Z,active,,
+s0n8SoFkh8OXfFYSJYgO,9l3iaehy-2tzq-ptgl-hcpfqhlrzx5h,03 | Consult Booked - Reminders,2026-04-05T00:27:37.029Z,finished,2026-04-07T20:30:00.132Z,appointment time reached
+qLoivDP4SpGmrtWT01Nj,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-03-23T10:57:58.512Z,finished,2026-03-23T11:02:58.277Z,completed
+qLoivDP4SpGmrtWT01Nj,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-03-24T23:42:58.043Z,finished,2026-04-23T14:52:30.315Z,completed
+qLoivDP4SpGmrtWT01Nj,jzwxinm7-orvt-eay4-ecfhxv6ewmoe,05 | Long-Term Nurture - Monthly,2026-04-23T14:52:30.185Z,active,,
+sDbjqMVzaVp62BSKLVPA,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-03-26T00:05:46.638Z,finished,2026-03-26T00:10:46.516Z,completed
+sDbjqMVzaVp62BSKLVPA,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-03-26T15:20:56.142Z,finished,2026-04-25T20:39:52.799Z,completed
+sDbjqMVzaVp62BSKLVPA,clbdopsc-hhyd-eapk-fzqsjahx9j6e,07 | Missed Call Text Back,2026-04-07T10:50:28.407Z,finished,2026-04-07T10:50:28.237Z,completed
+sDbjqMVzaVp62BSKLVPA,jzwxinm7-orvt-eay4-ecfhxv6ewmoe,05 | Long-Term Nurture - Monthly,2026-04-25T20:39:52.787Z,active,,
+1F6gcqInkTY88mHwg2KD,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-03-30T15:50:40.444Z,finished,2026-03-30T15:55:40.652Z,completed
+1F6gcqInkTY88mHwg2KD,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-03-31T16:18:36.267Z,finished,2026-04-30T15:41:52.351Z,completed
+1F6gcqInkTY88mHwg2KD,jzwxinm7-orvt-eay4-ecfhxv6ewmoe,05 | Long-Term Nurture - Monthly,2026-04-30T15:41:52.415Z,active,,
+89HoZ9zDnki7XeZZOmEP,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-04-02T04:53:14.952Z,finished,2026-04-02T04:58:14.755Z,completed
+89HoZ9zDnki7XeZZOmEP,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-04-02T21:24:59.760Z,active,,
+89HoZ9zDnki7XeZZOmEP,9l3iaehy-2tzq-ptgl-hcpfqhlrzx5h,03 | Consult Booked - Reminders,2026-04-08T18:26:34.667Z,finished,2026-04-13T21:30:00.024Z,appointment time reached
+89HoZ9zDnki7XeZZOmEP,9qppax9h-qr0e-svdn-renruz6acevr,09 | Post-Consult Follow Up,2026-04-15T21:30:00.566Z,finished,2026-04-29T21:30:00.029Z,completed
+fQ5xj7t2ydf0K5uY8iH1,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-04-11T00:28:32.792Z,finished,2026-04-11T00:33:32.597Z,completed
+fQ5xj7t2ydf0K5uY8iH1,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-04-11T23:24:15.401Z,finished,2026-05-11T23:13:49.354Z,completed
+fQ5xj7t2ydf0K5uY8iH1,jzwxinm7-orvt-eay4-ecfhxv6ewmoe,05 | Long-Term Nurture - Monthly,2026-05-11T23:13:49.025Z,active,,
+V1CQ4hJhqAo0iEFJdED5,clbdopsc-hhyd-eapk-fzqsjahx9j6e,07 | Missed Call Text Back,2026-04-13T01:57:52.627Z,finished,2026-04-13T01:57:52.973Z,completed
+V1CQ4hJhqAo0iEFJdED5,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-04-13T16:02:19.611Z,finished,2026-05-13T17:49:03.542Z,completed
+V1CQ4hJhqAo0iEFJdED5,jzwxinm7-orvt-eay4-ecfhxv6ewmoe,05 | Long-Term Nurture - Monthly,2026-05-13T17:49:03.038Z,active,,
+nTAOivg3QxvEXHJX6nsB,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-04-15T02:59:16.850Z,finished,2026-04-15T03:04:16.813Z,completed
+nTAOivg3QxvEXHJX6nsB,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-04-15T16:53:18.668Z,finished,2026-04-15T17:56:59.895Z,contact replied
+EMXQdYG6INyNjORSSM4R,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-04-17T20:15:44.533Z,finished,2026-04-17T20:20:44.992Z,completed
+EMXQdYG6INyNjORSSM4R,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-04-18T23:36:53.224Z,finished,2026-05-18T20:41:27.960Z,completed
+EMXQdYG6INyNjORSSM4R,jzwxinm7-orvt-eay4-ecfhxv6ewmoe,05 | Long-Term Nurture - Monthly,2026-05-18T20:41:27.787Z,active,,
+XZAKS6zCeaRyML8QjEXA,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-05-08T20:41:09.101Z,finished,2026-05-08T20:46:09.825Z,completed
+XZAKS6zCeaRyML8QjEXA,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-05-09T15:04:59.530Z,active,,
+XZAKS6zCeaRyML8QjEXA,9l3iaehy-2tzq-ptgl-hcpfqhlrzx5h,03 | Consult Booked - Reminders,2026-05-12T01:29:49.840Z,finished,2026-05-13T21:00:00.161Z,appointment time reached
+XZAKS6zCeaRyML8QjEXA,9qppax9h-qr0e-svdn-renruz6acevr,09 | Post-Consult Follow Up,2026-05-15T21:00:00.551Z,finished,2026-05-29T21:00:00.141Z,completed
+DQ74q69dTcada4PR0Nfy,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-05-17T22:30:42.784Z,finished,2026-05-17T22:35:42.811Z,completed
+DQ74q69dTcada4PR0Nfy,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-05-18T16:43:18.555Z,finished,2026-06-17T17:50:40.026Z,completed
+DQ74q69dTcada4PR0Nfy,jzwxinm7-orvt-eay4-ecfhxv6ewmoe,05 | Long-Term Nurture - Monthly,2026-06-17T17:50:40.917Z,active,,
+jM1tLB4pyyRyMX5oZCsS,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-05-20T14:03:20.921Z,finished,2026-05-20T14:08:20.122Z,completed
+jM1tLB4pyyRyMX5oZCsS,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-05-21T14:11:19.462Z,active,,
+jM1tLB4pyyRyMX5oZCsS,9l3iaehy-2tzq-ptgl-hcpfqhlrzx5h,03 | Consult Booked - Reminders,2026-05-20T17:14:57.544Z,finished,2026-05-25T18:00:00.915Z,appointment time reached
+LWaYyDIfIZwXeozLH5q4,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-05-21T19:04:07.215Z,finished,2026-05-21T19:09:07.041Z,completed
+LWaYyDIfIZwXeozLH5q4,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-05-22T17:23:07.791Z,finished,2026-06-21T18:26:22.992Z,completed
+LWaYyDIfIZwXeozLH5q4,jzwxinm7-orvt-eay4-ecfhxv6ewmoe,05 | Long-Term Nurture - Monthly,2026-06-21T18:26:22.878Z,active,,
+3KFLKnq7XrBg8CXL0M9i,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-06-15T21:30:50.813Z,finished,2026-06-15T21:35:50.829Z,completed
+3KFLKnq7XrBg8CXL0M9i,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-06-16T21:16:05.178Z,finished,2026-07-16T21:05:33.149Z,completed
+3KFLKnq7XrBg8CXL0M9i,jzwxinm7-orvt-eay4-ecfhxv6ewmoe,05 | Long-Term Nurture - Monthly,2026-07-16T21:05:33.688Z,active,,
+8wd5J5b16dqYGTVPWEdg,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-06-17T19:04:17.957Z,finished,2026-06-17T19:09:17.655Z,completed
+8wd5J5b16dqYGTVPWEdg,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-06-18T21:27:01.363Z,finished,2026-07-18T21:00:16.871Z,completed
+8wd5J5b16dqYGTVPWEdg,jzwxinm7-orvt-eay4-ecfhxv6ewmoe,05 | Long-Term Nurture - Monthly,2026-07-18T21:00:16.634Z,active,,
+XC9g77y1bOeCvu0oEhOx,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-06-23T13:03:51.397Z,finished,2026-06-23T13:08:51.516Z,completed
+XC9g77y1bOeCvu0oEhOx,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-06-23T13:03:51.918Z,finished,2026-06-30T13:03:51.780Z,completed
+XC9g77y1bOeCvu0oEhOx,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-06-24T18:32:18.246Z,active,,
+XC9g77y1bOeCvu0oEhOx,9l3iaehy-2tzq-ptgl-hcpfqhlrzx5h,03 | Consult Booked - Reminders,2026-06-24T21:48:29.939Z,finished,2026-07-04T14:30:00.865Z,appointment time reached
+XC9g77y1bOeCvu0oEhOx,9qppax9h-qr0e-svdn-renruz6acevr,09 | Post-Consult Follow Up,2026-07-06T14:30:00.144Z,finished,2026-07-20T14:30:00.606Z,completed
+XC9g77y1bOeCvu0oEhOx,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-07-06T17:34:36.254Z,finished,2026-07-13T20:44:14.938Z,completed
+xBqp7pgysA5kd1UsjObC,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-07-02T07:35:29.698Z,finished,2026-07-02T07:40:29.229Z,completed
+xBqp7pgysA5kd1UsjObC,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-07-03T15:23:15.955Z,active,,
+xBqp7pgysA5kd1UsjObC,9l3iaehy-2tzq-ptgl-hcpfqhlrzx5h,03 | Consult Booked - Reminders,2026-07-03T20:41:10.399Z,finished,2026-07-06T15:00:00.939Z,appointment time reached
+xBqp7pgysA5kd1UsjObC,9qppax9h-qr0e-svdn-renruz6acevr,09 | Post-Consult Follow Up,2026-07-08T15:00:00.708Z,finished,2026-07-22T15:00:00.862Z,completed
+SUHA1U6dHZwvs1O38Ffa,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-07-21T17:34:26.943Z,finished,2026-07-21T17:39:26.234Z,completed
+SUHA1U6dHZwvs1O38Ffa,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-07-22T19:09:25.633Z,finished,2026-08-21T23:11:28.740Z,completed
+SUHA1U6dHZwvs1O38Ffa,jzwxinm7-orvt-eay4-ecfhxv6ewmoe,05 | Long-Term Nurture - Monthly,2026-08-21T23:11:28.871Z,active,,
+CGbHZIibp9foNlkgtqJ0,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-07-27T14:09:30.316Z,finished,2026-07-27T14:14:30.939Z,completed
+CGbHZIibp9foNlkgtqJ0,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-07-28T16:14:13.449Z,finished,2026-08-27T18:21:41.538Z,completed
+CGbHZIibp9foNlkgtqJ0,jzwxinm7-orvt-eay4-ecfhxv6ewmoe,05 | Long-Term Nurture - Monthly,2026-08-27T18:21:41.757Z,active,,
+zk80b8OySAM1MHcz8dXx,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-07-28T02:03:15.717Z,finished,2026-07-28T02:08:15.135Z,completed
+zk80b8OySAM1MHcz8dXx,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-07-28T17:07:26.877Z,finished,2026-08-01T20:39:36.916Z,contact DND
+4cc3PNr6RNrOIZ7cNgqh,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-07-28T03:41:42.014Z,finished,2026-07-28T03:46:42.479Z,completed
+4cc3PNr6RNrOIZ7cNgqh,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-07-28T03:41:42.223Z,finished,2026-08-04T03:41:42.298Z,completed
+4cc3PNr6RNrOIZ7cNgqh,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-07-28T18:56:38.364Z,finished,2026-08-27T23:08:03.092Z,completed
+4cc3PNr6RNrOIZ7cNgqh,jzwxinm7-orvt-eay4-ecfhxv6ewmoe,05 | Long-Term Nurture - Monthly,2026-08-27T23:08:03.409Z,active,,
+ymJTxD5JtNEE0tbpvomG,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-08-05T13:42:07.085Z,finished,2026-08-05T13:47:07.342Z,completed
+ymJTxD5JtNEE0tbpvomG,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-08-06T21:04:38.310Z,active,,
+ymJTxD5JtNEE0tbpvomG,9l3iaehy-2tzq-ptgl-hcpfqhlrzx5h,03 | Consult Booked - Reminders,2026-08-05T18:53:51.422Z,finished,2026-08-06T15:39:39.035Z,appointment cancelled
+ymJTxD5JtNEE0tbpvomG,9l3iaehy-2tzq-ptgl-hcpfqhlrzx5h,03 | Consult Booked - Reminders,2026-08-06T17:58:04.491Z,finished,2026-08-14T21:00:00.539Z,appointment time reached
+RmNN2r01HgV2V7WErYOT,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-08-20T12:47:22.937Z,finished,2026-08-20T12:52:22.949Z,completed
+RmNN2r01HgV2V7WErYOT,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-08-21T22:28:41.428Z,finished,2026-09-20T15:10:18.478Z,completed
+RmNN2r01HgV2V7WErYOT,jzwxinm7-orvt-eay4-ecfhxv6ewmoe,05 | Long-Term Nurture - Monthly,2026-09-20T15:10:18.798Z,active,,
+lItZjBKyLof06vu1M1p9,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-08-23T20:41:22.784Z,finished,2026-08-23T20:46:22.847Z,completed
+lItZjBKyLof06vu1M1p9,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-08-23T20:41:22.604Z,finished,2026-08-30T20:41:22.509Z,completed
+lItZjBKyLof06vu1M1p9,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-08-24T18:44:16.097Z,finished,2026-09-06T20:15:20.726Z,contact replied
+4m9AFzCXN5LvSHV0fkxu,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-08-28T00:16:25.673Z,finished,2026-08-28T00:21:25.243Z,completed
+4m9AFzCXN5LvSHV0fkxu,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-08-28T23:43:28.727Z,active,,
+4m9AFzCXN5LvSHV0fkxu,9l3iaehy-2tzq-ptgl-hcpfqhlrzx5h,03 | Consult Booked - Reminders,2026-09-10T18:03:16.232Z,finished,2026-09-17T13:30:00.689Z,appointment time reached
+6tz1gLaQbmlFXJKr3P5I,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-09-01T20:21:35.410Z,finished,2026-09-01T20:26:35.953Z,completed
+6tz1gLaQbmlFXJKr3P5I,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-09-01T20:21:35.992Z,finished,2026-09-08T20:21:35.391Z,completed
+6tz1gLaQbmlFXJKr3P5I,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-09-02T22:57:52.169Z,finished,2026-10-02T20:46:36.428Z,completed
+6tz1gLaQbmlFXJKr3P5I,jzwxinm7-orvt-eay4-ecfhxv6ewmoe,05 | Long-Term Nurture - Monthly,2026-10-02T20:46:36.782Z,active,,
+bdo4zLW9cCdNppock7L2,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-09-06T01:38:00.792Z,finished,2026-09-06T01:43:00.238Z,completed
+bdo4zLW9cCdNppock7L2,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-09-06T01:38:00.600Z,finished,2026-09-13T01:38:00.338Z,completed
+bdo4zLW9cCdNppock7L2,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-09-06T20:15:25.312Z,finished,2026-09-10T16:02:58.698Z,contact replied
+zPe9hB06wJpymDswpBcr,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-09-15T19:03:57.102Z,finished,2026-09-15T19:08:57.350Z,completed
+zPe9hB06wJpymDswpBcr,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-09-15T19:03:57.827Z,finished,2026-09-22T19:03:57.005Z,completed
+zPe9hB06wJpymDswpBcr,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-09-16T15:48:16.592Z,finished,2026-09-25T19:51:25.701Z,contact DND
+IpzMGni3WhRGfI2rVXWy,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-09-22T01:48:12.994Z,finished,2026-09-22T01:53:12.582Z,completed
+IpzMGni3WhRGfI2rVXWy,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-09-22T18:02:24.530Z,active,,
+IpzMGni3WhRGfI2rVXWy,9l3iaehy-2tzq-ptgl-hcpfqhlrzx5h,03 | Consult Booked - Reminders,2026-09-24T22:33:15.444Z,finished,2026-09-29T18:00:00.066Z,appointment time reached
+IpzMGni3WhRGfI2rVXWy,9qppax9h-qr0e-svdn-renruz6acevr,09 | Post-Consult Follow Up,2026-10-01T18:00:00.986Z,finished,2026-10-15T18:00:00.063Z,completed
+ZQSw5AbQTSDp2zw5Ogls,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-09-26T02:12:53.840Z,finished,2026-09-26T02:17:53.493Z,completed
+ZQSw5AbQTSDp2zw5Ogls,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-09-26T14:52:18.108Z,active,,
+ZQSw5AbQTSDp2zw5Ogls,9l3iaehy-2tzq-ptgl-hcpfqhlrzx5h,03 | Consult Booked - Reminders,2026-09-26T15:02:09.303Z,finished,2026-09-29T13:00:00.664Z,appointment time reached
+pRhcYunX6wV6fASVzVN1,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-10-01T14:35:08.095Z,finished,2026-10-01T14:40:08.694Z,completed
+pRhcYunX6wV6fASVzVN1,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-10-02T14:44:01.550Z,active,,
+9dkwwAfmOtiiRTFQEpTp,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-10-03T14:39:18.278Z,active,,
+9dkwwAfmOtiiRTFQEpTp,9l3iaehy-2tzq-ptgl-hcpfqhlrzx5h,03 | Consult Booked - Reminders,2026-10-04T08:56:43.420Z,finished,2026-10-06T20:30:00.737Z,appointment time reached
+KEXfixXNdzpdxcaSM9nD,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-10-04T10:59:53.907Z,finished,2026-10-04T11:04:53.252Z,completed
+KEXfixXNdzpdxcaSM9nD,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-10-05T14:21:11.084Z,active,,
+C9hkuCDKxskJecaDWFfV,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-10-08T20:59:46.374Z,finished,2026-10-08T21:04:46.060Z,completed
+C9hkuCDKxskJecaDWFfV,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-10-08T20:59:46.734Z,finished,2026-10-15T20:59:46.690Z,completed
+C9hkuCDKxskJecaDWFfV,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-10-09T17:11:35.294Z,active,,
+NuylP0wuoxiJ6x11qpdc,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-10-20T15:55:13.997Z,finished,2026-10-20T16:00:13.337Z,completed
+NuylP0wuoxiJ6x11qpdc,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-10-20T15:55:13.860Z,finished,2026-10-27T15:55:13.330Z,completed
+NuylP0wuoxiJ6x11qpdc,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-10-21T18:34:18.523Z,active,,
+GTA4veCaQ90l5UkysaCZ,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-10-21T01:56:06.425Z,finished,2026-10-21T02:01:06.066Z,completed
+GTA4veCaQ90l5UkysaCZ,vwgwkdrz-favp-6qtz-4v5clpmyosac,06 | Financing Interest,2026-10-21T01:56:06.121Z,finished,2026-10-28T01:56:06.947Z,completed
+GTA4veCaQ90l5UkysaCZ,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-10-21T21:18:53.005Z,active,,
+SfjQLxJL8AxHpKCzqhol,hezqljj7-s3rq-y1jl-4qiswzr8cabv,01 | New Lead - Speed to Lead,2026-10-22T03:23:05.831Z,finished,2026-10-22T03:28:05.477Z,completed
+SfjQLxJL8AxHpKCzqhol,lejtutqu-kjq7-9ve6-ml7flltlwdwx,02 | New Lead Nurture - 30 Day,2026-10-22T15:34:33.361Z,active,,
