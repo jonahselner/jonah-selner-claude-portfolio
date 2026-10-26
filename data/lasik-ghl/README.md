@@ -6,7 +6,8 @@ A year of fictional lead follow-up data for a made-up 3-location LASIK practice 
 
 ## Status
 
-`sample/` is a **review set**: 60 leads across Nov 2025–Oct 2026, so every era and workflow appears at least once. The full set, about 6,000 leads, is produced by the same generator with `--leads 6000`.
+- `sample/`: a 60-lead review set across Nov 2025–Oct 2026, small enough to read thread by thread.
+- `full/`: the full year. About 6,100 leads plus 1,800 existing patients who call in, 169k message rows, 43k calls, 1,400 Voice AI calls and 2,100 appointments. The message log is split into monthly files in `full/messages/` (by UTC date) to keep each file small. Stack them back together before analysis.
 
 ## Why it's split into many files
 
