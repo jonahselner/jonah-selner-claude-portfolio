@@ -8,10 +8,10 @@ One static page listing the apps, Claude skills and dashboards Jonah built. Host
 
 ## "Add X to the portfolio"
 
-1. Add one object to `window.PORTFOLIO` in `site/projects.js`. Do not edit `index.html` for content.
-   - `type`: `"app"`, `"skill"` or `"dashboard"` (the page groups and counts by type automatically)
-   - `id`, `name`, `tagline`, `problem`, 3–5 `highlights`, `stack`, up to 3 `stats`, `links`, `added: "YYYY-MM"`
-   - Mark the main link(s) `primary: true`. For a skill with no live demo, link the SKILL.md on GitHub.
+1. Add one object to `window.PORTFOLIO` in `site/projects.js`. Do not edit `index.html` for content. The field list and allowed values are in the comment at the top of `projects.js`.
+   - Tiles are app-store style and must stay short: a ~15-word `tagline`, up to 2 `stats`, and the detail (`why`, up to 3 `points`, `tech`) folds under "How it works".
+   - Pick an `icon` and `tone` that differ from the neighboring tiles.
+   - Exactly one link is `primary: true` (the tile's button). Other links show under "How it works". For a skill, copy its files to `skills/<name>/` and link the SKILL.md on GitHub.
 2. Get the facts from the thing itself (its repo, README, live URL), not from guesses. Ask Jonah for anything missing (links, numbers).
 3. Voice follows the Boost Patients design system: concrete, plain verbs, short sentences, sentence case, numbers with their source.
 4. Check it renders (desktop + 390px mobile), then redeploy the `site/` files to the Vercel project with `target: "production"`, and commit to this repo.
