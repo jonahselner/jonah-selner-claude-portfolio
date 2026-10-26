@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: gate-question-partial-upload
+context:
+  scaffold_script: place-files.sh
+expected_outcome: |
+  Acknowledges two uploads and asks exactly "Are you done uploading all your people?" without producing any verdicts or documents.

@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: video-interviews-no-human-review
+context:
+  scaffold_script: place-files.sh
+expected_outcome: |
+  Processes both videos itself (frames + voice metrics), with no recommendation that the team watch the videos.
+  Sofía GREEN (or YELLOW only via a recruiter ask, not a viewing task); Jorge RED (know-it-all, money-driven, comprehension issues, messy setup with another person visible, flat delivery).
+  Accent is described honestly as not directly assessed. Exec summary + 2 reviews, one page each.

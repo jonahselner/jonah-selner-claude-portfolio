@@ -1,0 +1,11 @@
+schema_version: "1.1"
+name: mixed-batch-five
+context:
+  scaffold_script: place-files.sh
+expected_outcome: |
+  Five candidates screened without re-asking the gate question (user said that's everyone).
+  María GREEN; Carlos RED (job-hopping, sales/stepping-stone, know-it-all, blames employers, mornings-only is fine but other reds dominate);
+  Daniela not RED (Spanish implied by Colombian background and bilingual queue; resume only);
+  Luis YELLOW or GREEN with a concrete check on limited phone tenure;
+  Valeria YELLOW flagging that the recruiter screened her for the wrong role/shift, with age/marital/children ignored.
+  One Executive Summary docx plus five Candidate Review docx, each one page.

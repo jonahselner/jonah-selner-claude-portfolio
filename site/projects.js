@@ -78,6 +78,49 @@ window.PORTFOLIO = [
     added: "2026-10",
   },
   {
+    id: "concierge-candidate-screening",
+    type: "skill",
+    name: "Concierge candidate screening",
+    tagline:
+      "Drop in a batch of resumes, recruiter transcripts and interview videos. Claude calls each candidate GREEN, YELLOW or RED and writes a one-page summary for the recruiter plus a one-page review per person.",
+    problem:
+      "We hire bilingual patient concierges in Latin America through an outside recruiter. Every interview slot spent on a weak fit is wasted, and a thin resume or a shallow recruiter screen can hide a great candidate.",
+    highlights: [
+      "Scores each candidate on 10 criteria with clear non-negotiables. Every YELLOW comes with one specific check and what each answer means: \"confirms a weekend shift → GREEN, weekdays only → RED\"",
+      "Handles the recruiter videos so nobody has to watch them: pulls frames to check the interview setup and measures pitch and volume variation in the candidate's answers as a read on energy",
+      "Says plainly what it can't judge. Accent can't be heard from files, so it reads the transcript for comprehension problems and leaves the rest to the live interview",
+      "Catches the misses people make in both directions, like a recruiter screening for the wrong role, or a Colombian candidate who doesn't list Spanish because it's obvious",
+      "Ignores age, sex, family status and appearance, even when a resume lists them",
+    ],
+    stack: ["Claude Skill", "SKILL.md", "Python", "ffmpeg", "python-docx", "skill-creator evals"],
+    stats: [
+      { value: "10", label: "Rubric criteria" },
+      { value: "18 / 18", label: "Test checks passed" },
+      { value: "1 page", label: "Per document" },
+    ],
+    note: "Tested on 3 synthetic batches. The same prompts without the skill passed 39% of the checks.",
+    links: [
+      {
+        label: "Read the SKILL.md",
+        url: "https://github.com/jonahselner/jonah-selner-claude-portfolio/blob/main/skills/concierge-candidate-screening/SKILL.md",
+        primary: true,
+      },
+      {
+        label: "Sample summary (PDF)",
+        url: "https://github.com/jonahselner/jonah-selner-claude-portfolio/blob/main/skills/concierge-candidate-screening/samples/Sample_Executive_Summary.pdf",
+      },
+      {
+        label: "Sample review (PDF)",
+        url: "https://github.com/jonahselner/jonah-selner-claude-portfolio/blob/main/skills/concierge-candidate-screening/samples/Sample_Candidate_Review_YELLOW.pdf",
+      },
+      {
+        label: "Test cases",
+        url: "https://github.com/jonahselner/jonah-selner-claude-portfolio/tree/main/skills/concierge-candidate-screening/evals",
+      },
+    ],
+    added: "2026-10",
+  },
+  {
     id: "aesthetics-consult-router",
     type: "skill",
     name: "Aesthetic consult booking",
