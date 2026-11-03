@@ -110,7 +110,7 @@ window.PORTFOLIO = [
     tagline: "Replies to a practice's web leads within seconds, answers from that practice's knowledge base, then hands them to a scheduler.",
     builtWith: ["AI texting agent", "Master prompt + per-practice knowledge base"],
     stats: [
-      { value: "24/7", label: "first reply, nights and weekends" },
+      { value: "100,000s", label: "texts sent for client practices" },
       { value: "Dozens", label: "practices live after a beta" },
     ],
     why: "Leads used to get silence, then an auto text that still needed a person to reply. Most practices answer web leads in hours, but the odds of even reaching a lead drop within minutes.",
