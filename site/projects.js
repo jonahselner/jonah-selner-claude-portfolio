@@ -3,14 +3,16 @@
   Keep every field short: someone hiring should get each tile in five seconds.
 
   id         unique kebab-case slug (the tile's #anchor)
-  type       "app" | "skill" | "dashboard"
+  type       "feature" | "app" | "skill" | "dashboard"
+             "feature" is the client-facing work, shown first as a wide card: up to 4 stats,
+             points shown open (not folded), and up to 3 links. Use it sparingly.
   name       display name
   icon       "timer" | "phone" | "pen" | "split" | "star" | "users" | "chart" | "mail" | "spark"
   tone       icon tile color: "blue" | "navy" | "deep" | "orange"
   subtitle   4 to 8 plain words under the name: what it is, for someone who has never seen it
   tagline    one sentence, about 15 to 20 words: what it does
   builtWith  AI tools, shown under "How it works", e.g. ["Claude Code"], ["ChatGPT Codex", "Claude Code"], ["Claude Skill", "Evals"]
-  stats      up to 2 { value, label } proof points
+  stats      up to 2 { value, label } proof points (up to 4 on a feature)
   why        one or two sentences, shown under "How it works"
   points     up to 3 short bullets, shown under "How it works"
   tech       optional small tech labels, shown under "How it works"
@@ -102,27 +104,28 @@ window.PORTFOLIO = [
   },
   {
     id: "speed-to-lead",
-    type: "app",
+    type: "feature",
     name: "Speed-to-lead texting agent",
     icon: "mail",
     tone: "orange",
-    subtitle: "Texts new leads back in seconds, any hour",
-    tagline: "Replies to a practice's web leads within seconds, answers from that practice's knowledge base, then hands off to a human.",
+    subtitle: "Client-facing AI · live at dozens of practices",
+    tagline: "When a patient fills out a practice's web form, this agent texts back within about a minute, answers from that practice's knowledge base, and hands off to a person when it's time.",
     builtWith: ["AI texting agent", "Master prompt + per-practice knowledge base"],
     stats: [
+      { value: "~60 sec", label: "to first text, down from hours or days" },
+      { value: "Dozens", label: "client practices live" },
       { value: "100,000s", label: "texts sent for client practices" },
-      { value: "Dozens", label: "practices live after a beta" },
+      { value: "Me", label: "wrote the original prompt, led the beta and rollout" },
     ],
-    why: "Leads used to get silence, then an auto text that still needed a person to reply. Most practices answer web leads in hours, but the odds of even reaching a lead drop within minutes.",
+    why: "Before this, most practices only called their web leads back, often hours or days later. Leads go cold in minutes.",
     points: [
-      "One shared master prompt; each practice gets its own procedures, pricing rules, calendars and locations",
-      "Hard limits outrank everything: no medical advice, no candidacy calls, no calendar access, emergencies go to 911",
-      "Human in the loop: when a patient is ready to book or hits an edge case, the AI turns off and a person takes over",
+      "One master prompt for every practice, plus a knowledge base each practice signs off on",
+      "Hard limits outrank everything: no medical advice, no candidacy calls, no calendar access",
+      "Human in the loop: automation turns the AI off when a patient is ready to book or the thread hits an edge case",
     ],
-    tech: ["Prompt engineering", "Knowledge base design", "Guardrails", "SMS"],
     note: "The example practice and sample threads are fictional.",
     links: [
-      { label: "See how it works", url: "speed-to-lead.html", primary: true },
+      { label: "Read the case study", url: "speed-to-lead.html", primary: true },
       { label: "Master prompt", url: "https://github.com/jonahselner/jonah-selner-claude-portfolio/blob/main/agents/speed-to-lead-texting/master-prompt.md" },
       { label: "Example knowledge base", url: "https://github.com/jonahselner/jonah-selner-claude-portfolio/blob/main/agents/speed-to-lead-texting/example-knowledge-base.md" },
     ],

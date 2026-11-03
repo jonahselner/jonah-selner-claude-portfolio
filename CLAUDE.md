@@ -8,7 +8,7 @@ One static page listing the apps, Claude skills and dashboards Jonah built. Host
 
 ## "Add X to the portfolio"
 
-1. Add one object to `window.PORTFOLIO` in `site/projects.js`. Do not edit `index.html` for content. The field list and allowed values are in the comment at the top of `projects.js`.
+1. Add one object to `window.PORTFOLIO` in `site/projects.js`. Client-facing work uses `type: "feature"` (a wide card above Apps, linking to its own case-study page in `site/`). Do not edit `index.html` for content. The field list and allowed values are in the comment at the top of `projects.js`.
    - Tiles are app-store style and must stay short: a ~15-word `tagline`, up to 2 `stats`, and the detail (`why`, up to 3 `points`, `tech`) folds under "How it works".
    - Pick an `icon` and `tone` that differ from the neighboring tiles.
    - Exactly one link is `primary: true` (the tile's button). Other links show under "How it works". For a skill, copy its files to `skills/<name>/` and link the SKILL.md on GitHub.

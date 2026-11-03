@@ -95,6 +95,25 @@ details[open] summary svg{transform:rotate(180deg)}
 .more .links a:hover{text-decoration:underline}
 .note{font-size:12px;line-height:16px;margin-top:10px}
 
+
+/* Feature (client-facing) */
+.feature{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:28px;background:#fff;border:1px solid var(--border);border-radius:var(--radius-xl);padding:28px;box-shadow:var(--shadow-card);scroll-margin-top:80px;position:relative;overflow:hidden}
+.feature::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.feature .meta h3{font-size:26px;line-height:30px;letter-spacing:-.6px}
+.feature .tagline{font-size:17px;line-height:26px}
+.feature .why{font-size:15px;line-height:23px;margin:0 0 12px}
+.feature ul{margin:0;padding-left:18px;font-size:15px;line-height:23px;color:var(--ink)}
+.feature li{margin-bottom:6px}
+.fstats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;align-content:start}
+.fstats .stat{background:var(--navy-950);border-radius:var(--radius-md);padding:14px 16px}
+.fstats .stat b{color:#fff;font-size:26px;line-height:30px}
+.fstats .stat span{color:var(--on-dark-muted);font-size:13px;line-height:18px}
+.fbtns{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;margin-top:18px}
+.fbtns a.sec{display:inline-flex;align-items:center;gap:4px;font-weight:600;font-size:14px;text-decoration:none}
+.fbtns a.sec:hover{text-decoration:underline}
+.fbtns a.sec svg{width:14px;height:14px}
+.feature .note{grid-column:1/-1;margin-top:0}
+
 /* About */
 .about{margin-top:48px;background:var(--navy-950);color:var(--on-dark-muted);position:relative;overflow:hidden}
 .about::before{content:"";position:absolute;right:-140px;top:-180px;width:520px;height:520px;border-radius:50%;background:radial-gradient(closest-side,rgba(61,115,196,.35),transparent)}
@@ -106,7 +125,7 @@ footer{padding:20px 0;font-size:12px;line-height:16px;background:var(--surface)}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .hidden{display:none!important}
 
-@media (max-width:860px){.grid{grid-template-columns:1fr}}
+@media (max-width:860px){.grid{grid-template-columns:1fr}.feature{grid-template-columns:1fr;padding:22px}}
 @media (max-width:560px){
   .wrap{padding:0 16px}
   .hero .wrap{padding-top:28px;padding-bottom:28px}
@@ -139,7 +158,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <div><b>Jonah Selner</b><span>Co-founder, Boost</span></div>
     </div>
     <h1>Real operating problems, solved with <em>Claude and ChatGPT</em>.</h1>
-    <p class="lead">Apps and Claude skills I built while running Boost, a patient engagement company for elective and specialty medical practices.</p>
+    <p class="lead">A client-facing AI agent, plus the apps and Claude skills I built while running Boost, a patient engagement company for elective and specialty medical practices.</p>
     <div class="chips" id="chips"></div>
   </div>
 </header>
@@ -160,6 +179,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 <script>
 (function(){
   var TYPES = [
+    {key:"feature", label:"For clients", one:"Client-facing agent", blurb:"The AI we put in front of our clients' patients"},
     {key:"app", label:"Apps", one:"App", blurb:"Working web apps with live demos"},
     {key:"skill", label:"Skills", one:"Skill", blurb:"Workflows Claude runs the same way every time"},
     {key:"dashboard", label:"Dashboards", one:"Dashboard", blurb:"Dashboards on sample data"}
@@ -208,6 +228,25 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     '</article>';
   }
 
+  function feature(p){
+    var links = p.links||[];
+    var primary = links.filter(function(l){return l.primary;})[0] || links[0];
+    var others = links.filter(function(l){return l!==primary;});
+    return '<article class="feature" id="'+esc(p.id)+'">'+
+      '<div>'+
+        '<div class="head"><div class="icon tone-'+esc(p.tone||"blue")+'">'+svg(ICONS[p.icon]||ICONS.spark)+'</div>'+
+        '<div class="meta"><h3>'+esc(p.name)+'</h3><div class="by">'+esc(p.subtitle||"")+'</div></div></div>'+
+        '<p class="tagline">'+esc(p.tagline)+'</p>'+
+        (p.why?'<p class="why">'+esc(p.why)+'</p>':'')+
+        ((p.points||[]).length?'<ul>'+p.points.slice(0,3).map(function(x){return '<li>'+esc(x)+'</li>';}).join("")+'</ul>':'')+
+        '<div class="fbtns">'+(primary?'<a class="get" href="'+esc(primary.url)+'">'+esc(primary.label)+ARROW+'</a>':'')+
+          others.map(function(l){return '<a class="sec" href="'+esc(l.url)+'" target="_blank" rel="noopener">'+esc(l.label)+ARROW+'</a>';}).join("")+'</div>'+
+      '</div>'+
+      '<div class="fstats">'+(p.stats||[]).slice(0,4).map(function(s){return '<div class="stat"><b>'+esc(s.value)+'</b><span>'+esc(s.label)+'</span></div>';}).join("")+'</div>'+
+      (p.note?'<div class="note">'+esc(p.note)+'</div>':'')+
+    '</article>';
+  }
+
   var shown = TYPES.filter(function(t){return count(t.key)>0;});
 
   document.getElementById("chips").innerHTML =
@@ -218,7 +257,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     var list = items.filter(function(i){return i.type===t.key;});
     return '<section class="group" data-type="'+t.key+'" id="'+t.key+'s"><div class="wrap">'+
       '<div class="group-head"><h2>'+t.label+'</h2><span>'+esc(t.blurb)+'</span></div>'+
-      '<div class="grid">'+list.map(function(p){return tile(p,t);}).join("")+'</div></div></section>';
+      (t.key==="feature" ? list.map(feature).join("") : '<div class="grid">'+list.map(function(p){return tile(p,t);}).join("")+'</div>')+'</div></section>';
   }).join("");
 
   var filters = document.getElementById("filters");

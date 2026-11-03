@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Speed-to-lead texting agent · Jonah Selner</title>
+<title>Speed-to-lead agent case study · Jonah Selner</title>
 <meta name="description" content="An AI texting agent that replies to a practice's web leads within seconds, answers from that practice's knowledge base, stays inside strict guardrails, and hands ready patients to a human scheduler.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -176,6 +176,62 @@ footer{padding:20px 0;font-size:12px;line-height:16px;background:var(--surface);
   .row{grid-template-columns:1fr;gap:2px}
   .card{padding:18px}
 }
+
+/* Case study additions */
+.kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:4px 0 16px}
+.kpis div{background:var(--navy-950);border-radius:var(--radius-md);padding:12px 14px}
+.kpis b{display:block;color:#fff;font-size:24px;line-height:28px;letter-spacing:-.4px}
+.kpis span{display:block;color:var(--on-dark-muted);font-size:12px;line-height:16px;margin-top:2px}
+.role{font-size:15px;line-height:23px;background:var(--surface-accent);border-radius:var(--radius-md);padding:12px 14px;color:var(--ink)}
+.role b{color:var(--brand-blue-deep)}
+.toc{position:sticky;top:60px;z-index:9;background:rgba(247,249,252,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.toc .wrap{display:flex;gap:4px;overflow-x:auto;padding-top:8px;padding-bottom:8px;scrollbar-width:none}
+.toc .wrap::-webkit-scrollbar{display:none}
+.toc a{flex:none;font-size:13px;font-weight:600;color:var(--ink-muted);text-decoration:none;padding:6px 10px;border-radius:999px}
+.toc a:hover{background:var(--surface-accent);color:var(--brand-blue-deep)}
+section.block{scroll-margin-top:110px}
+.arch{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1.5fr) auto minmax(0,1fr) auto minmax(0,1fr);gap:10px;align-items:stretch;margin-top:20px}
+.arch .arrow{display:grid;place-items:center;font-size:22px;font-weight:700;color:var(--border-strong)}
+.node{background:#fff;border:1px solid var(--border);border-radius:var(--radius-lg);padding:14px;box-shadow:var(--shadow-card)}
+.node .k{display:block;font-size:11px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:var(--brand-blue)}
+.node b{display:block;color:var(--ink);font-size:16px;line-height:21px;margin:4px 0 6px}
+.node small{display:block;font-size:13px;line-height:18px}
+.node.ai{background:var(--navy-950);border-color:var(--navy-950)}
+.node.ai .k{color:var(--brand-blue-300)}.node.ai b{color:#fff}
+.parts{display:grid;gap:6px;margin-top:4px}
+.parts span{background:rgba(255,255,255,.08);border-radius:8px;padding:6px 9px;color:#fff;font-size:13px;font-weight:600;line-height:17px}
+.parts em{display:block;font-style:normal;font-weight:400;color:var(--on-dark-muted);font-size:12px}
+.node.human{border-color:var(--brand-blue-300);box-shadow:0 0 0 3px var(--surface-accent),var(--shadow-card)}
+.fine{font-size:14px;line-height:21px;margin-top:14px;max-width:80ch}
+.decs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:20px}
+.dec .num{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:8px;background:var(--brand-blue);color:#fff;font-weight:700;font-size:13px}
+.dec h3{font-size:18px;line-height:24px;margin:10px 0 6px}
+.dec p{font-size:15px;line-height:23px;margin:0 0 8px}
+.dec .why{margin:0;padding-top:10px;border-top:1px solid var(--border);font-size:14px;line-height:21px}
+.dec .why b{color:var(--ink)}
+.sop{list-style:none;counter-reset:s;margin:20px 0 18px;padding:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}
+.sop li{counter-increment:s;background:#fff;border:1px solid var(--border);border-radius:var(--radius-md);padding:12px;font-size:13px;line-height:18px}
+.sop li::before{content:counter(s);display:inline-grid;place-items:center;width:22px;height:22px;border-radius:6px;background:var(--surface-accent);color:var(--brand-blue-deep);font-weight:700;font-size:12px;margin-bottom:8px}
+.sop li:nth-child(5){border-color:var(--brand-orange);background:#fffaf0}
+.sop b{display:block;color:var(--ink);font-size:14px;margin-bottom:2px}
+.lessons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:20px}
+.lessons .card{padding:18px}
+.lessons h3{font-size:16px;line-height:21px;margin-bottom:6px}
+.lessons p{font-size:14px;line-height:21px;margin:0}
+.steps.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media (max-width:980px){
+  .arch{grid-template-columns:1fr}
+  .arch .arrow{transform:rotate(90deg);height:18px}
+  .sop{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .steps.four{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:700px){
+  .decs,.lessons,.steps.four{grid-template-columns:1fr}
+  .sop{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .kpis{grid-template-columns:1fr 1fr 1fr;gap:6px}
+  .kpis b{font-size:19px}
+  .kpis div{padding:10px}
+}
 </style>
 </head>
 <body>
@@ -190,19 +246,15 @@ footer{padding:20px 0;font-size:12px;line-height:16px;background:var(--surface);
 <header class="hero">
   <div class="wrap">
     <div>
-      <div class="eyebrow">App · AI texting agent</div>
+      <div class="eyebrow">Case study · Client-facing AI</div>
       <h1>Speed-to-lead texting agent</h1>
-      <p class="lead">When someone fills out a practice's contact form, this agent texts them back within seconds, day or night. It answers their questions from that practice's knowledge base, stays inside strict guardrails, and keeps a human in the loop: the moment a patient is ready to book, or the conversation hits an edge case, the AI turns off and a person takes over.</p>
-      <div class="chips">
-        <span class="chip">Elective healthcare</span>
-        <span class="chip">English and Spanish</span>
-        <span class="chip">Live at dozens of practices</span>
-        <span class="chip">Hundreds of thousands of texts sent</span>
+      <p class="lead">Our clients' web leads used to wait hours or days for a phone call. I built an AI texting agent that replies in about a minute, answers questions from each practice's own knowledge base, and hands the conversation to a person when it's time. We rolled it out to dozens of practices.</p>
+      <div class="kpis">
+        <div><b>~60 sec</b><span>to first text, down from hours or days</span></div>
+        <div><b>Dozens</b><span>client practices live</span></div>
+        <div><b>100,000s</b><span>texts sent for client practices</span></div>
       </div>
-      <div class="cta">
-        <a class="btn" href="https://github.com/jonahselner/jonah-selner-claude-portfolio/blob/main/agents/speed-to-lead-texting/master-prompt.md" target="_blank" rel="noopener">Read the master prompt</a>
-        <a class="btn ghost" href="#guardrails">See the guardrails</a>
-      </div>
+      <div class="role"><b>My role.</b> I wrote the original master prompt, prototyped it with a few clients, ran the beta and led the rollout. Our team has run and improved it for the past couple of years.</div>
     </div>
 
     <div class="phone" aria-label="Sample conversations">
@@ -220,33 +272,37 @@ footer{padding:20px 0;font-size:12px;line-height:16px;background:var(--surface);
   </div>
 </header>
 
+<div class="toc"><div class="wrap">
+  <a href="#problem">Problem</a><a href="#architecture">How it works</a><a href="#decisions">Design decisions</a><a href="#onboarding">Onboarding</a><a href="#guardrails">Guardrails</a><a href="#human-in-the-loop">Human in the loop</a><a href="#iteration">Iteration</a><a href="#rollout">Rollout</a>
+</div></div>
+
 <main>
 
-<section class="block">
+<section class="block" id="problem">
   <div class="wrap">
     <div class="head">
-      <div class="eyebrow">The problem</div>
+      <div class="eyebrow">01 · The problem</div>
       <h2>Three versions of what happens after "Submit"</h2>
-      <p>A web form lead is someone who just raised their hand. What the practice does in the next few minutes decides a lot. Here's how that moment changed at Boost.</p>
+      <p>A web form lead is someone who just raised their hand. What the practice does in the next few minutes decides a lot. Here's how that moment changed for our clients.</p>
     </div>
     <div class="stages">
       <div class="card stage">
         <span class="n">1</span>
-        <h3>Nothing happens</h3>
-        <p>The patient fills out the form and hits submit. Then silence until someone at the practice gets to it, often hours later, sometimes the next day.</p>
-        <div class="res"><b>What the patient feels:</b> ignored. Then phone tag, voicemails, and a good chance they've already called someone else.</div>
+        <h3>A phone call, eventually</h3>
+        <p>Most practices weren't texting leads at all. They called back, often hours or days later, and the patient heard nothing in between.</p>
+        <div class="res"><b>What the patient got:</b> silence, then phone tag and voicemails. Plenty of time to call someone else.</div>
       </div>
       <div class="card stage">
         <span class="n">2</span>
         <h3>An automated text</h3>
-        <p>"Thanks so much, we got your contact form. Is this John?" Instant, which helped. But the moment John replied, a person still had to see it and carry the conversation forward.</p>
-        <div class="res"><b>The catch:</b> the first touch was fast, the second wasn't. Questions at 9pm waited until morning.</div>
+        <p>"Thanks so much, we got your contact form. Is this John?" Instant, which helped. But the moment John replied, a person still had to see it and carry the conversation.</p>
+        <div class="res"><b>The catch:</b> the first touch was fast, the second wasn't. A question at 9pm waited until morning.</div>
       </div>
       <div class="card stage now">
         <span class="n">3</span>
         <h3>An AI agent that talks back</h3>
-        <p>The agent knows that practice's procedures, consult details, financing and locations. It answers questions right away, keeps the conversation warm, and asks about a consult at the right moments.</p>
-        <div class="res"><b>Human in the loop:</b> once the patient says yes, the AI turns off and a real person calls them to book. The AI never touches the calendar.</div>
+        <p>The patient gets a text from the practice within about a minute. The agent answers questions from that practice's knowledge base, keeps the conversation warm, and asks about a consult at the right moments.</p>
+        <div class="res"><b>Human in the loop:</b> once the patient says yes, the AI turns off and a real person calls to book.</div>
       </div>
     </div>
   </div>
@@ -274,17 +330,65 @@ footer{padding:20px 0;font-size:12px;line-height:16px;background:var(--surface);
         <a href="https://asset-downloads.zeiss.com/catalogs/download/med/4b9b467a-6b52-4324-adc9-4a3b43a3cf70/Web-generated-Lead-Analysis-via-Mystery-Shopping-in-LVC-Practices-White-Paper-US.pdf.pdf" target="_blank" rel="noopener">ZEISS and LeadEngage white paper, 2024</a>
       </div>
     </div>
-    <p class="after">Patients also want to text. In a 2021 HIMSS survey, nearly half of patients said they prefer texting their providers, and more than a third said they'd switch providers to get real-time texting. An AI agent covers the hours a team can't: nights, weekends, and the lunch rush when every line is busy.</p>
+    <p class="after">Patients also want to text. In a 2021 HIMSS survey, nearly half of patients said they prefer texting their providers, and more than a third said they'd switch providers to get real-time texting. An agent covers the hours a team can't: nights, weekends, and the lunch rush when every line is busy.</p>
   </div>
 </section>
 
-<section class="block">
+<section class="block" id="architecture">
   <div class="wrap">
     <div class="head">
-      <div class="eyebrow">Built per practice</div>
-      <h2>One master prompt, tailored to each practice</h2>
-      <p>Every practice runs the same master prompt: the voice, the conversation flow and the hard limits. What changes is a knowledge base we build with the practice at onboarding, from a set of questions about how they want leads handled.</p>
+      <div class="eyebrow">02 · How it works</div>
+      <h2>Four steps, and only one of them is the model</h2>
+      <p>The AI is one piece of a workflow. A form triggers it, a knowledge base grounds it, an actions layer and back-end automation decide when it stops, and a person finishes the job.</p>
     </div>
+    <div class="arch" aria-label="System diagram">
+      <div class="node"><span class="k">Trigger</span><b>Web form</b><small>Patient submits a practice's contact form. A webhook sends it to the CRM.</small></div>
+      <div class="arrow" aria-hidden="true">›</div>
+      <div class="node ai"><span class="k">AI agent</span><b>Texts the patient</b>
+        <div class="parts"><span>Master prompt<em>shared rules</em></span><span>Knowledge base<em>one per practice</em></span><span>Actions<em>tags and escalations</em></span></div>
+      </div>
+      <div class="arrow" aria-hidden="true">›</div>
+      <div class="node"><span class="k">Automation</span><b>Triggers turn the AI off</b><small>Ready to book, an escalation, or an edge case.</small></div>
+      <div class="arrow" aria-hidden="true">›</div>
+      <div class="node human"><span class="k">Human</span><b>Team member takes over</b><small>Calls to book, or reviews the thread and replies.</small></div>
+    </div>
+    <p class="fine">The first text usually goes out within 60 seconds. Exact timing depends on how each practice's form and webhooks are set up. Opt-outs (STOP) are handled by a separate setting at the platform level, outside the prompt.</p>
+  </div>
+</section>
+
+<section class="block" id="decisions">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">03 · Design decisions</div>
+      <h2>The choices that made it safe to scale</h2>
+      <p>Getting one agent to sound good for one practice is easy. Running it for dozens, in healthcare, without someone rewriting it every week took a few deliberate choices.</p>
+    </div>
+    <div class="decs">
+      <div class="card dec"><span class="num">1</span><h3>Split the rules from the facts</h3><p>The master prompt holds the voice, the conversation flow and the hard limits. Each practice's facts live in its own knowledge base.</p><p class="why"><b>Why:</b> a fix to the master prompt improves every practice at once, and a new practice means filling in a knowledge base, not writing a new prompt.</p></div>
+      <div class="card dec"><span class="num">2</span><h3>The AI never touches the calendar</h3><p>It can't offer, confirm or move appointment times, and it has no access to calendars or records.</p><p class="why"><b>Why:</b> booking changes a real doctor's schedule. That stays with a person. The agent's job is getting the patient to yes.</p></div>
+      <div class="card dec"><span class="num">3</span><h3>An explicit order of authority</h3><p>Hard limits, then actions, then conversation flow, then personality. When two rules conflict, the higher one wins.</p><p class="why"><b>Why:</b> a prompt with dozens of rules will contradict itself. "Always end with a question" and "stop asking once they say yes" can't both win, so the prompt says which does.</p></div>
+      <div class="card dec"><span class="num">4</span><h3>Tell it when to use each fact</h3><p>Every knowledge base section opens with a line like "use when asked about location or hours." FAQs say "use these answers directly."</p><p class="why"><b>Why:</b> the agent pulls the right block for the question in front of it, and the most common answers stay consistent from one patient to the next.</p></div>
+      <div class="card dec"><span class="num">5</span><h3>Eligibility is a setting, not a judgment</h3><p>Each practice lists its own "Requires Team Review" factors. If a patient mentions one, the agent stops moving toward a booking.</p><p class="why"><b>Why:</b> who's a candidate is a clinical call. The practice decides the triggers. The AI only recognizes them and steps back.</p></div>
+      <div class="card dec"><span class="num">6</span><h3>Patient messages are data, not instructions</h3><p>Rules come only from the system prompt. Anything a patient sends that tries to change them is treated as a manipulation attempt.</p><p class="why"><b>Why:</b> anyone can text "ignore your instructions." A public-facing agent has to assume someone will.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="onboarding">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">04 · Onboarding</div>
+      <h2>Every practice gets its own agent, built from an SOP</h2>
+      <p>The knowledge base is only as good as what the practice tells us, so we built a repeatable onboarding process around it.</p>
+    </div>
+    <ol class="sop">
+      <li><b>Intake form</b><span>The practice answers our questions ahead of time.</span></li>
+      <li><b>Recorded call</b><span>We dig deeper on a call and record it, so nothing depends on someone's notes.</span></li>
+      <li><b>Knowledge base</b><span>We build it from the call in the standard structure.</span></li>
+      <li><b>Practice signs off</b><span>The practice approves what the agent will say before it says it.</span></li>
+      <li><b>Try to break it</b><span>A test bot throws curveballs at the agent to find where it slips.</span></li>
+      <li><b>Go live</b><span>Leads start getting texts within about a minute.</span></li>
+    </ol>
     <div class="cfg">
       <div class="card">
         <h3>Which procedures we book</h3>
@@ -303,7 +407,7 @@ footer{padding:20px 0;font-size:12px;line-height:16px;background:var(--surface);
       </div>
       <div class="card">
         <h3>Who needs a human first</h3>
-        <p>Each practice can mark candidacy factors as "Requires Team Review." If a patient mentions one, the agent stops moving toward a booking and brings in a person. It never decides who is or isn't a candidate.</p>
+        <p>Each practice marks its own candidacy factors as "Requires Team Review." The agent never decides who is or isn't a candidate.</p>
         <div class="ex"><b>Example:</b> under 18, or pregnant or nursing, and asking about LASIK.</div>
       </div>
     </div>
@@ -313,7 +417,7 @@ footer{padding:20px 0;font-size:12px;line-height:16px;background:var(--surface);
 <section class="block" id="guardrails">
   <div class="wrap">
     <div class="head">
-      <div class="eyebrow">Guardrails</div>
+      <div class="eyebrow">05 · Guardrails</div>
       <h2>The part I spent the most time on</h2>
       <p>A friendly agent that's confidently wrong about a medical question is worse than no agent. So the prompt sets an order of authority. When two rules pull in different directions, the higher one wins, and the hard limits never bend for tone or flow.</p>
     </div>
@@ -357,9 +461,9 @@ footer{padding:20px 0;font-size:12px;line-height:16px;background:var(--surface);
 <section class="block" id="human-in-the-loop">
   <div class="wrap">
     <div class="head">
-      <div class="eyebrow">Human in the loop</div>
+      <div class="eyebrow">06 · Human in the loop</div>
       <h2>The AI knows when to step aside</h2>
-      <p>The agent starts conversations and keeps them moving. It doesn't get the final word. Automation watches each thread, and when it makes sense for a person to take over, it turns the AI off for that patient and hands the conversation to a team member, who reviews it and replies with their own judgment.</p>
+      <p>The agent starts conversations and keeps them moving. It doesn't get the final word. Triggers we set up on the back end watch each thread. When it makes sense for a person to take over, automation turns the AI off for that patient and hands the conversation to a team member, who reviews it and replies with their own judgment.</p>
     </div>
     <div class="hitl">
       <div class="card path go">
@@ -383,27 +487,36 @@ footer{padding:20px 0;font-size:12px;line-height:16px;background:var(--surface);
   </div>
 </section>
 
-<section class="block">
+<section class="block" id="iteration">
   <div class="wrap">
     <div class="head">
-      <div class="eyebrow">Voice</div>
-      <h2>Texts like a person, on purpose</h2>
-      <p>Patients can tell a script from a person in one message. The prompt spends real space on how to sound: match their energy, react when something lands, one question per text, and never the same opener twice. It bans "Great question" and "Great choice" outright, and the scheduling ask rotates so it never repeats word for word.</p>
+      <div class="eyebrow">07 · Iteration</div>
+      <h2>Rules that came from real conversations</h2>
+      <p>The first version of the prompt wasn't the one that scaled. Many of the rules came from patterns we noticed in live threads, and the prompt kept evolving as we read more of them. A few that made the cut:</p>
+    </div>
+    <div class="lessons">
+      <div class="card"><h3>One question per text</h3><p>Every text is easy to answer, and the conversation never feels like a form.</p></div>
+      <div class="card"><h3>Never ask to schedule twice in a row</h3><p>The agent checks its last message first. If it already asked, it asks something about the patient instead.</p></div>
+      <div class="card"><h3>Stop the moment they say yes</h3><p>No "what day works?" and no second confirmation. Thank them and hand off.</p></div>
+      <div class="card"><h3>Banned phrases</h3><p>No "Great question." No "Great choice" about a procedure, because it sounds like ordering off a menu.</p></div>
+      <div class="card"><h3>No dashes, ever</h3><p>Long dashes are a well-known tell of AI-written text. The agent rewrites the sentence instead.</p></div>
+      <div class="card"><h3>Close gently after two off-topic turns</h3><p>One warm acknowledgment, then a kind close with no booking ask, matched to the weight of what they shared.</p></div>
     </div>
   </div>
 </section>
 
-<section class="block">
+<section class="block" id="rollout">
   <div class="wrap">
     <div class="head">
-      <div class="eyebrow">Rollout</div>
-      <h2>How it went live</h2>
+      <div class="eyebrow">08 · Rollout</div>
+      <h2>From a prototype to dozens of practices</h2>
       <p>Over the past couple of years, we've sent hundreds of thousands of text messages for client practices.</p>
     </div>
-    <div class="steps">
-      <div class="card"><div class="k">Prototype</div><h3>A few practices</h3><p>Built the master prompt and the first knowledge bases with a small group of clients.</p></div>
-      <div class="card"><div class="k">Beta</div><h3>Beta sessions</h3><p>Ran beta sessions, read real threads, and tightened the rules wherever the agent drifted.</p></div>
-      <div class="card"><div class="k">Rollout</div><h3>Dozens of practices</h3><p>Rolled it out across dozens of client practices, each with its own knowledge base on the shared prompt.</p></div>
+    <div class="steps four">
+      <div class="card"><div class="k">Prototype</div><h3>A few practices</h3><p>I wrote the master prompt and built the first knowledge bases with a small group of clients.</p></div>
+      <div class="card"><div class="k">Beta</div><h3>Beta sessions</h3><p>We ran beta sessions, read real threads, and tightened the rules wherever the agent drifted.</p></div>
+      <div class="card"><div class="k">Rollout</div><h3>Dozens of practices</h3><p>Rolled out across dozens of client practices, each with its own knowledge base on the shared prompt.</p></div>
+      <div class="card"><div class="k">Since</div><h3>Run by the team</h3><p>I stepped back from the day-to-day. Our team runs it and keeps evolving the prompt.</p></div>
     </div>
   </div>
 </section>
@@ -413,7 +526,7 @@ footer{padding:20px 0;font-size:12px;line-height:16px;background:var(--surface);
     <div class="head">
       <div class="eyebrow">The files</div>
       <h2>Read the real thing</h2>
-      <p>The master prompt is the one we ran, with the practice-specific values swapped for placeholders. The knowledge base follows the structure of a real client's, rewritten for a fictional practice.</p>
+      <p>The master prompt is the one we ran, with practice-specific values swapped for placeholders. The knowledge base follows the structure of a real client's, rewritten for a fictional practice.</p>
     </div>
     <div class="files">
       <a class="card file" href="https://github.com/jonahselner/jonah-selner-claude-portfolio/blob/main/agents/speed-to-lead-texting/master-prompt.md" target="_blank" rel="noopener"><h3>Master prompt ↗</h3><p>Personality, conversation flow, scope rules and hard limits. Shared by every practice.</p></a>
@@ -423,6 +536,7 @@ footer{padding:20px 0;font-size:12px;line-height:16px;background:var(--surface);
 </section>
 
 </main>
+
 
 <section class="sources">
   <div class="wrap">
