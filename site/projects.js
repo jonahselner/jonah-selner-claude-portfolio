@@ -107,7 +107,7 @@ window.PORTFOLIO = [
     icon: "mail",
     tone: "orange",
     subtitle: "Texts new leads back in seconds, any hour",
-    tagline: "Replies to a practice's web leads within seconds, answers from that practice's knowledge base, then hands them to a scheduler.",
+    tagline: "Replies to a practice's web leads within seconds, answers from that practice's knowledge base, then hands off to a human.",
     builtWith: ["AI texting agent", "Master prompt + per-practice knowledge base"],
     stats: [
       { value: "100,000s", label: "texts sent for client practices" },
@@ -117,7 +117,7 @@ window.PORTFOLIO = [
     points: [
       "One shared master prompt; each practice gets its own procedures, pricing rules, calendars and locations",
       "Hard limits outrank everything: no medical advice, no candidacy calls, no calendar access, emergencies go to 911",
-      "Never books anyone itself. When a patient says yes, it stops and a team member takes over",
+      "Human in the loop: when a patient is ready to book or hits an edge case, the AI turns off and a person takes over",
     ],
     tech: ["Prompt engineering", "Knowledge base design", "Guardrails", "SMS"],
     note: "The example practice and sample threads are fictional.",

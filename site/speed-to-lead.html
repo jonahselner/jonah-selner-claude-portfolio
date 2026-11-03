@@ -122,6 +122,21 @@ section.block{padding:52px 0 8px}
 .row .then{color:var(--ink-muted)}
 .row .then q{color:var(--ink);font-style:italic;quotes:"“" "”"}
 
+
+/* Human in the loop */
+.hitl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:20px}
+.path .tag{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.4px;padding:4px 10px;border-radius:999px;margin-bottom:10px}
+.path.go .tag{background:var(--good-bg);color:var(--good)}
+.path.edge .tag{background:var(--warn-bg);color:#7a5200}
+.path h3{font-size:18px;line-height:24px;margin-bottom:6px}
+.path p{font-size:15px;line-height:23px}
+.path ul{margin:0;padding-left:18px;font-size:14px;line-height:21px}
+.path li{margin-bottom:4px}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:14px;padding-top:12px;border-top:1px solid var(--border);font-size:13px;font-weight:600;color:var(--ink)}
+.flow span{background:var(--surface-alt);border-radius:8px;padding:5px 9px}
+.flow i{font-style:normal;color:var(--border-strong)}
+@media (max-width:700px){.hitl{grid-template-columns:1fr}}
+
 /* Rollout */
 .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:20px}
 .steps .card h3{font-size:17px;margin:0 0 6px}
@@ -177,7 +192,7 @@ footer{padding:20px 0;font-size:12px;line-height:16px;background:var(--surface);
     <div>
       <div class="eyebrow">App · AI texting agent</div>
       <h1>Speed-to-lead texting agent</h1>
-      <p class="lead">When someone fills out a practice's contact form, this agent texts them back within seconds, day or night. It answers their questions from that practice's knowledge base, stays inside strict guardrails, and hands them to a human scheduler as soon as they're ready to book.</p>
+      <p class="lead">When someone fills out a practice's contact form, this agent texts them back within seconds, day or night. It answers their questions from that practice's knowledge base, stays inside strict guardrails, and keeps a human in the loop: the moment a patient is ready to book, or the conversation hits an edge case, the AI turns off and a person takes over.</p>
       <div class="chips">
         <span class="chip">Elective healthcare</span>
         <span class="chip">English and Spanish</span>
@@ -231,7 +246,7 @@ footer{padding:20px 0;font-size:12px;line-height:16px;background:var(--surface);
         <span class="n">3</span>
         <h3>An AI agent that talks back</h3>
         <p>The agent knows that practice's procedures, consult details, financing and locations. It answers questions right away, keeps the conversation warm, and asks about a consult at the right moments.</p>
-        <div class="res"><b>The handoff:</b> once the patient says yes, it stops and a team member books them. The AI never touches the calendar.</div>
+        <div class="res"><b>Human in the loop:</b> once the patient says yes, the AI turns off and a real person calls them to book. The AI never touches the calendar.</div>
       </div>
     </div>
   </div>
@@ -339,6 +354,35 @@ footer{padding:20px 0;font-size:12px;line-height:16px;background:var(--surface);
   </div>
 </section>
 
+<section class="block" id="human-in-the-loop">
+  <div class="wrap">
+    <div class="head">
+      <div class="eyebrow">Human in the loop</div>
+      <h2>The AI knows when to step aside</h2>
+      <p>The agent starts conversations and keeps them moving. It doesn't get the final word. Automation watches each thread, and when it makes sense for a person to take over, it turns the AI off for that patient and hands the conversation to a team member, who reviews it and replies with their own judgment.</p>
+    </div>
+    <div class="hitl">
+      <div class="card path go">
+        <span class="tag">Ready to book</span>
+        <h3>A real person books the appointment</h3>
+        <p>The moment a patient says yes, the AI thanks them and stops asking questions. Then a team member calls to find a time and get them on the calendar.</p>
+        <div class="flow"><span>Patient says yes</span><i>›</i><span>AI turns off</span><i>›</i><span>Team member calls</span></div>
+      </div>
+      <div class="card path edge">
+        <span class="tag">Edge case</span>
+        <h3>A person takes over the conversation</h3>
+        <p>When the thread goes somewhere the AI shouldn't handle alone, it gets punted to a human, for example:</p>
+        <ul>
+          <li>A candidacy factor the practice marked "Requires Team Review"</li>
+          <li>A price question at a practice that doesn't quote prices by text</li>
+          <li>Interest in a procedure we don't book for that practice</li>
+        </ul>
+        <div class="flow"><span>Edge case</span><i>›</i><span>AI turns off</span><i>›</i><span>Human reviews and replies</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="block">
   <div class="wrap">
     <div class="head">
@@ -406,13 +450,13 @@ footer{padding:20px 0;font-size:12px;line-height:16px;background:var(--surface);
       ["ai","About 90 minutes, and it's free.\n\nYou'll meet Dr. Solheim, do some testing, and walk out with a real recommendation.\n\nHow long have you been wearing contacts?"],
       ["lead","like 12 years lol. ok yeah let's book it"],
       ["ai","Oh I love that for you!!\n\nA team member will reach out to get you on the calendar. Talk soon, Maya!"],
-      ["sys go","Handoff → team books the consult"]
+      ["sys go","AI off → a team member calls to book"]
     ],
     clinical: [
       ["lead","I had PRK somewhere else 8 years ago and my vision is getting blurry again. Is that normal?"],
       ["ai","Thanks for sharing that, that's really helpful to know.\n\nThat one's a question for the doctor though. They'll go over your past surgery at the consult and walk you through what could work.\n\nWant to get a consultation on the calendar so you can get a real answer?"],
       ["lead","how much does it cost to redo it?"],
-      ["sys","Pricing question → escalated to team"],
+      ["sys","Pricing question → flagged for a human"],
       ["ai","Good news, the consult itself is free.\n\nI'll have someone from the team follow up on pricing so you get the right numbers for your situation.\n\nAnything else you're wondering about the consult in the meantime?"]
     ],
     limits: [
