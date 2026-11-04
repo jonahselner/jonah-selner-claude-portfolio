@@ -101,6 +101,7 @@ section{padding:28px 0}
 .foot{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-top:auto;padding-top:14px;border-top:1px solid var(--line)}
 .hu{display:inline-flex;align-items:center;gap:7px;color:#fff;font-size:14px;font-weight:500}
 .hu svg{width:16px;height:16px;color:var(--coral)}
+.hu em{font-style:normal;color:var(--fg-subtle);font-size:10.5px;margin-right:2px}
 .proof{color:var(--fg-subtle);font-size:11px}
 .more{margin-left:auto;display:flex;gap:14px}
 .more a{display:inline-flex;align-items:center;gap:4px;color:var(--fg-muted);text-decoration:none;font-size:11px}
@@ -207,7 +208,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
       '<div>'+goal(p)+'</div>'+
       '<div class="ba"><span class="b">'+esc(p.before)+'</span><span class="to">'+svg("arrowR")+'</span><span class="a grad">'+esc(p.after)+'</span><span class="lbl mono">'+esc(p.baLabel)+'</span></div>'+
       '<div class="steps">'+STEPS.map(function(s){return '<div class="step"><div class="h mono">'+svg(s[0])+s[1]+'</div><p>'+esc(p[s[0]])+'</p></div>';}).join("")+'</div>'+
-      '<div class="foot">'+(p.human?'<span class="hu">'+svg("human")+esc(p.human)+'</span>':'')+(p.proof?'<span class="proof mono">'+esc(p.proof)+'</span>':'')+
+      '<div class="foot">'+(p.human?'<span class="hu">'+svg("human")+'<em class="mono">Human in the loop</em>'+esc(p.human)+'</span>':'')+(p.proof?'<span class="proof mono">'+esc(p.proof)+'</span>':'')+
         (others.length?'<span class="more mono">'+others.map(function(l){return a(l,'',esc(l.label)+svg("ext"));}).join("")+'</span>':'')+'</div>'+
     '</article>';
   }
