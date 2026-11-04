@@ -140,7 +140,7 @@ window.PORTFOLIO = [
     before: "Hours",
     after: "60 sec",
     baLabel: "to first reply",
-    human: "A person books",
+    human: "A person books and takes edge cases",
     proof: "Rolled out to 100+ practices · 100,000s of texts",
     type: "feature",
     name: "Speed-to-lead texting agent",
