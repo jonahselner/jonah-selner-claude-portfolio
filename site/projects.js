@@ -176,7 +176,7 @@ window.PORTFOLIO = [
     before: "Hours",
     after: "5 min",
     baLabel: "to review a candidate batch",
-    human: "The team interviews",
+    human: "Hiring manager checks Claude's evidence",
     proof: "Green · yellow · red",
     type: "skill",
     name: "Candidate screener",
