@@ -76,9 +76,9 @@ section{padding:28px 0}
 
 .ba{display:flex;align-items:flex-end;gap:14px;flex-wrap:wrap}
 .ba .b{font-family:var(--display);font-size:44px;line-height:1;color:var(--fg-subtle);text-decoration:line-through;text-decoration-thickness:3px;text-decoration-color:rgba(254,115,98,.75)}
-.ba .to{color:var(--fg-subtle);padding-bottom:8px}
+.ba .to{color:var(--fg-subtle);padding-bottom:14px}
 .ba .to svg{width:26px;height:26px}
-.ba .a{font-family:var(--display);font-size:68px;line-height:.92}
+.ba .a{font-family:var(--display);font-size:68px;line-height:1.08;padding-bottom:2px}
 .ba .lbl{flex-basis:100%;color:var(--fg-subtle);font-size:11px}
 
 .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
@@ -185,7 +185,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
         (pr?a(pr,'btn',esc(pr.label)+svg("ext")):'')+'</div>'+
       '<div class="ba"><span class="b">'+esc(p.before)+'</span><span class="to">'+svg("arrowR")+'</span><span class="a grad">'+esc(p.after)+'</span><span class="lbl mono">'+esc(p.baLabel)+'</span></div>'+
       '<div class="steps">'+STEPS.map(function(s){return '<div class="step"><div class="h mono">'+svg(s[0])+s[1]+'</div><p>'+esc(p[s[0]])+'</p></div>';}).join("")+'</div>'+
-      '<div class="foot"><span class="hu">'+svg("human")+esc(p.human)+'</span><span class="proof mono">'+esc(p.proof)+'</span>'+
+      '<div class="foot">'+(p.human?'<span class="hu">'+svg("human")+esc(p.human)+'</span>':'')+(p.proof?'<span class="proof mono">'+esc(p.proof)+'</span>':'')+
         (others.length?'<span class="more mono">'+others.map(function(l){return a(l,'',esc(l.label)+svg("ext"));}).join("")+'</span>':'')+'</div>'+
     '</article>';
   }
