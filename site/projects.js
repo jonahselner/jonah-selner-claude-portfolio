@@ -68,7 +68,7 @@ window.PORTFOLIO = [
     before: "60+",
     after: "1",
     baLabel: "call policy format",
-    human: "Concierge runs the call",
+    human: "Staff upload, review and correct each import",
     proof: "CMS · Google sign-in · role permissions",
     type: "app",
     name: "Live call guide",
