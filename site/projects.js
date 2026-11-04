@@ -60,7 +60,7 @@ window.PORTFOLIO = [
   },
   {
     id: "boost-flow",
-    goal: "time",
+    goal: "quality",
     featured: 2,
     audit: "60+ messy Google Docs",
     optimize: "One 6-stage format",
