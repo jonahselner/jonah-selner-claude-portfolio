@@ -19,6 +19,13 @@
   note       optional footnote, e.g. "The demo uses sample data."
   links      [{ label, url, primary? }]; the primary link is the tile's main button
   added      "YYYY-MM"
+
+  Featured case studies (shown large, in order) also have:
+  featured   1, 2, 3...  position in the case-study section
+  audit      one sentence: what was broken and what it cost
+  optimize   one sentence: the redesigned process, human in the loop
+  automate   one sentence: what the AI does
+  result     up to 2 { value, label }
 */
 window.PORTFOLIO = [
   {
@@ -50,6 +57,11 @@ window.PORTFOLIO = [
   },
   {
     id: "boost-flow",
+    featured: 2,
+    audit: "Our call policies lived in 60+ Google Docs, each formatted differently. Nobody could open a new one and know where to look.",
+    optimize: "One standard format for every practice: six call stages from greeting to booking, with the emergency protocol built in.",
+    automate: "An AI import skill rewrites any uploaded policy into that format, inside a CMS that only Boost staff with permission can use.",
+    result: [{value: "60+", label: "call policies, one format"}, {value: "6", label: "call stages, every practice"}],
     type: "app",
     name: "Live call guide",
     icon: "phone",
@@ -77,6 +89,11 @@ window.PORTFOLIO = [
   },
   {
     id: "consult-finder",
+    featured: 3,
+    audit: "Agents on a live call aren't clinicians. They had to pick one of 7 consults, and the fee, while the caller waited.",
+    optimize: "One answer every time. Safety checks run first, and the agent asks one question only when it's truly 50/50.",
+    automate: "I built and tested the routing as a Claude skill, then turned it into rules that run instantly in the browser.",
+    result: [{value: "269 / 273", label: "catalog phrasings routed right"}, {value: "0", label: "caller details leave the screen"}],
     type: "app",
     name: "Consult Finder",
     icon: "split",
@@ -104,6 +121,11 @@ window.PORTFOLIO = [
   },
   {
     id: "speed-to-lead",
+    featured: 1,
+    audit: "Most practices didn't text new leads at all. They called back hours or days later, and patients got phone tag.",
+    optimize: "Text first, answer questions right away, and have a person call to book once the patient is ready. The AI never books.",
+    automate: "A web form triggers the agent. One master prompt plus a knowledge base per practice, and automation hands off to a person.",
+    result: [{value: "~60 sec", label: "to first text, down from hours or days"}, {value: "Dozens", label: "of practices live, 100,000s of texts"}],
     type: "feature",
     name: "Speed-to-lead texting agent",
     icon: "mail",
@@ -130,6 +152,11 @@ window.PORTFOLIO = [
   },
   {
     id: "concierge-candidate-screening",
+    featured: 4,
+    audit: "Our outside recruiter sent batches of resumes, transcripts and videos. Weak fits took interview slots, and thin resumes hid strong people.",
+    optimize: "A 10-point rubric with clear non-negotiables. Every YELLOW comes with the one question that settles it.",
+    automate: "A Claude skill reviews the whole batch, including the videos, and writes a one-page review per candidate. The team still interviews.",
+    result: [{value: "18 / 18", label: "test checks passed with the skill"}, {value: "39%", label: "same tests, without it"}],
     type: "skill",
     name: "Candidate screener",
     icon: "users",
