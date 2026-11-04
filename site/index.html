@@ -76,15 +76,15 @@ section{padding:28px 0}
 .case{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:20px;scroll-margin-top:80px;position:relative;overflow:hidden}
 .case::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:var(--grad)}
 .top{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:14px;align-items:center}
-.ic{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:var(--card-2);border:1px solid var(--line-strong);color:#fff}
+.top .goal{align-self:start}
+.ic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:var(--card-2);border:1px solid var(--line-strong);color:#fff}
 .ic svg{width:22px;height:22px}
-.top h3{color:#fff;font:700 20px/1.2 var(--sans);margin:0 0 3px}
+.top h3{color:#fff;font:700 26px/1.15 var(--sans);letter-spacing:-.4px;margin:0 0 4px}
 .top .mono{color:var(--fg-subtle);font-size:11px}
 .btn{display:inline-flex;align-items:center;gap:6px;padding:9px 15px;border-radius:999px;background:var(--grad);color:#fff;text-decoration:none;font:500 14px/1 var(--sans);white-space:nowrap;box-shadow:0 8px 22px -10px rgba(254,85,176,.7)}
 .btn:hover{filter:brightness(1.08)}
 .btn svg{width:14px;height:14px}
 
-.case>div:nth-child(2){margin-bottom:-10px}
 .ba{display:flex;align-items:flex-end;gap:14px;flex-wrap:wrap}
 .ba .b{font-family:var(--display);font-size:44px;line-height:1;color:var(--fg-subtle);text-decoration:line-through;text-decoration-thickness:3px;text-decoration-color:rgba(254,115,98,.75)}
 .ba .to{color:var(--fg-subtle);padding-bottom:14px}
@@ -93,15 +93,17 @@ section{padding:28px 0}
 .ba .lbl{flex-basis:100%;color:var(--fg-subtle);font-size:11px}
 
 .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-.step{background:var(--card-2);border:1px solid var(--line);border-radius:14px;padding:12px}
+.step{background:rgba(255,255,255,.04);border-radius:14px;padding:12px}
 .step .h{display:flex;align-items:center;gap:7px;color:var(--fg-subtle);font-size:10.5px;margin-bottom:8px}
 .step .h svg{width:15px;height:15px;color:var(--pink)}
 .step p{margin:0;color:#fff;font:500 15px/1.3 var(--sans)}
 
-.foot{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-top:auto;padding-top:14px;border-top:1px solid var(--line)}
-.hu{display:inline-flex;align-items:center;gap:7px;color:#fff;font-size:14px;font-weight:500}
-.hu svg{width:16px;height:16px;color:var(--coral)}
-.hu em{font-style:normal;white-space:nowrap;color:var(--fg-subtle);font-size:10.5px;margin-right:2px}
+.foot{display:flex;align-items:flex-end;justify-content:space-between;gap:12px 16px;margin-top:auto;padding-top:14px;border-top:1px solid var(--line)}
+.fl{display:flex;flex-direction:column;gap:6px;min-width:0}
+.hu{display:flex;flex-direction:column;gap:3px}
+.hu b{color:#fff;font-size:15px;font-weight:500;line-height:1.3}
+.hu svg{width:14px;height:14px;color:var(--coral)}
+.hu em{display:flex;align-items:center;gap:6px;font-style:normal;white-space:nowrap;color:var(--fg-subtle);font-size:10.5px}
 .proof{color:var(--fg-subtle);font-size:11px}
 .more{margin-left:auto;display:flex;gap:14px}
 .more a{display:inline-flex;align-items:center;gap:4px;color:var(--fg-muted);text-decoration:none;font-size:11px}
@@ -128,7 +130,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
   .links{gap:14px}
   .case{padding:18px}
   .top{grid-template-columns:auto minmax(0,1fr)}
-  .top .btn{grid-column:1/-1;justify-content:center}
+  .top .goal{grid-column:2;justify-self:start}
+  .top h3{font-size:22px}
+  .foot{flex-direction:column;align-items:stretch}
+  .foot .btn{justify-content:center}
   .steps{grid-template-columns:1fr}
   .step{display:flex;align-items:center;gap:12px}
   .step .h{margin:0;min-width:96px}
@@ -196,16 +201,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
 
 
   function card(p){
-    var pr=primary(p), others=(p.links||[]).filter(function(l){return l!==pr;}).slice(0,2);
+    var pr=primary(p);
     return '<article class="case" id="'+esc(p.id)+'">'+
       '<div class="top"><div class="ic">'+svg(p.icon)+'</div>'+
-        '<div><h3>'+esc(p.name)+'</h3><div class="mono">'+esc(p.subtitle||"")+'</div></div>'+
-        (pr?a(pr,'btn',esc(pr.label)+svg("ext")):'')+'</div>'+
-      '<div>'+goal(p)+'</div>'+
+        '<div><h3>'+esc(p.name)+'</h3><div class="mono sub2">'+esc(p.subtitle||"")+'</div></div>'+goal(p)+'</div>'+
       '<div class="ba"><span class="b">'+esc(p.before)+'</span><span class="to">'+svg("arrowR")+'</span><span class="a grad">'+esc(p.after)+'</span><span class="lbl mono">'+esc(p.baLabel)+'</span></div>'+
       '<div class="steps">'+STEPS.map(function(s){return '<div class="step"><div class="h mono">'+svg(s[0])+s[1]+'</div><p>'+esc(p[s[0]])+'</p></div>';}).join("")+'</div>'+
-      '<div class="foot">'+(p.human?'<span class="hu">'+svg("human")+'<em class="mono">Human in the loop</em>'+esc(p.human)+'</span>':'')+(p.proof?'<span class="proof mono">'+esc(p.proof)+'</span>':'')+
-        (others.length?'<span class="more mono">'+others.map(function(l){return a(l,'',esc(l.label)+svg("ext"));}).join("")+'</span>':'')+'</div>'+
+      '<div class="foot"><div class="fl">'+(p.human?'<span class="hu"><em class="mono">'+svg("human")+'Human in the loop</em><b>'+esc(p.human)+'</b></span>':'')+(p.proof?'<span class="proof mono">'+esc(p.proof)+'</span>':'')+'</div>'+
+        (pr?a(pr,'btn',esc(pr.label)+svg("ext")):'')+'</div>'+
     '</article>';
   }
   function row(p){

@@ -6,7 +6,7 @@
   type       "feature" | "app" | "skill" | "dashboard"
              "feature" is the client-facing work, shown first as a wide card: up to 4 stats,
              points shown open (not folded), and up to 3 links. Use it sparingly.
-  name       display name
+  name       display name, Title Case, a short product name with a hook
   icon       "timer" | "phone" | "pen" | "split" | "star" | "users" | "chart" | "mail" | "spark"
   tone       icon tile color: "blue" | "navy" | "deep" | "orange"
   subtitle   4 to 8 plain words under the name: what it is, for someone who has never seen it
@@ -34,7 +34,7 @@ window.PORTFOLIO = [
     id: "secret-shop",
     goal: "money",
     type: "app",
-    name: "Speed-to-lead secret shopper",
+    name: "Callback Stopwatch",
     icon: "timer",
     tone: "blue",
     tagline: "Fills out a practice's web form as a new patient, then logs every call and text for five days and scores the response.",
@@ -71,7 +71,7 @@ window.PORTFOLIO = [
     human: "Staff upload, review and correct each import",
     proof: "CMS · Google sign-in · role permissions",
     type: "app",
-    name: "Live call guide",
+    name: "Live Call Playbook",
     icon: "phone",
     tone: "navy",
     tagline: "Turned 60+ call policies, each formatted differently, into one standard step-by-step guide for every call.",
@@ -110,7 +110,7 @@ window.PORTFOLIO = [
     icon: "split",
     tone: "blue",
     tagline: "A search box for med spa call agents. Type what the caller wants and get the one consult to book, with the fee.",
-    subtitle: "Tells call agents which consult to book",
+    subtitle: "Tells agents which consult to book",
     builtWith: ["Claude Skill", "Claude Code"],
     stats: [
       { value: "269 / 273", label: "catalog phrasings routed right" },
@@ -143,10 +143,10 @@ window.PORTFOLIO = [
     human: "A person books and takes edge cases",
     proof: "Rolled out to 100+ practices · 100,000s of texts",
     type: "feature",
-    name: "Speed-to-lead texting agent",
+    name: "60-Second Responder",
     icon: "mail",
     tone: "orange",
-    subtitle: "Texts new leads within a minute",
+    subtitle: "AI texting agent for new leads",
     tagline: "When a patient fills out a practice's web form, this agent texts back in about a minute and hands off to a person when it's time.",
     builtWith: ["AI texting agent", "Master prompt + per-practice knowledge base"],
     stats: [
@@ -179,11 +179,11 @@ window.PORTFOLIO = [
     human: "Hiring manager checks Claude's evidence",
     proof: "Green · yellow · red",
     type: "skill",
-    name: "Candidate screener",
+    name: "Candidate Shortlister",
     icon: "users",
     tone: "deep",
     tagline: "Reads resumes, recruiter transcripts and interview videos, then writes a one-page review of each candidate.",
-    subtitle: "Rates job applicants green, yellow or red",
+    subtitle: "Rates applicants green, yellow or red",
     builtWith: ["Claude Skill", "Tested with evals"],
     stats: [
       { value: "18 / 18", label: "test checks passed" },
@@ -206,7 +206,7 @@ window.PORTFOLIO = [
     id: "a-plus-call-check",
     goal: "quality",
     type: "skill",
-    name: "Client-ready call check",
+    name: "A+ Call Spotter",
     icon: "star",
     tone: "orange",
     tagline: "Scores a call someone flagged as great. If it's truly A+, Claude drafts the note to send the practice.",
@@ -234,7 +234,7 @@ window.PORTFOLIO = [
     id: "jonah-voice",
     goal: "time",
     type: "skill",
-    name: "My writing voice",
+    name: "Write Like Me",
     icon: "pen",
     tone: "navy",
     tagline: "Rules and examples Claude follows when it drafts or edits anything I send or publish.",
@@ -260,7 +260,7 @@ window.PORTFOLIO = [
     id: "boost-compliance-advisor",
     goal: "quality",
     type: "skill",
-    name: "Compliance advisor",
+    name: "Ask Compliance",
     icon: "spark",
     tone: "orange",
     tagline: "Answers \"can we do this?\" questions about calls, texts, AI and patient data with a clear recommendation and a risk rating.",
