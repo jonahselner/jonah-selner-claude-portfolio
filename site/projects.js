@@ -20,12 +20,12 @@
   links      [{ label, url, primary? }]; the primary link is the tile's main button
   added      "YYYY-MM"
 
-  Featured case studies (shown large, in order) also have:
-  featured   1, 2, 3...  position in the case-study section
-  audit      one sentence: what was broken and what it cost
-  optimize   one sentence: the redesigned process, human in the loop
-  automate   one sentence: what the AI does
-  result     up to 2 { value, label }
+  Featured case studies (shown large, in order) also have. Keep each to a few words:
+  featured   1, 2, 3...  position
+  before / after / baLabel   the big visual, e.g. "Hours" -> "60 sec", "to first reply"
+  audit, optimize, automate  2 to 4 words each
+  human      2 to 4 words: where the person stays in the loop
+  proof      one short line of evidence
 */
 window.PORTFOLIO = [
   {
@@ -58,10 +58,14 @@ window.PORTFOLIO = [
   {
     id: "boost-flow",
     featured: 2,
-    audit: "Our call policies lived in 60+ Google Docs, each formatted differently. Nobody could open a new one and know where to look.",
-    optimize: "One standard format for every practice: six call stages from greeting to booking, with the emergency protocol built in.",
-    automate: "An AI import skill rewrites any uploaded policy into that format, inside a CMS that only Boost staff with permission can use.",
-    result: [{value: "60+", label: "call policies, one format"}, {value: "6", label: "call stages, every practice"}],
+    audit: "60+ messy Google Docs",
+    optimize: "One 6-stage format",
+    automate: "AI import skill",
+    before: "60+",
+    after: "1",
+    baLabel: "call policy format",
+    human: "Concierge runs the call",
+    proof: "CMS · Google sign-in · role permissions",
     type: "app",
     name: "Live call guide",
     icon: "phone",
@@ -90,10 +94,14 @@ window.PORTFOLIO = [
   {
     id: "consult-finder",
     featured: 3,
-    audit: "Agents on a live call aren't clinicians. They had to pick one of 7 consults, and the fee, while the caller waited.",
-    optimize: "One answer every time. Safety checks run first, and the agent asks one question only when it's truly 50/50.",
-    automate: "I built and tested the routing as a Claude skill, then turned it into rules that run instantly in the browser.",
-    result: [{value: "269 / 273", label: "catalog phrasings routed right"}, {value: "0", label: "caller details leave the screen"}],
+    audit: "Agents guessing mid-call",
+    optimize: "One answer, safety first",
+    automate: "Skill → instant rules",
+    before: "7",
+    after: "1",
+    baLabel: "consult types → one answer",
+    human: "Escalates to clinicians",
+    proof: "269 / 273 phrasings routed right",
     type: "app",
     name: "Consult Finder",
     icon: "split",
@@ -122,15 +130,19 @@ window.PORTFOLIO = [
   {
     id: "speed-to-lead",
     featured: 1,
-    audit: "Most practices didn't text new leads at all. They called back hours or days later, and patients got phone tag.",
-    optimize: "Text first, answer questions right away, and have a person call to book once the patient is ready. The AI never books.",
-    automate: "A web form triggers the agent. One master prompt plus a knowledge base per practice, and automation hands off to a person.",
-    result: [{value: "~60 sec", label: "to first text, down from hours or days"}, {value: "Dozens", label: "of practices live, 100,000s of texts"}],
+    audit: "Leads waited hours",
+    optimize: "Text first, human books",
+    automate: "AI agent + handoff",
+    before: "Hours",
+    after: "60 sec",
+    baLabel: "to first reply",
+    human: "A person books",
+    proof: "Dozens of practices · 100,000s of texts",
     type: "feature",
     name: "Speed-to-lead texting agent",
     icon: "mail",
     tone: "orange",
-    subtitle: "Client-facing AI · live at dozens of practices",
+    subtitle: "Texts new leads within a minute",
     tagline: "When a patient fills out a practice's web form, this agent texts back in about a minute and hands off to a person when it's time.",
     builtWith: ["AI texting agent", "Master prompt + per-practice knowledge base"],
     stats: [
@@ -153,10 +165,14 @@ window.PORTFOLIO = [
   {
     id: "concierge-candidate-screening",
     featured: 4,
-    audit: "Our outside recruiter sent batches of resumes, transcripts and videos. Weak fits took interview slots, and thin resumes hid strong people.",
-    optimize: "A 10-point rubric with clear non-negotiables. Every YELLOW comes with the one question that settles it.",
-    automate: "A Claude skill reviews the whole batch, including the videos, and writes a one-page review per candidate. The team still interviews.",
-    result: [{value: "18 / 18", label: "test checks passed with the skill"}, {value: "39%", label: "same tests, without it"}],
+    audit: "Wasted interview slots",
+    optimize: "10-point rubric",
+    automate: "Claude reads the batch",
+    before: "39%",
+    after: "100%",
+    baLabel: "test checks passed, without → with skill",
+    human: "The team interviews",
+    proof: "Resumes · transcripts · videos",
     type: "skill",
     name: "Candidate screener",
     icon: "users",
