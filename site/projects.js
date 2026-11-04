@@ -34,7 +34,7 @@ window.PORTFOLIO = [
     id: "secret-shop",
     goal: "money",
     type: "app",
-    name: "Callback Stopwatch",
+    name: "Speed-to-Lead Secret Shop",
     icon: "timer",
     tone: "blue",
     tagline: "Fills out a practice's web form as a new patient, then logs every call and text for five days and scores the response.",
