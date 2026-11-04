@@ -31,7 +31,7 @@ body{margin:0;color:var(--fg-muted);font:400 16px/1.5 var(--sans);-webkit-font-s
 a{color:inherit}
 .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
 .mono{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
-.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.grad{white-space:nowrap;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 svg{display:block}
 
 /* Nav */
@@ -53,6 +53,7 @@ h1{font-family:var(--display);font-weight:400;text-transform:uppercase;color:#ff
 .pill{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border:1px solid var(--line-strong);border-radius:999px;color:#fff;background:rgba(255,255,255,.03)}
 .pill svg{width:16px;height:16px;color:var(--pink)}
 .loop .arr{color:var(--fg-subtle)}
+.sub{margin:18px 0 0;max-width:60ch;font-size:17px;line-height:1.5;color:var(--fg-muted)}
 
 /* Sections */
 section{padding:28px 0}
@@ -136,8 +137,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
     <img src="jonah.jpg" alt="Jonah Selner" width="56" height="56">
     <div class="mono"><b>Jonah Selner</b>Co-founder, Boost · patient engagement</div>
   </div>
-  <h1>Real operating problems, solved with <span class="grad">Claude + ChatGPT</span>.</h1>
+  <h1>I take work apart and rebuild it <span class="grad">with AI</span>.</h1>
   <div class="loop mono" id="loop"></div>
+  <p class="sub">Agents, apps and Claude skills from running Boost, a patient engagement company for medical practices.</p>
 </div></header>
 
 <main id="main"></main>
