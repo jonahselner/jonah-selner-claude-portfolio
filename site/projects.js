@@ -20,6 +20,8 @@
   links      [{ label, url, primary? }]; the primary link is the tile's main button
   added      "YYYY-MM"
 
+  goal       "money" | "time" | "quality": the one business outcome this build serves
+
   Featured case studies (shown large, in order) also have. Keep each to a few words:
   featured   1, 2, 3...  position
   before / after / baLabel   the big visual, e.g. "Hours" -> "60 sec", "to first reply"
@@ -30,6 +32,7 @@
 window.PORTFOLIO = [
   {
     id: "secret-shop",
+    goal: "money",
     type: "app",
     name: "Speed-to-lead secret shopper",
     icon: "timer",
@@ -57,6 +60,7 @@ window.PORTFOLIO = [
   },
   {
     id: "boost-flow",
+    goal: "time",
     featured: 2,
     audit: "60+ messy Google Docs",
     optimize: "One 6-stage format",
@@ -93,6 +97,7 @@ window.PORTFOLIO = [
   },
   {
     id: "consult-finder",
+    goal: "quality",
     featured: 3,
     audit: "Agents guessing mid-call",
     optimize: "Map every treatment to a consult",
@@ -127,6 +132,7 @@ window.PORTFOLIO = [
   },
   {
     id: "speed-to-lead",
+    goal: "money",
     featured: 1,
     audit: "Leads waited hours",
     optimize: "Text first, human books",
@@ -162,6 +168,7 @@ window.PORTFOLIO = [
   },
   {
     id: "concierge-candidate-screening",
+    goal: "time",
     featured: 4,
     audit: "Wasted time, missed top talent",
     optimize: "10-point rubric",
@@ -197,6 +204,7 @@ window.PORTFOLIO = [
   },
   {
     id: "a-plus-call-check",
+    goal: "quality",
     type: "skill",
     name: "Client-ready call check",
     icon: "star",
@@ -224,6 +232,7 @@ window.PORTFOLIO = [
   },
   {
     id: "jonah-voice",
+    goal: "time",
     type: "skill",
     name: "My writing voice",
     icon: "pen",
@@ -249,6 +258,7 @@ window.PORTFOLIO = [
   },
   {
     id: "boost-compliance-advisor",
+    goal: "quality",
     type: "skill",
     name: "Compliance advisor",
     icon: "spark",

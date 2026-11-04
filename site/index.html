@@ -55,6 +55,16 @@ h1{font-family:var(--display);font-weight:400;text-transform:uppercase;color:#ff
 .loop .arr{color:var(--fg-subtle)}
 .sub{margin:18px 0 0;max-width:60ch;font-size:17px;line-height:1.5;color:var(--fg-muted)}
 
+.goals{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:12px}
+.glbl{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--fg-subtle);margin-right:4px}
+.goal{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:999px;font-size:11px;white-space:nowrap;border:1px solid}
+.goal svg{width:13px;height:13px}
+.g-money{color:#fe9a8c;border-color:rgba(254,115,98,.45);background:rgba(254,115,98,.10)}
+.g-time{color:#ff8fcb;border-color:rgba(254,85,176,.45);background:rgba(254,85,176,.10)}
+.g-quality{color:#c49bf0;border-color:rgba(158,82,218,.5);background:rgba(158,82,218,.12)}
+.goal.sm{padding:3px 8px;font-size:10px}
+.row .goal{display:inline-flex;color:inherit}.row .g-money{color:#fe9a8c}.row .g-time{color:#ff8fcb}.row .g-quality{color:#c49bf0}
+
 /* Sections */
 section{padding:28px 0}
 .sh{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:18px;border-top:1px solid var(--line);padding-top:22px}
@@ -74,6 +84,7 @@ section{padding:28px 0}
 .btn:hover{filter:brightness(1.08)}
 .btn svg{width:14px;height:14px}
 
+.case>div:nth-child(2){margin-bottom:-10px}
 .ba{display:flex;align-items:flex-end;gap:14px;flex-wrap:wrap}
 .ba .b{font-family:var(--display);font-size:44px;line-height:1;color:var(--fg-subtle);text-decoration:line-through;text-decoration-thickness:3px;text-decoration-color:rgba(254,115,98,.75)}
 .ba .to{color:var(--fg-subtle);padding-bottom:14px}
@@ -98,7 +109,7 @@ section{padding:28px 0}
 
 /* Rows */
 .rows{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-.row{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:center;background:rgba(255,255,255,.025);border:1px solid var(--line);border-radius:14px;padding:12px 14px;text-decoration:none;transition:border-color .15s,background .15s}
+.row{display:grid;grid-template-columns:auto minmax(0,1fr) auto auto;gap:12px;align-items:center;background:rgba(255,255,255,.025);border:1px solid var(--line);border-radius:14px;padding:12px 14px;text-decoration:none;transition:border-color .15s,background .15s}
 .row:hover{border-color:var(--line-strong);background:rgba(255,255,255,.05)}
 .row .ic{width:36px;height:36px;border-radius:10px}
 .row .ic svg{width:17px;height:17px}
@@ -122,6 +133,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
   .step .h{margin:0;min-width:96px}
   .ba .a{font-size:56px}.ba .b{font-size:36px}
   .more{margin-left:0}
+  .row{grid-template-columns:auto minmax(0,1fr) auto}
+  .row .goal{grid-column:2;justify-self:start}
+  .row .go{grid-row:1;grid-column:3}
 }
 </style>
 </head>
@@ -139,6 +153,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
   </div>
   <h1>I take work apart and rebuild it <span class="grad">with AI</span>.</h1>
   <div class="loop mono" id="loop"></div>
+  <div class="goals" id="goals"></div>
   <p class="sub">Agents, apps and Claude skills from running Boost, a patient engagement company for medical practices.</p>
 </div></header>
 
@@ -153,6 +168,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
     audit:'<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',
     optimize:'<path d="M4 6h10"/><path d="M18 6h2"/><circle cx="16" cy="6" r="2"/><path d="M4 18h4"/><path d="M12 18h8"/><circle cx="10" cy="18" r="2"/><path d="M4 12h2"/><path d="M10 12h10"/><circle cx="8" cy="12" r="2"/>',
     automate:'<path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>',
+    money:'<line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>',
+    time:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+    quality:'<path d="M12 2 4 5v6c0 5 3.5 9 8 11 4.5-2 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/>',
     human:'<circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/>',
     arrowR:'<path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>',
     ext:'<path d="M7 17 17 7"/><path d="M8 7h9v9"/>',
@@ -173,8 +191,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
   function primary(p){var l=p.links||[];return l.filter(function(x){return x.primary;})[0]||l[0];}
 
   var items = (window.PORTFOLIO||[]).slice();
+  var GOALS={money:"Makes money",time:"Saves time",quality:"Raises quality"};
+  function goal(p,cls){return p.goal&&GOALS[p.goal]?'<span class="goal g-'+p.goal+' mono'+(cls?' '+cls:'')+'">'+svg(p.goal)+GOALS[p.goal]+'</span>':'';}
   var STEPS=[["audit","Audit"],["optimize","Optimize"],["automate","Automate"]];
 
+  document.getElementById("goals").innerHTML = '<span class="glbl">Every build maps to one</span>'+Object.keys(GOALS).map(function(k){return goal({goal:k});}).join("");
   document.getElementById("loop").innerHTML = STEPS.map(function(s){return '<span class="pill">'+svg(s[0])+s[1]+'</span>';}).join('<span class="arr">'+svg("arrowR").replace('<svg','<svg width="18" height="18"')+'</span>');
 
   function card(p){
@@ -183,6 +204,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
       '<div class="top"><div class="ic">'+svg(p.icon)+'</div>'+
         '<div><h3>'+esc(p.name)+'</h3><div class="mono">'+esc(p.subtitle||"")+'</div></div>'+
         (pr?a(pr,'btn',esc(pr.label)+svg("ext")):'')+'</div>'+
+      '<div>'+goal(p)+'</div>'+
       '<div class="ba"><span class="b">'+esc(p.before)+'</span><span class="to">'+svg("arrowR")+'</span><span class="a grad">'+esc(p.after)+'</span><span class="lbl mono">'+esc(p.baLabel)+'</span></div>'+
       '<div class="steps">'+STEPS.map(function(s){return '<div class="step"><div class="h mono">'+svg(s[0])+s[1]+'</div><p>'+esc(p[s[0]])+'</p></div>';}).join("")+'</div>'+
       '<div class="foot">'+(p.human?'<span class="hu">'+svg("human")+esc(p.human)+'</span>':'')+(p.proof?'<span class="proof mono">'+esc(p.proof)+'</span>':'')+
@@ -191,7 +213,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
   }
   function row(p){
     var pr=primary(p); if(!pr) return '';
-    return a(pr,'row','<div class="ic">'+svg(p.icon)+'</div><div><b>'+esc(p.name)+'</b><span>'+esc(p.subtitle||"")+'</span></div>'+svg("ext","go"));
+    return a(pr,'row','<div class="ic">'+svg(p.icon)+'</div><div><b>'+esc(p.name)+'</b><span>'+esc(p.subtitle||"")+'</span></div>'+goal(p,'sm')+svg("ext","go"));
   }
   var feat=items.filter(function(p){return p.featured;}).sort(function(x,y){return x.featured-y.featured;});
   var rest=items.filter(function(p){return !p.featured;});
