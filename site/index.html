@@ -53,7 +53,7 @@ h1{font-family:var(--display);font-weight:400;text-transform:uppercase;color:#ff
 .pill{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border:1px solid var(--line-strong);border-radius:999px;color:#fff;background:rgba(255,255,255,.03)}
 .pill svg{width:16px;height:16px;color:var(--pink)}
 .loop .arr{color:var(--fg-subtle)}
-.sub{margin:18px 0 0;max-width:60ch;font-size:17px;line-height:1.5;color:var(--fg-muted)}
+.sub{margin:0;max-width:60ch;font-size:17px;line-height:1.5;color:var(--fg-muted)}
 
 .goals{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:12px}
 .glbl{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--fg-subtle);margin-right:4px}
@@ -153,8 +153,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
     <div class="mono"><b>Jonah Selner</b>Co-founder, Boost · patient engagement</div>
   </div>
   <h1>I take work apart and rebuild it <span class="grad">with AI</span>.</h1>
-  <div class="loop mono" id="loop"></div>
-  <div class="goals" id="goals"></div>
   <p class="sub">Agents, apps and Claude skills from running Boost, a patient engagement company for medical practices.</p>
 </div></header>
 
@@ -196,8 +194,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
   function goal(p,cls){return p.goal&&GOALS[p.goal]?'<span class="goal g-'+p.goal+' mono'+(cls?' '+cls:'')+'">'+svg(p.goal)+GOALS[p.goal]+'</span>':'';}
   var STEPS=[["audit","Audit"],["optimize","Optimize"],["automate","Automate"]];
 
-  document.getElementById("goals").innerHTML = '<span class="glbl">Every build maps to one</span>'+Object.keys(GOALS).map(function(k){return goal({goal:k});}).join("");
-  document.getElementById("loop").innerHTML = STEPS.map(function(s){return '<span class="pill">'+svg(s[0])+s[1]+'</span>';}).join('<span class="arr">'+svg("arrowR").replace('<svg','<svg width="18" height="18"')+'</span>');
 
   function card(p){
     var pr=primary(p), others=(p.links||[]).filter(function(l){return l!==pr;}).slice(0,2);
